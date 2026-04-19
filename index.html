@@ -1,43 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-		/>
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-		<link rel="stylesheet" href="dist/reset.css" />
-		<link rel="stylesheet" href="dist/reveal.css" />
-		<link rel="stylesheet" href="dist/theme/black.css" />
+	<title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="dist/plugin/highlight/monokai.css" />
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+	<link rel="stylesheet" href="dist/reset.css" />
+	<link rel="stylesheet" href="dist/reveal.css" />
+	<link rel="stylesheet" href="dist/theme/simple.css" />
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="dist/plugin/highlight/monokai.css" />
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h3
+					style="color: #0077b6; margin-top: -20px; font-size: 1.25em; margin-bottom: 30px; text-transform: none;">
+					Basic Quantum We'll Need</h3>
+
+				<div
+					style="display: flex; justify-content: space-between; align-items: flex-start; text-align: left; font-size: 0.65em;">
+					<!-- Text Section -->
+					<div style="width: 58%;">
+						<p style="margin-bottom: 5px; color: #333; line-height: 1.3;"><strong>Quantum States
+								(Qubits):</strong> Unlike classical computing, quantum bits can exist in combinations
+							via <strong>superposition</strong>.</p>
+						<div
+							style="background: #f8f9fa; padding: 5px 15px; border-left: 4px solid #0077b6; font-size: 1.2em; margin: 15px 0; color: #111;">
+							$| \psi \rangle = \alpha|0\rangle + \beta|1\rangle = \begin{pmatrix} \alpha \\ \beta
+							\end{pmatrix}$
+						</div>
+
+						<div style="margin-top: 25px;">
+							<p style="margin-bottom: 2px; color: #333;"><strong>Manipulating States:</strong></p>
+							<p style="color: #d62828; margin-top: 0; font-weight: 500;">$\rightarrow$ We apply
+								<em>unitary transformations</em> (geometric rotations)</p>
+						</div>
+
+						<div
+							style="margin-top: 30px; padding: 15px 20px; border: 1px solid #dee2e6; border-radius: 8px; background: #e9ecef; color: #222;">
+							<p style="margin-top: 0; margin-bottom: 10px; font-weight: 600;">The Mathematical View:</p>
+							<ul style="line-height: 1.4; margin: 0; padding-left: 20px;">
+								<li style="margin-bottom: 5px;">An $n$-qubit state is a <strong>$2^n$-dimensional
+										vector</strong>.</li>
+								<li>An $n$-qubit operation is a <strong>$2^n \times 2^n$ unitary matrix</strong>.</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Diagram Section -->
+					<div style="width: 38%; text-align: center; margin-top: 0;">
+						<div
+							style="background: #ffffff; padding: 20px 15px 15px 15px; border-radius: 12px; display: inline-block; border: 1px solid #ccc; box-shadow: 0 6px 15px rgba(0,0,0,0.08);">
+							<svg width="220" height="220" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
+								<defs>
+									<marker id="arrowB" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="4"
+										markerHeight="4" orient="auto-start-reverse">
+										<path d="M 0 0 L 10 5 L 0 10 z" fill="#112b4d" />
+									</marker>
+									<marker id="arrowBlue" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="4"
+										markerHeight="4" orient="auto-start-reverse">
+										<path d="M 0 0 L 10 5 L 0 10 z" fill="#004e92" />
+									</marker>
+									<marker id="arrowRed" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="4"
+										markerHeight="4" orient="auto">
+										<path d="M 0 0 L 10 5 L 0 10 z" fill="#cc0000" />
+									</marker>
+								</defs>
+								<!-- Axes -->
+								<line x1="30" y1="210" x2="230" y2="210" stroke="#112b4d" stroke-width="2.5"
+									marker-end="url(#arrowB)" />
+								<line x1="30" y1="210" x2="30" y2="30" stroke="#112b4d" stroke-width="2.5"
+									marker-end="url(#arrowB)" />
+								<text x="235" y="215" fill="#112b4d" font-size="20" font-family="serif">|0⟩</text>
+								<text x="10" y="20" fill="#112b4d" font-size="20" font-family="serif">|1⟩</text>
+
+								<!-- Dashed Projections -->
+								<line x1="170" y1="210" x2="170" y2="120" stroke="#888" stroke-width="2"
+									stroke-dasharray="5,5" />
+								<line x1="30" y1="120" x2="170" y2="120" stroke="#888" stroke-width="2"
+									stroke-dasharray="5,5" />
+								<path d="M 170 215 L 170 220 L 30 220 L 30 215" fill="none" stroke="#112b4d"
+									stroke-width="1.5" />
+								<text x="95" y="240" fill="#112b4d" font-size="18" font-style="italic"
+									font-family="serif">α</text>
+
+								<path d="M 25 210 L 20 210 L 20 120 L 25 120" fill="none" stroke="#112b4d"
+									stroke-width="1.5" />
+								<text x="5" y="170" fill="#112b4d" font-size="18" font-style="italic"
+									font-family="serif">β</text>
+
+								<!-- State 1 -->
+								<line x1="30" y1="210" x2="167" y2="122" stroke="#004e92" stroke-width="3.5"
+									marker-end="url(#arrowBlue)" />
+								<text x="180" y="115" fill="#004e92" font-size="22" font-family="serif">|ψ⟩</text>
+
+								<!-- State 2 (Rotated) -->
+								<line x1="30" y1="210" x2="90" y2="55" stroke="#004e92" stroke-width="3.5"
+									marker-end="url(#arrowBlue)" />
+								<text x="90" y="45" fill="#004e92" font-size="22" font-family="serif">U|ψ⟩</text>
+
+								<!-- Arc -->
+								<path d="M 120 150 Q 130 110 102 85" fill="none" stroke="#cc0000" stroke-width="3"
+									marker-end="url(#arrowRed)" />
+							</svg>
+						</div>
+						<p style="margin-top: 15px; font-size: 0.9em; color: #555; line-height: 1.3;">Geometric
+							perspective: executing a gate simply rotates the vector in space.</p>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<h3 style="color: #0077b6; text-transform: none; margin-bottom: 20px;">Slide 2 — Coming Soon</h3>
+				<p style="color: #555; font-size: 0.75em;">This slide will contain content to be added.</p>
+			</section>
+
 		</div>
+	</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="dist/plugin/notes.js"></script>
-		<script src="dist/plugin/markdown.js"></script>
-		<script src="dist/plugin/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+	<script src="dist/reveal.js"></script>
+	<script src="dist/plugin/notes.js"></script>
+	<script src="dist/plugin/markdown.js"></script>
+	<script src="dist/plugin/highlight.js"></script>
+	<script src="dist/plugin/math.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
-			});
-		</script>
-	</body>
+			// Standard PPT Size (16:9)
+			width: 1280,
+			height: 720,
+			margin: 0.05, // Reduce margins to use more of the screen
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX],
+		});
+	</script>
+</body>
+
 </html>
