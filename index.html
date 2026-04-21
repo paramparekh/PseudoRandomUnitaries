@@ -117,162 +117,143 @@
 				</div>
 			</section>
 
-			<!-- ═══════════════ SLIDE 2 ═══════════════ -->
+			<!-- ═══════════════ SLIDE 2: CLASSICAL RANDOMNESS ═══════════════ -->
+			<!-- ═══════════════ SLIDE 2: CLASSICAL RANDOMNESS ═══════════════ -->
 			<section>
-				<h3 style="color: #0077b6; text-transform: none; margin-bottom: 14px; font-size: 1.15em;">
+				<h3 style="color:#0077b6; text-transform:none; margin-bottom:15px; font-size:1.20em;">
 					Randomness in the Classical World
 				</h3>
 
 				<div
-					style="display:flex; justify-content:space-between; align-items:stretch; font-size:0.60em; gap:28px;">
+					style="font-size:0.65em; max-width:1100px; margin:0 auto; display:flex; flex-direction:column; gap:16px;">
 
-					<!-- ── LEFT: Concepts ── -->
-					<div style="width:50%; display:flex; flex-direction:column; gap:14px; text-align:left;">
-
-						<!-- Card: Truly Random String -->
-						<div
-							style="display:flex; align-items:center; gap:14px; background:#f0f6ff; border-left:4px solid #0077b6; border-radius:8px; padding:13px 15px;">
-							<!-- Coin SVG -->
-							<svg width="52" height="52" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg"
-								style="flex-shrink:0;">
-								<circle cx="26" cy="26" r="23" fill="#ffd166" stroke="#d4950a" stroke-width="2.5" />
-								<circle cx="26" cy="26" r="17" fill="none" stroke="#d4950a" stroke-width="1"
-									stroke-dasharray="3,2.5" />
-								<text x="26" y="33" text-anchor="middle" font-size="22" font-weight="bold"
-									fill="#7c4e00" font-family="Georgia,serif">$</text>
-							</svg>
-							<div>
-								<p style="margin:0 0 4px 0; font-weight:700; color:#003f6e; font-size:1.08em;">Truly
-									Random String</p>
-								<p style="margin:0; color:#333; line-height:1.45;">$s \overset{\$}{\leftarrow}
-									\{0,1\}^n$ &nbsp;— each bit is an independent coin flip</p>
-							</div>
-						</div>
-
-						<!-- Card: Truly Random Function -->
-						<div
-							style="background:#f8f9fa; border-left:4px solid #0077b6; border-radius:8px; padding:13px 15px;">
-							<p style="margin:0 0 10px 0; font-weight:700; color:#003f6e; font-size:1.08em;">
-								Truly Random Function &nbsp; $f \overset{\$}{\leftarrow} \mathrm{Func}_n$
+					<!-- 1. Truly Random String -->
+					<div
+						style="display:flex; align-items:center; gap:25px; background:#f0f6ff; border-left:5px solid #0077b6; border-radius:12px; padding:15px 25px; box-shadow:0 4px 10px rgba(0,0,0,0.05);">
+						<svg width="60" height="60" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg"
+							style="flex-shrink:0;">
+							<circle cx="26" cy="26" r="23" fill="#ffd166" stroke="#d4950a" stroke-width="2.5" />
+							<text x="26" y="33" text-anchor="middle" font-size="22" font-weight="bold" fill="#7c4e00"
+								font-family="Georgia,serif">$</text>
+						</svg>
+						<div style="text-align:left;">
+							<p style="margin:0 0 5px 0; font-weight:700; color:#003f6e; font-size:1.15em;">Truly Random
+								String</p>
+							<p style="margin:0; color:#333; font-size:1.1em;">$s \overset{\$}{\leftarrow} \{0,1\}^n$
 							</p>
-							<!-- Mini lookup-table diagram -->
-							<div style="display:flex; align-items:center; justify-content:center; gap:8px;">
-								<!-- Input column -->
-								<div
-									style="display:flex; flex-direction:column; gap:5px; font-family:monospace; font-size:1.05em;">
-									<div
-										style="background:#dde5f4; border-radius:5px; padding:4px 10px; color:#1a3a5c;">
-										00</div>
-									<div
-										style="background:#dde5f4; border-radius:5px; padding:4px 10px; color:#1a3a5c;">
-										01</div>
-									<div
-										style="background:#dde5f4; border-radius:5px; padding:4px 10px; color:#1a3a5c;">
-										10</div>
-									<div
-										style="background:#dde5f4; border-radius:5px; padding:4px 10px; color:#1a3a5c;">
-										11</div>
-								</div>
-								<!-- Arrows SVG -->
-								<svg width="65" height="95" viewBox="0 0 65 95" xmlns="http://www.w3.org/2000/svg">
-									<defs>
-										<marker id="arrFn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5"
-											markerHeight="5" orient="auto">
-											<path d="M0,0 L10,5 L0,10 Z" fill="#0077b6" />
-										</marker>
-									</defs>
-									<line x1="2" y1="12" x2="58" y2="12" stroke="#0077b6" stroke-width="1.8"
-										marker-end="url(#arrFn)" />
-									<line x1="2" y1="36" x2="58" y2="60" stroke="#0077b6" stroke-width="1.8"
-										marker-end="url(#arrFn)" />
-									<line x1="2" y1="60" x2="58" y2="36" stroke="#0077b6" stroke-width="1.8"
-										marker-end="url(#arrFn)" />
-									<line x1="2" y1="84" x2="58" y2="84" stroke="#0077b6" stroke-width="1.8"
-										marker-end="url(#arrFn)" />
-								</svg>
-								<!-- Output column -->
-								<div
-									style="display:flex; flex-direction:column; gap:5px; font-family:monospace; font-size:1.05em;">
-									<div
-										style="background:#ffd6d6; border-radius:5px; padding:4px 10px; color:#7c0000;">
-										0101</div>
-									<div
-										style="background:#ffd6d6; border-radius:5px; padding:4px 10px; color:#7c0000;">
-										1100</div>
-									<div
-										style="background:#ffd6d6; border-radius:5px; padding:4px 10px; color:#7c0000;">
-										0011</div>
-									<div
-										style="background:#ffd6d6; border-radius:5px; padding:4px 10px; color:#7c0000;">
-										1010</div>
-								</div>
-							</div>
-							<p style="margin:8px 0 0 0; color:#666; text-align:center; font-style:italic;">every input
-								gets a uniformly random output</p>
 						</div>
 					</div>
 
-					<!-- ── RIGHT: Applications ── -->
-					<div style="width:46%; display:flex; flex-direction:column; gap:12px; text-align:left;">
-						<p style="margin:0 0 4px 0; font-weight:700; color:#003f6e; font-size:1.08em;">Why Randomness?
-						</p>
-
-						<!-- Card: Algorithms -->
-						<div
-							style="display:flex; align-items:center; gap:12px; background:#fff8e1; border-radius:8px; padding:11px 14px; border:1px solid #f0c040;">
-							<svg width="38" height="38" viewBox="0 0 38 38" style="flex-shrink:0;"
-								xmlns="http://www.w3.org/2000/svg">
-								<rect x="2" y="2" width="34" height="34" rx="6" fill="#ffc107" stroke="#b8860b"
-									stroke-width="2" />
-								<circle cx="12" cy="12" r="3.2" fill="white" />
-								<circle cx="26" cy="12" r="3.2" fill="white" />
-								<circle cx="19" cy="19" r="3.2" fill="white" />
-								<circle cx="12" cy="26" r="3.2" fill="white" />
-								<circle cx="26" cy="26" r="3.2" fill="white" />
+					<!-- 2. Truly Random Function -->
+					<div
+						style="display:flex; align-items:center; gap:25px; background:#f8f9fa; border-left:5px solid #0077b6; border-radius:12px; padding:15px 25px; box-shadow:0 4px 10px rgba(0,0,0,0.05);">
+						<!-- Mapping Diagram -->
+						<div style="display:flex; align-items:center; gap:10px; flex-shrink:0;">
+							<div
+								style="display:flex; flex-direction:column; gap:4px; font-family:monospace; font-size:0.85em;">
+								<div style="background:#dde5f4; border-radius:4px; padding:3px 8px; color:#1a3a5c;">00
+								</div>
+								<div style="background:#dde5f4; border-radius:4px; padding:3px 8px; color:#1a3a5c;">01
+								</div>
+								<div style="background:#dde5f4; border-radius:4px; padding:3px 8px; color:#1a3a5c;">10
+								</div>
+								<div style="background:#dde5f4; border-radius:4px; padding:3px 8px; color:#1a3a5c;">11
+								</div>
+							</div>
+							<svg width="45" height="75" viewBox="0 0 50 80">
+								<defs>
+									<marker id="arrFnSlide2B" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5"
+										markerHeight="5" orient="auto">
+										<path d="M0,0 L10,5 L0,10 Z" fill="#0077b6" />
+									</marker>
+								</defs>
+								<line x1="2" y1="12" x2="45" y2="12" stroke="#0077b6" stroke-width="1.5"
+									marker-end="url(#arrFnSlide2B)" />
+								<line x1="2" y1="32" x2="45" y2="52" stroke="#0077b6" stroke-width="1.5"
+									marker-end="url(#arrFnSlide2B)" />
+								<line x1="2" y1="52" x2="45" y2="32" stroke="#0077b6" stroke-width="1.5"
+									marker-end="url(#arrFnSlide2B)" />
+								<line x1="2" y1="72" x2="45" y2="72" stroke="#0077b6" stroke-width="1.5"
+									marker-end="url(#arrFnSlide2B)" />
 							</svg>
-							<div>
-								<p style="margin:0 0 3px 0; font-weight:700; color:#7c5000;">Algorithm Design</p>
-								<p style="margin:0; color:#555; line-height:1.35;">Primality testing · Monte Carlo ·
-									randomized sorting</p>
+							<div
+								style="display:flex; flex-direction:column; gap:4px; font-family:monospace; font-size:0.85em;">
+								<div style="background:#ffd6d6; border-radius:4px; padding:2px 6px; color:#7c0000;">01
+								</div>
+								<div style="background:#ffd6d6; border-radius:4px; padding:2px 6px; color:#7c0000;">11
+								</div>
+								<div style="background:#ffd6d6; border-radius:4px; padding:2px 6px; color:#7c0000;">00
+								</div>
+								<div style="background:#ffd6d6; border-radius:4px; padding:2px 6px; color:#7c0000;">10
+								</div>
 							</div>
 						</div>
-
-						<!-- Card: Cryptography -->
-						<div
-							style="display:flex; align-items:center; gap:12px; background:#e8f5e9; border-radius:8px; padding:11px 14px; border:1px solid #66bb6a;">
-							<svg width="38" height="38" viewBox="0 0 38 38" style="flex-shrink:0;"
-								xmlns="http://www.w3.org/2000/svg">
-								<rect x="2" y="17" width="34" height="19" rx="4" fill="#4caf50" stroke="#2e7d32"
-									stroke-width="2" />
-								<path d="M11 17 V12 Q11 4 19 4 Q27 4 27 12 V17" fill="none" stroke="#2e7d32"
-									stroke-width="3.2" stroke-linecap="round" />
-								<circle cx="19" cy="26" r="3" fill="white" />
-								<line x1="19" y1="26" x2="19" y2="31" stroke="white" stroke-width="2.5"
-									stroke-linecap="round" />
-							</svg>
-							<div>
-								<p style="margin:0 0 3px 0; font-weight:700; color:#1b5e20;">Cryptography</p>
-								<p style="margin:0; color:#555; line-height:1.35;">Probabilistic encryption · nonces ·
-									key generation</p>
-							</div>
+						<div style="text-align:left;">
+							<p style="margin:0 0 5px 0; font-weight:700; color:#003f6e; font-size:1.15em;">Truly Random
+								Function</p>
+							<p style="margin:0; color:#333; font-size:1.1em;">$f \overset{}{\leftarrow} \mathrm{Func}_n$
+								&nbsp;:&nbsp; every input gets a <strong>uniformly random</strong> output</p>
 						</div>
+					</div>
 
-						<!-- Card: Probabilistic Constructions -->
+					<p style="margin:5px 0 0 0; font-weight:700; color:#003f6e; font-size:1.0em; text-align:left;">
+						Applications of Classical Randomness:</p>
+
+					<!-- Cards Grid (Resized to match Slide 4) -->
+					<div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:15px;">
+
+						<!-- Card 1: Algorithm Design -->
 						<div
-							style="display:flex; align-items:center; gap:12px; background:#f3e5f5; border-radius:8px; padding:11px 14px; border:1px solid #ab47bc;">
-							<svg width="38" height="38" viewBox="0 0 38 38" style="flex-shrink:0;"
-								xmlns="http://www.w3.org/2000/svg">
-								<rect x="2" y="2" width="34" height="34" rx="5" fill="#9c27b0" stroke="#6a0080"
+							style="display:flex; flex-direction:column; align-items:center; gap:12px; background:#fff8e1; border-radius:15px; padding:20px; border:2px solid #f0c040; transition: transform 0.3s ease;">
+							<svg width="60" height="60" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+								<rect x="2" y="2" width="28" height="28" rx="6" fill="#ffc107" stroke="#b8860b"
 									stroke-width="2" />
-								<text x="8" y="16" font-family="monospace" font-size="9" fill="white">1 0 1</text>
-								<text x="8" y="24" font-family="monospace" font-size="9" fill="white">0 1 1</text>
-								<text x="8" y="32" font-family="monospace" font-size="9" fill="#ffd166">1 1 0</text>
+								<circle cx="10" cy="10" r="2.5" fill="white" />
+								<circle cx="22" cy="10" r="2.5" fill="white" />
+								<circle cx="16" cy="16" r="2.5" fill="white" />
+								<circle cx="10" cy="22" r="2.5" fill="white" />
+								<circle cx="22" cy="22" r="2.5" fill="white" />
 							</svg>
-							<div>
-								<p style="margin:0 0 3px 0; font-weight:700; color:#4a148c;">Probabilistic Constructions
+							<div style="text-align:center;">
+								<p style="margin:0; font-weight:700; color:#7c5000; font-size:1.15em;">Algorithm Design
 								</p>
-								<p style="margin:0; color:#555; line-height:1.35;">Random codes $\Rightarrow$ good
-									error-correcting codes exist!</p>
+								<p style="margin:5px 0 0 0; color:#555; font-size:0.92em; line-height:1.2;">Primality
+									testing, Monte Carlo, randomized sorting</p>
+							</div>
+						</div>
+
+						<!-- Card 2: Cryptography -->
+						<div
+							style="display:flex; flex-direction:column; align-items:center; gap:12px; background:#e8f5e9; border-radius:15px; padding:20px; border:2px solid #66bb6a; transition: transform 0.3s ease;">
+							<svg width="60" height="60" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+								<rect x="4" y="14" width="24" height="14" rx="3" fill="#4caf50" stroke="#2e7d32"
+									stroke-width="2" />
+								<path d="M10 14 V10 Q10 4 16 4 Q22 4 22 10 V14" fill="none" stroke="#2e7d32"
+									stroke-width="3" />
+								<circle cx="16" cy="21" r="2" fill="white" />
+							</svg>
+							<div style="text-align:center;">
+								<p style="margin:0; font-weight:700; color:#1b5e20; font-size:1.15em;">Cryptography</p>
+								<p style="margin:5px 0 0 0; color:#555; font-size:0.92em; line-height:1.2;">Encryption,
+									Authentication, Key Generation</p>
+							</div>
+						</div>
+
+						<!-- Card 3: Probabilistic Proofs -->
+						<div
+							style="display:flex; flex-direction:column; align-items:center; gap:12px; background:#f3e5f5; border-radius:15px; padding:20px; border:2px solid #ab47bc; transition: transform 0.3s ease;">
+							<svg width="60" height="60" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+								<rect x="2" y="2" width="28" height="28" rx="6" fill="#9c27b0" />
+								<text x="6" y="14" font-family="monospace" font-size="7" fill="white">1 0 1</text>
+								<text x="6" y="21" font-family="monospace" font-size="7" fill="white">0 1 1</text>
+								<text x="6" y="28" font-family="monospace" font-size="7" fill="#ffd166">1 1 0</text>
+							</svg>
+							<div style="text-align:center;">
+								<p style="margin:0; font-weight:700; color:#4a148c; font-size:1.15em;">Probabilistic
+									Constructions</p>
+								<p style="margin:5px 0 0 0; color:#555; font-size:0.92em; line-height:1.2;">Random Error
+									Correcting codes
+								</p>
 							</div>
 						</div>
 					</div>
@@ -280,7 +261,7 @@
 				</div>
 			</section>
 
-			<!-- ═══════════════ SLIDE 3 ═══════════════ -->
+			<!-- ═══════════════ SLIDE 3 ═══════════════
 			<section>
 				<h3 style="color: #0077b6; text-transform: none; margin-bottom: 14px; font-size: 1.15em;">
 					The Problem: Truly Random Functions Are Exponential
@@ -288,10 +269,10 @@
 
 				<div style="font-size:0.61em; text-align:left;">
 
-					<!-- Top row -->
+
 					<div style="display:flex; gap:28px; align-items:flex-start; margin-bottom:16px;">
 
-						<!-- Left: intuition -->
+
 						<div style="width:53%;">
 							<p style="margin:0 0 10px 0; color:#333; line-height:1.55;">
 								To specify $f:\{0,1\}^n \to \{0,1\}^n$ we must store its entire truth table —
@@ -307,7 +288,7 @@
 							</p>
 						</div>
 
-						<!-- Right: exponential table -->
+
 						<div style="width:43%;">
 							<table
 								style="width:100%; border-collapse:collapse; text-align:center; font-size:1em; border-radius:8px; overflow:hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
@@ -349,7 +330,7 @@
 						</div>
 					</div>
 
-					<!-- Bottom: PPT impossibility callout -->
+
 					<div
 						style="display:flex; align-items:center; gap:16px; background:#fdecea; border-left:5px solid #cc0000; border-radius:9px; padding:14px 18px;">
 						<svg width="40" height="40" viewBox="0 0 40 40" style="flex-shrink:0;"
@@ -372,20 +353,20 @@
 					</div>
 
 				</div>
-			</section>
+			</section> -->
 
 			<!-- ═══════════════ SLIDE 4: APPLICATIONS ═══════════════ -->
 			<section>
-				<h3 style="color:#0077b6; text-transform:none; margin-bottom:20px; font-size:1.20em;">
+				<h3 style="color:#0077b6; text-transform:none; margin-bottom:10px; font-size:1.20em;">
 					Randomness in the Quantum World
 				</h3>
 
-				<div style="font-size:0.65em; max-width:1100px; margin:0 auto;">
+				<div style="font-size:0.58em; max-width:1100px; margin:0 auto;">
 
 					<!-- 1. Quantum Random Object: Random Unitary -->
 					<div
-						style="display:flex; align-items:center; gap:20px; background:#f0f8ff; border-left:5px solid #0077b6; border-radius:10px; padding:15px 25px; margin-bottom:20px; box-shadow:0 4px 10px rgba(0,0,0,0.05);">
-						<svg width="60" height="60" viewBox="0 0 190 160" style="flex-shrink:0;">
+						style="display:flex; align-items:center; gap:20px; background:#f0f8ff; border-left:5px solid #0077b6; border-radius:10px; padding:10px 20px; margin-bottom:8px; box-shadow:0 4px 10px rgba(0,0,0,0.05);">
+						<svg width="55" height="55" viewBox="0 0 190 160" style="flex-shrink:0;">
 							<defs>
 								<radialGradient id="haarGradSlide3" cx="38%" cy="38%" r="62%">
 									<stop offset="0%" stop-color="#deeeff" />
@@ -398,23 +379,22 @@
 								font-weight="bold" text-anchor="middle">U</text>
 						</svg>
 						<div style="text-align:left;">
-							<p style="margin:0 0 5px 0; font-weight:700; color:#003f6e; font-size:1.3em;">Truly Random
+							<p style="margin:0 0 5px 0; font-weight:700; color:#003f6e; font-size:1.3em;">Haar Random
 								Unitary &nbsp; $U \sim \mathrm{Haar}$</p>
-							<p style="margin:0; color:#444; font-size:1.1em; line-height:1.4;">A randomly chosen generic
-								quantum operation (matrix) across all $n$ qubits.</p>
+
 						</div>
 					</div>
 
-					<p style="margin:0 0 10px 0; font-weight:700; color:#003f6e; font-size:1.0em; text-align:left;">
+					<p style="margin:0 0 5px 0; font-weight:700; color:#003f6e; font-size:1.0em; text-align:left;">
 						Applications of Quantum Randomness:</p>
 
 					<!-- 3-Column Premium Card Grid -->
-					<div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:15px;">
+					<div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px;">
 
 						<!-- Card 1: Black Holes -->
 						<div
-							style="display:flex; flex-direction:column; align-items:center; gap:12px; background:#f0f8ff; border-radius:15px; padding:20px; border:2px solid #90e0ef; transition: transform 0.3s ease;">
-							<svg width="60" height="60" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+							style="display:flex; flex-direction:column; align-items:center; gap:6px; background:#f0f8ff; border-radius:12px; padding:12px; border:2px solid #90e0ef; transition: transform 0.3s ease;">
+							<svg width="50" height="50" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
 								<circle cx="16" cy="16" r="14" fill="#023e8a" />
 								<circle cx="16" cy="16" r="9" fill="none" stroke="#48cae4" stroke-width="2"
 									opacity="0.8" />
@@ -431,8 +411,8 @@
 
 						<!-- Card 2: Scrambling -->
 						<div
-							style="display:flex; flex-direction:column; align-items:center; gap:12px; background:#f0fff4; border-radius:15px; padding:20px; border:2px solid #b7e4c7;">
-							<svg width="60" height="60" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+							style="display:flex; flex-direction:column; align-items:center; gap:6px; background:#f0fff4; border-radius:12px; padding:12px; border:2px solid #b7e4c7;">
+							<svg width="50" height="50" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
 								<rect x="2" y="2" width="28" height="28" rx="6" fill="#1b4332" />
 								<circle cx="10" cy="10" r="3" fill="#95d5b2" />
 								<circle cx="22" cy="22" r="3" fill="#95d5b2" />
@@ -450,8 +430,8 @@
 
 						<!-- Card 3: Error Mitigation -->
 						<div
-							style="display:flex; flex-direction:column; align-items:center; gap:12px; background:#fffaf0; border-radius:15px; padding:20px; border:2px solid #ffd8a8;">
-							<svg width="60" height="60" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+							style="display:flex; flex-direction:column; align-items:center; gap:6px; background:#fffaf0; border-radius:12px; padding:12px; border:2px solid #ffd8a8;">
+							<svg width="50" height="50" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
 								<rect x="2" y="2" width="28" height="28" rx="6" fill="#a64900" />
 								<polyline points="4,22 10,14 16,24 22,10 28,18" fill="none" stroke="#ffe8cc"
 									stroke-width="3" stroke-linecap="round" />
@@ -467,8 +447,8 @@
 
 						<!-- Card 4: Learning -->
 						<div
-							style="display:flex; flex-direction:column; align-items:center; gap:12px; background:#f5f3ff; border-radius:15px; padding:20px; border:2px solid #dcd6ff;">
-							<svg width="60" height="60" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+							style="display:flex; flex-direction:column; align-items:center; gap:6px; background:#f5f3ff; border-radius:12px; padding:12px; border:2px solid #dcd6ff;">
+							<svg width="50" height="50" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
 								<rect x="2" y="2" width="28" height="28" rx="6" fill="#5b21b6" />
 								<circle cx="16" cy="10" r="4" fill="#e0aaff" />
 								<circle cx="9" cy="22" r="4" fill="#e0aaff" />
@@ -486,8 +466,8 @@
 
 						<!-- Card 5: Cryptography -->
 						<div
-							style="display:flex; flex-direction:column; align-items:center; gap:12px; background:#fff5f7; border-radius:15px; padding:20px; border:2px solid #ffdeeb;">
-							<svg width="60" height="60" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+							style="display:flex; flex-direction:column; align-items:center; gap:6px; background:#fff5f7; border-radius:12px; padding:12px; border:2px solid #ffdeeb;">
+							<svg width="50" height="50" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
 								<rect x="8" y="16" width="16" height="12" rx="3" fill="#7209b7" />
 								<path d="M10 16 V11 Q10 5 16 5 Q22 5 22 11 V16" fill="none" stroke="#f72585"
 									stroke-width="3" />
@@ -502,8 +482,8 @@
 
 						<!-- Card 6: Error Correction -->
 						<div
-							style="display:flex; flex-direction:column; align-items:center; gap:12px; background:#fefce8; border-radius:15px; padding:20px; border:2px solid #fef08a;">
-							<svg width="60" height="60" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+							style="display:flex; flex-direction:column; align-items:center; gap:6px; background:#fefce8; border-radius:12px; padding:12px; border:2px solid #fef08a;">
+							<svg width="50" height="50" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
 								<rect x="2" y="2" width="28" height="28" rx="6" fill="#854d0e" />
 								<polyline points="8,16 14,22 24,10" fill="none" stroke="#fef9c3" stroke-width="4"
 									stroke-linecap="round" stroke-linejoin="round" />
@@ -518,8 +498,8 @@
 
 						<!-- Card 7: Entanglement (Spanning) -->
 						<div
-							style="display:flex; align-items:center; justify-content:center; gap:30px; background:#ecfeff; border-radius:15px; padding:20px; border:2px solid #a5f3fc; grid-column: 1 / span 3;">
-							<svg width="60" height="60" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+							style="display:flex; align-items:center; justify-content:center; gap:15px; background:#ecfeff; border-radius:12px; padding:8px 15px; border:2px solid #a5f3fc; grid-column: 1 / span 3;">
+							<svg width="50" height="50" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
 								<circle cx="10" cy="16" r="8" fill="none" stroke="#0077b6" stroke-width="3" />
 								<circle cx="22" cy="16" r="8" fill="none" stroke="#00b4d8" stroke-width="3" />
 								<path d="M16 11 Q19 16 16 21" fill="none" stroke="#0077b6" stroke-width="2" />
@@ -541,20 +521,19 @@
 			<!-- ═══════════════ SLIDE 6: THE EFFICIENCY BARRIER ═══════════════ -->
 			<section>
 				<h3 style="color:#0077b6; text-transform:none; margin-bottom:20px; font-size:1.2em;">
-					The Efficiency Barrier: Truly Random vs. PRFs
+					Fixing Efficiency Barrier: TRF to PRF
 				</h3>
 
-				<div style="display:flex; justify-content:space-between; align-items:flex-start; gap:40px;">
+				<div style="display:flex; justify-content:space-between; align-items:start; gap:40px;">
 
 					<!-- Left: Truly Random (Infeasible) -->
 					<div style="width:48%; display:flex; flex-direction:column; gap:15px; text-align:left;">
 						<div
-							style="background:#fff1f0; border-left:5px solid #cf1322; padding:12px; border-radius:8px;">
-							<p style="margin:0; font-weight:700; color:#cf1322; font-size:1.05em;">Truly Random ($f \in
-								\text{Func}_n$)</p>
-							<p style="margin:5px 0 0 0; font-size:0.8em; color:#444;">
-								Specifying a function requires $n \cdot 2^n$ bits.
-								$|\text{Func}_n| = 2^{n \cdot 2^n}$ — <strong>Exponential!</strong>
+							style="background:#fff1f0; border-left:5px solid #cf1322; padding:12px; border-radius:8px; height:95px; display:flex; flex-direction:column; justify-content:center;">
+							<p style="margin:0; font-weight:700; color:#cf1322; font-size:0.8em;">
+								Truly Random Function (TRF)</p>
+							<p style="margin:4px 0 0 0; font-size:0.65em; color:#444;">
+								$f \leftarrow \text{Func}_n$ requires $n \cdot 2^n$ bits
 							</p>
 						</div>
 
@@ -614,12 +593,12 @@
 					<!-- Right: PRF (The Solution) -->
 					<div style="width:48%; display:flex; flex-direction:column; gap:15px; text-align:left;">
 						<div
-							style="background:#f6ffed; border-left:5px solid #389e0d; padding:12px; border-radius:8px;">
-							<p style="margin:0; font-weight:700; color:#389e0d; font-size:1.05em;">Pseudorandom Function
+							style="background:#f6ffed; border-left:5px solid #389e0d; padding:12px; border-radius:8px; height:95px; display:flex; flex-direction:column; justify-content:center;">
+							<p style="margin:0; font-weight:700; color:#389e0d; font-size:0.8em;">Pseudorandom Function
 								(PRF)</p>
-							<p style="margin:5px 0 0 0; font-size:0.8em; color:#444;">
+							<p style="margin:4px 0 0 0; font-size:0.65em; color:#444;">
 								Efficiently computable in <strong>polynomial time</strong>.
-								Requires only a short, random key $k$.
+								Requires a random key $k$.
 							</p>
 						</div>
 
@@ -667,7 +646,7 @@
 			<!-- ═══════════════ SLIDE 7: SECURITY & LAZY SAMPLING ═══════════════ -->
 			<section>
 				<h3 style="color:#0077b6; text-transform:none; margin-bottom:20px; font-size:1.15em;">
-					PRF Security & On-the-Fly Simulation
+					PRF Security<span class="fragment" data-fragment-index="0"> & Efficient Simulation of TRF</span>
 				</h3>
 
 				<div
@@ -792,7 +771,7 @@
 					</div>
 
 					<!-- Right: Lazy Sampling Infographic -->
-					<div style="width:50%; text-align:left;">
+					<div style="width:50%; text-align:left;" class="fragment" data-fragment-index="0">
 						<div
 							style="background:#e6f7ff; border-radius:15px; border-left:8px solid #1890ff; padding:20px;">
 							<p style="margin:0; font-weight:800; color:#0050b3; font-size:1.3em;">On-the-Fly Simulation
@@ -827,7 +806,9 @@
 								</table>
 							</div>
 							<p style="margin:15px 0 0 0; font-style:italic; font-size:1.05em; color:#0050b3;">
-								"Only store what the adversary asks for. The rest remains undefined until needed."
+								"Assign random output to queried input on the fly, storing only the queried
+								input-output
+								pairs in a table"
 							</p>
 						</div>
 					</div>
@@ -837,51 +818,51 @@
 
 			<!-- ═══════════════ SLIDE 7: PSEUDORANDOM UNITARIES (PRUs) ═══════════════ -->
 			<section>
-				<h3 style="color:#0077b6; text-transform:none; margin-bottom:15px; font-size:1.1em;">
-					Pseudorandom Unitaries (PRUs)
+				<h3 style="color:#0077b6; text-transform:none; margin-bottom:10px; font-size:1.2em;">
+					Fixing Efficiency Barrier: Haar Random unitaries to Pseudorandom unitaries
 				</h3>
 
 				<div
-					style="display:flex; justify-content:space-between; align-items:flex-start; gap:20px; font-size:0.55em;">
+					style="display:flex; justify-content:space-between; align-items:flex-start; gap:25px; font-size:0.54em;">
 
-					<!-- Left Column: The Haar Complexity Challenge -->
-					<div style="width:38%; text-align:left; border-right: 1px solid #ddd; padding-right:20px;">
-						<div style="font-weight:700; color:#003f6e; font-size:1.2em; margin-bottom:10px;">The Challenge:
-							Haar Randomness</div>
+					<div
+						style="width:42%; text-align:left; border-right: 1px solid #eee; padding-right:15px; display:flex; flex-direction:column;">
+						<!-- Header + Diagram alignment container -->
+						<div
+							style="height: 165px; display: flex; flex-direction: column; justify-content: space-between; margin-bottom: 10px;">
+							<div style="font-weight:600; color:#003f6e; font-size:1.0em;">The Challenge: Haar Randomness
+							</div>
 
-						<!-- Haar Ellipse (Resized for column) -->
-						<div style="display:flex; justify-content:center; margin-bottom:15px;">
-							<svg width="220" height="150" viewBox="0 0 190 160">
-								<defs>
-									<radialGradient id="haarGradFinal" cx="38%" cy="38%" r="62%">
-										<stop offset="0%" stop-color="#deeeff" />
-										<stop offset="100%" stop-color="#9ac8ee" />
-									</radialGradient>
-									<filter id="glowUFinal" x="-50%" y="-50%" width="200%" height="200%">
-										<feGaussianBlur stdDeviation="3.5" result="blur" />
-										<feMerge>
-											<feMergeNode in="blur" />
-											<feMergeNode in="SourceGraphic" />
-										</feMerge>
-									</filter>
-								</defs>
-								<ellipse cx="95" cy="80" rx="80" ry="50" fill="url(#haarGradFinal)" stroke="#0077b6"
-									stroke-width="2" opacity="0.92" />
-								<circle cx="82" cy="68" r="7" fill="#e63946" filter="url(#glowUFinal)" />
-								<text x="93" y="64" fill="#003f6e" font-size="14" font-family="serif"
-									font-style="italic" font-weight="bold">U</text>
-								<text x="95" y="145" text-anchor="middle" fill="#0077b6" font-size="11"
-									font-family="serif">Haar Measure</text>
-							</svg>
+							<div style="height:115px; display:flex; flex-direction:column; justify-content:center;">
+								<!-- Haar Ellipse -->
+								<div style="display:flex; justify-content:center;">
+									<svg width="150" height="90" viewBox="0 0 190 160">
+										<defs>
+											<radialGradient id="haarGradFinal" cx="38%" cy="38%" r="62%">
+												<stop offset="0%" stop-color="#deeeff" />
+												<stop offset="100%" stop-color="#9ac8ee" />
+											</radialGradient>
+										</defs>
+										<ellipse cx="95" cy="80" rx="85" ry="55" fill="url(#haarGradFinal)"
+											stroke="#0077b6" stroke-width="2" opacity="0.95" />
+										<circle cx="82" cy="72" r="8" fill="#e63946" stroke="#fff" stroke-width="1.5" />
+										<text x="96" y="76" fill="#003f6e" font-size="20" font-family="serif"
+											font-style="italic">U</text>
+										<text x="95" y="150" text-anchor="middle" fill="#0077b6" font-size="15"
+											font-family="serif">Haar Measure</text>
+									</svg>
+								</div>
+							</div>
 						</div>
 
-						<!-- Exp-Depth Circuit (Better alignment/sizing) -->
+						<!-- Truly Random Challenge Box -->
 						<div
-							style="background:#f0f7ff; border-radius:10px; padding:15px 10px; border:1px solid #bae7ff; margin-top:5px;">
+							style="background:#f0f7ff; border-radius:12px; padding:12px 15px; border:1px solid #bae7ff; box-shadow: 0 4px 12px rgba(0,119,182,0.04); box-sizing:border-box;">
 							<p
-								style="margin:0 0 10px 0; font-weight:700; color:#0077b6; font-size:1.1em; text-align:center;">
+								style="margin:0 0 8px 0; font-weight:600; color:#0077b6; font-size:1.1em; text-align:center;">
 								Truly Random = Inefficient</p>
-							<svg width="250" height="150" viewBox="20 0 240 200" style="display:block; margin:0 auto;">
+							<svg width="300" height="180" viewBox="15 -10 250 220"
+								style="display:block; margin:0 auto;">
 								<!-- Wires -->
 								<line x1="45" y1="50" x2="215" y2="50" stroke="#112b4d" stroke-width="2.5" />
 								<line x1="45" y1="75" x2="215" y2="75" stroke="#112b4d" stroke-width="2.5" />
@@ -894,8 +875,9 @@
 								<rect x="75" y="37" width="16" height="50" rx="2" fill="#0077b6" stroke="#112b4d" />
 								<rect x="100" y="112" width="18" height="50" rx="2" fill="#0077b6" stroke="#112b4d" />
 
-								<rect x="130" y="35" width="25" height="130" fill="white" />
-								<text x="133" y="105" fill="#555" font-weight="bold" font-size="20">...</text>
+								<rect x="130" y="35" width="25" height="130" fill="#f0f7ff" />
+								<text x="142" y="105" fill="#112b4d" font-weight="900" font-size="24"
+									text-anchor="middle">...</text>
 
 								<rect x="165" y="62" width="16" height="50" rx="2" fill="#0077b6" stroke="#112b4d" />
 								<rect x="195" y="112" width="18" height="25" rx="2" fill="#0077b6" stroke="#112b4d" />
@@ -909,32 +891,45 @@
 						</div>
 					</div>
 
-					<!-- Right Column: The PRU Solution (Refined) -->
-					<div style="width:58%; text-align:left;">
+					<!-- Right Column: The PRU Solution -->
+					<div style="width:55%; text-align:left; display:flex; flex-direction:column;">
+						<!-- Header + PRU Box alignment container -->
 						<div
-							style="background:#f6ffed; border-left:5px solid #389e0d; padding:15px; border-radius:8px; margin-bottom:15px; box-shadow:0 4px 10px rgba(56,158,13,0.05);">
-							<p style="margin:0 0 10px 0; font-weight:800; color:#135200; font-size:1.3em;">The PRU
-								Solution</p>
-							<ul
-								style="margin:0; padding-left:15px; list-style-type: square; color:#389e0d; font-size:1.15em; line-height:1.4;">
-								<li><strong>Efficiently computable (poly(n) depth)</strong></li>
-								<li style="margin-top:8px;"><strong>Computationally indistinguishable from Haar
-										random Unitary</strong></li>
-							</ul>
+							style="height: 165px; display: flex; flex-direction: column; justify-content: space-between; margin-bottom: 10px;">
+							<div style="font-weight:600; color:#135200; font-size:1.0em;">The Solution: Quantum PRUs
+							</div>
+
+							<div style="height:115px; display:flex; flex-direction:column; justify-content:center;">
+								<!-- PRU Solution Box -->
+								<div
+									style="background:#f6ffed; border-left:5px solid #389e0d; padding:10px 15px; border-radius:8px; box-shadow:0 4px 10px rgba(56,158,13,0.05); box-sizing:border-box; margin:0;">
+									<p
+										style="margin:0 0 4px 0; font-weight:600; color:#135200; font-size:1.05em; text-transform:uppercase; letter-spacing:0.5px;">
+										The PRU Solution</p>
+									<ul
+										style="margin:0; padding-left:22px; list-style-type: square; color:#389e0d; font-size:0.95em; line-height:1.3;">
+										<li>Efficiently computable (poly(n) depth)</li>
+										<li style="margin-top:3px;">Indistinguishable from Haar random</li>
+									</ul>
+								</div>
+							</div>
 						</div>
 
-						<!-- PRU Adversary Diagram -->
+						<!-- PRU Adversary Diagram Container -->
 						<div
-							style="background:white; border:1px solid #d9f7be; border-radius:15px; padding:10px 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); position:relative;">
-							<div style="font-weight:700; color:#135200; font-size:1.1em; margin-bottom:5px;">Quantum
-								Oracle Adversary ($\mathcal{A}$)</div>
-							<svg width="450" height="145" viewBox="0 0 450 145">
-								<!-- Rails -->
-								<text x="5" y="45" font-size="14" fill="#555">$\mathsf{A}$ (Query)</text>
-								<line x1="80" y1="40" x2="400" y2="40" stroke="#333" stroke-width="2.5" />
-
-								<text x="5" y="105" font-size="14" fill="#555">$\mathsf{B}$ (Work)</text>
-								<line x1="80" y1="100" x2="400" y2="100" stroke="#333" stroke-width="2.5" />
+							style="background:white; border:1px solid #d9f7be; border-radius:15px; padding:12px 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); position:relative; box-sizing:border-box;margin: 20px;">
+							<div
+								style="font-weight:600; color:#135200; font-size:1.1em; margin-bottom:8px; text-align:center;">
+								Quantum Oracle Adversary ($\mathcal{A}$)</div>
+							<svg width="100%" height="130" viewBox="-15 0 520 150"
+								style="display:block; margin:0 auto; max-width:450px;">
+								<!-- Rails Labels -->
+								<text x="-12" y="45" font-size="13" fill="#666" font-weight="700">$\mathsf{A}$
+									(Query)</text>
+								<text x="-12" y="105" font-size="13" fill="#666" font-weight="700">$\mathsf{B}$
+									(Work)</text>
+								<line x1="85" y1="40" x2="400" y2="40" stroke="#333" stroke-width="2.5" />
+								<line x1="85" y1="100" x2="400" y2="100" stroke="#333" stroke-width="2.5" />
 
 								<!-- Adversary Gates -->
 								<rect x="100" y="30" width="45" height="80" rx="6" fill="#e6f7ff" stroke="#1890ff"
@@ -964,35 +959,43 @@
 								</foreignObject>
 
 								<!-- States -->
-								<foreignObject x="30" y="50" width="50" height="40">
+								<foreignObject x="30" y="50" width="55" height="40">
 									<div xmlns="http://www.w3.org/1999/xhtml"
-										style="color:#555; font-size:16px; display:flex; justify-content:flex-end; align-items:center; width:100%; height:100%;">
+										style="color:#666; font-size:15px; display:flex; justify-content:flex-end; align-items:center; width:100%; height:100%;">
 										$|0\rangle_{\mathsf{AB}}$</div>
 								</foreignObject>
-								<foreignObject x="402" y="50" width="48" height="40">
+								<foreignObject x="405" y="50" width="65" height="40">
 									<div xmlns="http://www.w3.org/1999/xhtml"
-										style="color:#389e0d; font-weight:bold; font-size:14px; display:flex; justify-content:flex-start; align-items:center; width:100%; height:100%;">
+										style="color:#389e0d; font-weight:bold; font-size:13px; display:flex; justify-content:flex-start; align-items:center; width:100%; height:100%;">
 										$|\mathcal{A}^{\mathcal{O}}\rangle$</div>
 								</foreignObject>
 							</svg>
 						</div>
 
-						<!-- Security Definition (Refined Math) -->
-						<div style="margin-top:10px; border-top:1px solid #ddd; padding-top:10px;">
-							<p style="margin:0 0 6px 0; font-weight:700; color:#1b4332; font-size:1.05em;">Formal
-								Security Definition:</p>
-							<div
-								style="font-size:0.88em; color:#135200; margin:0; text-align:center; background:#f9fff0; padding:8px; border-radius:10px; border:1px solid #d9f7be; overflow-x:auto;">
-								$$
-								\left|\, \underset{\mathcal{O} \leftarrow \mathcal{U}_n}{\mathbb{E}}
-								\mathrm{Tr}\!\left(D_{\mathcal{A}} \cdot |\mathcal{A}^{\mathcal{O}}\rangle\!\langle
-								\mathcal{A}^{\mathcal{O}}|_{\mathsf{AB}}\right) - \underset{\mathcal{O} \sim
-								\mathrm{Haar}}{\mathbb{E}} \mathrm{Tr}\!\left(D_{\mathcal{A}} \cdot
-								|\mathcal{A}^{\mathcal{O}}\rangle\!\langle
-								\mathcal{A}^{\mathcal{O}}|_{\mathsf{AB}}\right) \right| \leq \mathrm{negl}(n)
-								$$
-							</div>
-						</div>
+					</div>
+				</div>
+
+				<!-- Security Definition -->
+				<div
+					style="margin-top:5px; border-top:1px solid #eee; padding-top:5px; width:98%; max-width:960px; margin-left:auto; margin-right:auto;">
+					<p
+						style="margin:0 0 2px 0; font-weight:normal; color:#1b4332; font-size:0.60em; text-align:center; opacity:0.8;">
+						Formal PRU Security: Let $\{\mathcal{U}_n\}_{n \in \mathbb{N}} = \{U_k\}_{k \in \mathcal{K}_n}$
+						be a family of $n$-qubit unitaries.
+					</p>
+					<div
+						style="font-size:0.55em; color:#135200; margin:0; text-align:center; background:#f9fff0; padding:5px 25px; border-radius:10px; border:1px solid #d9f7be; overflow-x:auto;">
+						$$
+						\left|\,
+						\underset{\mathcal{O} \leftarrow \mathcal{U}_n}{\mathbb{E}}\,
+						\mathrm{Tr}\!\left(D_{\mathcal{A}} \cdot
+						|\mathcal{A}^{\mathcal{O}}\rangle\!\langle \mathcal{A}^{\mathcal{O}}|_{\mathsf{AB}}\right)
+						-
+						\underset{\mathcal{O} \sim \mathrm{Haar}}{\mathbb{E}}\,
+						\mathrm{Tr}\!\left(D_{\mathcal{A}} \cdot
+						|\mathcal{A}^{\mathcal{O}}\rangle\!\langle \mathcal{A}^{\mathcal{O}}|_{\mathsf{AB}}\right)
+						\right| \leq \mathrm{negl}(n),
+						$$
 					</div>
 				</div>
 			</section>
@@ -1880,7 +1883,8 @@
 						</div>
 						<p style="margin:0; color:#555; line-height:1.5;">The purifying register now carries
 							<strong>two</strong> delta constraints, summing only over $(\pi,f)$ consistent with
-							<em>both</em> revealed mappings.</p>
+							<em>both</em> revealed mappings.
+						</p>
 					</div>
 					<div
 						style="flex:1; background:#f6ffed; border:1px solid #b7eb8f; border-radius:8px; padding:12px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
@@ -1926,15 +1930,14 @@
 						<p style="margin:0 0 6px 0; color:#333; line-height:1.4;">The purifying factor $\Phi_R$ depends
 							only on the set of revealed pairs $R$, independent of their order. We denote this as
 							$|\mathsf{pf}_R\rangle$:</p>
-
 						<!-- Boxed Definition -->
 						<div
 							style="background:#fffde6; border:2px solid #faad14; border-radius:10px; padding:10px; box-shadow:0 4px 12px rgba(250,173,20,0.06); text-align:center;">
 							<div
 								style="background:white; padding:8px; border-radius:6px; font-size:1.15em; display:inline-block; border:1px solid #ffe58f;">
-								$$ \boxed{ |\mathsf{pf}_R\rangle_{PF} \propto \sum_{\pi \in S_{2^n}} \prod_{(x,y)\in
+								$$ |\mathsf{pf}_R\rangle_{PF} \propto \sum_{\pi \in S_{2^n}} \prod_{(x,y)\in
 								R}\delta_{\pi(x)=y} \;|\pi\rangle_P \otimes \sum_{f \in \{0,1\}^{2^n}}
-								(-1)^{\sum_{(x,y)\in R} f(x)} |f\rangle_F } $$
+								(-1)^{\sum_{(x,y)\in R} f(x)} |f\rangle_F $$
 							</div>
 						</div>
 					</div>
@@ -1953,8 +1956,307 @@
 				</div>
 			</section>
 
+			<!-- ═══════════════ SLIDE 18: RELATION TO V ORACLE ═══════════════ -->
+			<section>
+				<h3 style="color:#0077b6; text-transform:none; margin-bottom:12px; font-size:1.15em;">
+					Intuition: Relation to Path-Recording Oracles
+				</h3>
 
+				<div
+					style="font-size:0.50em; max-width:1150px; margin:0 auto; display:flex; flex-direction:column; gap:12px;">
 
+					<!-- Key Observation -->
+					<div
+						style="background:#e6f7ff; border-left:4px solid #1890ff; padding:10px 14px; border-radius:8px; line-height:1.4;">
+						<p style="margin:0; color:#0050b3;"><strong>Key Observation:</strong> If all inputs $x_1, \dots,
+							x_t$
+							are distinct, the state $|\mathsf{pf}_{\{(x_1,y_1), \dots, (x_t,y_t)\}}\rangle$ is
+							orthogonal
+							to states with different revealed pairs. It acts as a <strong>purified version</strong> of
+							the
+							recorded path $|R\rangle$.</p>
+					</div>
+
+					<div style="display:flex; gap:15px;">
+						<!-- pfO Action -->
+						<div
+							style="flex:1; background:white; border:1px solid #e8e8e8; border-radius:12px; padding:15px; box-shadow:0 4px 12px rgba(0,0,0,0.05);">
+							<div
+								style="color:#1890ff; font-weight:700; margin-bottom:10px; border-bottom:1px solid #f0f0f0; padding-bottom:5px;">
+								Purifying Oracle $\mathsf{pf}O$</div>
+							<p style="font-size:0.95em; color:#666; margin-bottom:10px;">Acts on the purifying register
+								$PF$:
+							</p>
+							<div style="background:#f9f9f9; padding:10px; border-radius:6px; text-align:center;">
+								$$ \mathsf{pf}O |x\rangle_A |\mathsf{pf}_R\rangle_{\mathrm{PF}} = \frac{1}{\sqrt{N -
+								|R|}} \sum_{y \in [N]} |y\rangle_A |\mathsf{pf}_{R \cup \{(x,y)\}}\rangle_{\mathrm{PF}}
+								$$
+							</div>
+						</div>
+
+						<!-- V Action -->
+						<div
+							style="flex:1; background:white; border:1px solid #e8e8e8; border-radius:12px; padding:15px; box-shadow:0 4px 12px rgba(0,0,0,0.05);">
+							<div
+								style="color:#faad14; font-weight:700; margin-bottom:10px; border-bottom:1px solid #f0f0f0; padding-bottom:5px;">
+								Path-Recording Oracle $V$</div>
+							<p style="font-size:0.95em; color:#666; margin-bottom:10px;">Records classical set $R$:</p>
+							<div style="background:#f9f9f9; padding:10px; border-radius:6px; text-align:center;">
+								$$ V : |x\rangle_A |R\rangle_R \mapsto \frac{1}{\sqrt{N - |R|}} \sum_{y \notin
+								\mathrm{Im}(R)} |y\rangle_A |R \cup \{(x,y)\}\rangle_R $$
+							</div>
+						</div>
+					</div>
+
+					<!-- The Relation -->
+					<div
+						style="background:#fff7e6; border:1px solid #ffe58f; padding:12px; border-radius:10px; text-align:center;">
+						<p style="margin:0; color:#333; line-height:1.5;">
+							Without access to the purifying registers, a query to <strong>random $P_\pi \cdot F_f$ is
+								identical to $V$</strong>,
+							except on paths with collisions among $x_1, \dots, x_t$.
+						</p>
+						<p style="margin:8px 0 0 0; color:#fa8c16; font-weight:700; font-size:1.1em;">
+							$\implies$ We add $C$ to explicitly remove these collisions!
+						</p>
+					</div>
+
+				</div>
+			</section>
+
+			<!-- ═══════════════ SLIDE 19: SECURITY HYBRIDS ═══════════════ -->
+			<section>
+				<h3 style="color:#0077b6; text-transform:none; margin-bottom:12px; font-size:1.15em;">
+					Security Hybrids (The Full Chain H0 → H4)
+				</h3>
+
+				<div
+					style="display:flex; justify-content:center; align-items:stretch; gap:8px; width:100%; max-width:1320px; margin:0 auto;">
+
+					<!-- Hybrid 0 Block -->
+					<div style="flex:1; display:flex; flex-direction:column;">
+						<div
+							style="background:white; border:1px solid #e8e8e8; border-radius:12px; padding:10px; box-shadow:0 4px 12px rgba(0,0,0,0.05); height:100%; display:flex; flex-direction:column; justify-content:space-between;">
+							<div
+								style="height:140px; display:flex; align-items:center; justify-content:center; overflow:visible;">
+								<svg width="100%" height="110" viewBox="0 0 140 110" style="overflow:visible;">
+									<line x1="0" y1="55" x2="140" y2="55" stroke="#555" stroke-width="3"
+										stroke-linecap="round" />
+									<rect x="30" y="25" width="80" height="60" fill="#fce8e6" stroke="#c0392b"
+										stroke-width="2.5" rx="4" />
+									<text x="70" y="61" text-anchor="middle" font-family="serif" font-weight="bold"
+										font-size="28" fill="#c0392b">U</text>
+								</svg>
+							</div>
+							<div style="margin-top:10px;">
+								<div style="font-size:0.55em; font-weight:bold; color:#c0392b;">Hybrid 0</div>
+								<div style="font-size:0.38em; color:#666;">(Ideal Haar)</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Approx -->
+					<div style="display:flex; align-items:center; font-size:1.2em; color:#888;">$\approx$</div>
+
+					<!-- Hybrid 1 Block -->
+					<div style="flex:1.2; display:flex; flex-direction:column;">
+						<div
+							style="background:white; border:1px solid #e8e8e8; border-radius:12px; padding:10px; box-shadow:0 4px 12px rgba(0,0,0,0.05); height:100%; display:flex; flex-direction:column; justify-content:space-between;">
+							<div
+								style="height:140px; display:flex; align-items:center; justify-content:center; overflow:visible;">
+								<svg width="100%" height="110" viewBox="0 0 190 110" style="overflow:visible;">
+									<line x1="0" y1="55" x2="190" y2="55" stroke="#555" stroke-width="3"
+										stroke-linecap="round" />
+									<rect x="25" y="25" width="80" height="60" fill="#fffbe6" stroke="#faad14"
+										stroke-width="2.5" rx="4" />
+									<text x="65" y="61" text-anchor="middle" font-family="serif" font-weight="bold"
+										font-size="16" fill="#d48806">P_π · F_f</text>
+									<rect x="120" y="25" width="45" height="60" fill="#fce8e6" stroke="#c0392b"
+										stroke-width="2.5" rx="4" />
+									<text x="142.5" y="61" text-anchor="middle" font-family="serif" font-weight="bold"
+										font-size="24" fill="#c0392b">U</text>
+								</svg>
+							</div>
+							<div style="margin-top:10px;">
+								<div style="font-size:0.55em; font-weight:bold; color:#faad14;">Hybrid 1</div>
+								<div style="font-size:0.38em; color:#666;">(Factored)</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Approx -->
+					<div style="display:flex; align-items:center; font-size:1.2em; color:#888;">$\approx$</div>
+
+					<!-- Hybrid 2 Block -->
+					<div style="flex:1.2; display:flex; flex-direction:column;">
+						<div
+							style="background:white; border:1px solid #e8e8e8; border-radius:12px; padding:10px; box-shadow:0 4px 12px rgba(0,0,0,0.05); height:100%; display:flex; flex-direction:column; justify-content:space-between;">
+							<div
+								style="height:140px; display:flex; align-items:center; justify-content:center; overflow:visible;">
+								<svg width="100%" height="140" viewBox="0 0 190 140" style="overflow:visible;">
+									<line x1="0" y1="30" x2="190" y2="30" stroke="#8b44ac" stroke-width="3"
+										stroke-dasharray="4" stroke-linecap="round" />
+									<circle cx="65" cy="30" r="8" fill="#8b44ac" />
+									<line x1="0" y1="110" x2="190" y2="110" stroke="#555" stroke-width="3"
+										stroke-linecap="round" />
+									<line x1="65" y1="30" x2="65" y2="80" stroke="#8b44ac" stroke-width="3" />
+									<rect x="25" y="80" width="80" height="50" fill="#fffbe6" stroke="#faad14"
+										stroke-width="2.5" rx="4" />
+									<text x="65" y="110" text-anchor="middle" font-family="serif" font-weight="bold"
+										font-size="16" fill="#d48806">P_π · F_f</text>
+									<rect x="120" y="80" width="45" height="50" fill="#fce8e6" stroke="#c0392b"
+										stroke-width="2.5" rx="4" />
+									<text x="142.5" y="110" text-anchor="middle" font-family="serif" font-weight="bold"
+										font-size="24" fill="#c0392b">U</text>
+								</svg>
+							</div>
+							<div style="margin-top:10px;">
+								<div style="font-size:0.55em; font-weight:bold; color:#8b44ac;">Hybrid 2</div>
+								<div style="font-size:0.38em; color:#666;">(Controlled)</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Approx -->
+					<div style="display:flex; align-items:center; font-size:1.2em; color:#888;">$\approx$</div>
+
+					<!-- Hybrid 3 Block -->
+					<div style="flex:1.2; display:flex; flex-direction:column;">
+						<div
+							style="background:white; border:1px solid #e8e8e8; border-radius:12px; padding:10px; box-shadow:0 4px 12px rgba(0,0,0,0.05); height:100%; display:flex; flex-direction:column; justify-content:space-between;">
+							<div
+								style="height:140px; display:flex; align-items:center; justify-content:center; overflow:visible;">
+								<svg width="100%" height="140" viewBox="0 0 190 140" style="overflow:visible;">
+									<line x1="0" y1="30" x2="190" y2="30" stroke="#8b44ac" stroke-width="3"
+										stroke-dasharray="4" stroke-linecap="round" />
+									<line x1="0" y1="110" x2="190" y2="110" stroke="#555" stroke-width="3"
+										stroke-linecap="round" />
+									<rect x="35" y="20" width="70" height="100" fill="#fffbe6" stroke="#faad14"
+										stroke-width="2.5" rx="4" />
+									<text x="70" y="75" text-anchor="middle" font-family="serif" font-weight="bold"
+										font-size="28" fill="#d48806">V</text>
+									<rect x="125" y="80" width="45" height="50" fill="#fce8e6" stroke="#c0392b"
+										stroke-width="2.5" rx="4" />
+									<text x="147.5" y="110" text-anchor="middle" font-family="serif" font-weight="bold"
+										font-size="24" fill="#c0392b">U</text>
+								</svg>
+							</div>
+							<div style="margin-top:10px;">
+								<div style="font-size:0.55em; font-weight:bold; color:#d48806;">Hybrid 3</div>
+								<div style="font-size:0.38em; color:#666;">(Oracle V)</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Approx -->
+					<div style="display:flex; align-items:center; font-size:1.2em; color:#888;">$\approx$</div>
+
+					<!-- Hybrid 4 Block -->
+					<div style="flex:1; display:flex; flex-direction:column;">
+						<div
+							style="background:white; border:1px solid #e8e8e8; border-radius:12px; padding:10px; box-shadow:0 4px 12px rgba(0,0,0,0.05); height:100%; display:flex; flex-direction:column; justify-content:space-between;">
+							<div
+								style="height:140px; display:flex; align-items:center; justify-content:center; overflow:visible;">
+								<svg width="100%" height="140" viewBox="0 0 140 140" style="overflow:visible;">
+									<line x1="0" y1="30" x2="140" y2="30" stroke="#8b44ac" stroke-width="3"
+										stroke-dasharray="4" stroke-linecap="round" />
+									<line x1="0" y1="110" x2="140" y2="110" stroke="#555" stroke-width="3"
+										stroke-linecap="round" />
+									<rect x="30" y="20" width="80" height="100" fill="#fffbe6" stroke="#faad14"
+										stroke-width="2.5" rx="4" />
+									<text x="70" y="75" text-anchor="middle" font-family="serif" font-weight="bold"
+										font-size="28" fill="#d48806">V</text>
+								</svg>
+							</div>
+							<div style="margin-top:10px;">
+								<div style="font-size:0.55em; font-weight:bold; color:#faad14;">Hybrid 4</div>
+								<div style="font-size:0.38em; color:#666;">(Final Oracle)</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+			<!-- ═══════════════ SLIDE 19: FINAL PROOF COMPLETION ═══════════════ -->
+			<section>
+				<h3 style="color:#237804; text-transform:none; margin-bottom:15px; font-size:1.1em;">
+					Completion of the Proof
+				</h3>
+
+				<div
+					style="font-size:0.52em; max-width:1150px; margin:0 auto; display:flex; flex-direction:column; gap:12px;">
+
+					<div
+						style="background:#f6ffed; border-left:4px solid #52c41a; padding:10px 14px; border-radius:8px; line-height:1.4;">
+						<p style="margin:0; color:#333;">Combining our hybrid transitions and substituting $U =
+							\text{Haar-random unitary}$ and $U = \mathfrak{D}$, we obtain the total trace distance
+							between
+							the construction and a truly random unitary oracle.</p>
+					</div>
+
+					<!-- Stepwise Bounds -->
+					<div style="display:flex; flex-direction:column; gap:10px;">
+						<div
+							style="background:white; border:1px solid #e8e8e8; border-radius:8px; padding:12px; box-shadow:0 4px 12px rgba(0,0,0,0.03);">
+							<div style="color:#666; margin-bottom:4px; font-weight:600; font-size:1.05em;">Trace
+								Distance Step-by-Step:
+							</div>
+							$$ \begin{aligned} \mathrm{TD}\left( \mathop{\mathbb{E}}_{\mathcal{O} \leftarrow
+							\mathrm{PF}(\mathfrak{D})}
+							|\mathcal{A}_t^{\mathcal{O}}\rangle\langle\mathcal{A}_t^{\mathcal{O}}|,\;
+							\mathrm{Tr}_R\!\left(|\mathcal{A}_t^{V}\rangle\langle\mathcal{A}_t^{V}|_{\mathrm{ABR}}\right)
+							\right) &\leq \frac{2t(t-1)}{N+1} \\[10pt] \mathrm{TD}\left(
+							\mathrm{Tr}_R\!\left(|\mathcal{A}_t^{V}\rangle\langle\mathcal{A}_t^{V}|_{\mathrm{ABR}}\right),\;
+							\mathop{\mathbb{E}}_{\mathcal{O} \sim \mu_{\mathrm{Haar}}}
+							|\mathcal{A}_t^{\mathcal{O}}\rangle\langle\mathcal{A}_t^{\mathcal{O}}| \right) &\leq
+							\frac{2t(t-1)}{N+1} \end{aligned} $$
+						</div>
+					</div>
+
+					<!-- Final Highlight Result -->
+					<div style="margin-top:5px;">
+						<div
+							style="background:#fffbe6; border:2px solid #faad14; border-radius:12px; padding:18px; box-shadow:0 6px 16px rgba(250,173,20,0.12); text-align:center;">
+							<div
+								style="font-size:1.15em; color:#856404; font-weight:800; margin-bottom:10px; text-transform:uppercase; letter-spacing:1px;">
+								Final Indistinguishability Bound
+							</div>
+							<div
+								style="background:white; display:inline-block; padding:12px 25px; border-radius:8px; border:2px solid #ffe58f; box-shadow:inset 0 2px 4px rgba(0,0,0,0.02);">
+								$$ \mathrm{TD}\left( \mathop{\mathbb{E}}_{\mathcal{O} \leftarrow
+								\mathrm{PF}(\mathfrak{D})}
+								|\mathcal{A}_t^{\mathcal{O}}\rangle\langle\mathcal{A}_t^{\mathcal{O}}|,\;
+								\mathop{\mathbb{E}}_{\mathcal{O} \sim \mu_{\mathrm{Haar}}}
+								|\mathcal{A}_t^{\mathcal{O}}\rangle\langle\mathcal{A}_t^{\mathcal{O}}| \right) \leq
+								\frac{4t(t-1)}{N+1} $$
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+			<!-- ═══════════════ SLIDE 21: STRONG PRUs ═══════════════ -->
+			<section>
+				<h3 style="color:#0077b6; text-transform:none; margin-bottom:20px; font-size:1.15em;">
+					Strong PRUs
+				</h3>
+				<div style="font-size:0.6em; color:#666; text-align:center;">
+					<p><i>Content placeholder for Strong PRU definitions and properties...</i></p>
+				</div>
+			</section>
+
+			<!-- ═══════════════ SLIDE 22: FUTURE WORK ═══════════════ -->
+			<section>
+				<h3 style="color:#0077b6; text-transform:none; margin-bottom:20px; font-size:1.15em;">
+					Future Work / Open Questions
+				</h3>
+				<div style="font-size:0.6em; color:#666; text-align:center;">
+					<p><i>Future directions and remaining open problems in PRU research...</i></p>
+				</div>
+			</section>
 
 		</div>
 	</div>
