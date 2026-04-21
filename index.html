@@ -1391,18 +1391,18 @@
 						<div style="width:100%; display:flex; flex-direction:column; align-items:center;">
 							<p style="margin:0 0 5px 0; color:#333; line-height:1.4; font-size:0.9em;">
 								For any query input $x \in [N]$ and database state $R \in \mathcal{R}^{\mathrm{inj}}$
-								(with $|R| < N$), $V$ acts as: </p>
+								(with $|R| N$), $V$ acts as: </p>
 
-									<!-- Core Equation Box -->
-									<div
-										style="background:white; border:2px dashed #0050b3; border-radius:10px; padding:10px; box-shadow:inset 0 2px 8px rgba(0,0,0,0.02); width:100%; max-width:1050px;">
-										<div style="color:#002c8c; font-size:0.9em; text-align:center;">
-											$$ V : \lvert x \rangle_A \lvert R \rangle_\mathsf{R} \mapsto
-											\frac{1}{\sqrt{N - |R|}} \sum_{\substack{y \in [N],\\ y \notin
-											\mathrm{Im}(R)}} \lvert y \rangle_A \, \lvert R \cup \{(x,y)\}
-											\rangle_\mathsf{R} $$
-										</div>
-									</div>
+							<!-- Core Equation Box -->
+							<div
+								style="background:white; border:2px dashed #0050b3; border-radius:10px; padding:10px; box-shadow:inset 0 2px 8px rgba(0,0,0,0.02); width:100%; max-width:1050px;">
+								<div style="color:#002c8c; font-size:0.9em; text-align:center;">
+									$$ V : \lvert x \rangle_A \lvert R \rangle_\mathsf{R} \mapsto
+									\frac{1}{\sqrt{N - |R|}} \sum_{\substack{y \in [N],\\ y \notin
+									\mathrm{Im}(R)}} \lvert y \rangle_A \, \lvert R \cup \{(x,y)\}
+									\rangle_\mathsf{R} $$
+								</div>
+							</div>
 						</div>
 					</div>
 
@@ -1674,6 +1674,287 @@
 					</div>
 				</div>
 			</section>
+
+
+			<!-- ═══════════════ SLIDE 14: INITIAL STATE ═══════════════ -->
+			<section>
+				<h3 style="color:#0077b6; text-transform:none; margin-bottom:18px; font-size:1.15em;">
+					Initial State & Oracle Rearrangement
+				</h3>
+
+				<div style="display:flex; gap:25px; align-items:flex-start;">
+					<!-- Left: Oracle Rearrangement -->
+					<div style="flex:1;">
+						<p
+							style="color:#555; font-size:0.75em; font-weight:600; margin-bottom:10px; text-align:center;">
+							Oracle Output Expansion</p>
+
+						<!-- Equation boxes showing rearrangement -->
+						<div
+							style="background:#f0f7ff; border-left:4px solid #0077b6; padding:12px 14px; border-radius:6px; margin-bottom:12px; font-size:0.68em;">
+							<p style="margin:0 0 8px 0; color:#0050b3; font-weight:600;">Standard Form:</p>
+							<p style="margin:0; color:#333; line-height:1.5;">$\texttt{pfO} \ket{x}_A \ket{\pi}_P
+								\ket{f}_F = (-1)^{f(x)} \ket{\pi(x)}_A \ket{\pi}_P \ket{f}_F$</p>
+						</div>
+
+						<!-- Arrow -->
+						<div style="text-align:center; font-size:1.2em; color:#0077b6; margin:8px 0; font-weight:700;">⬇
+						</div>
+
+						<!-- Rearranged form -->
+						<div
+							style="background:#fff3cd; border-left:4px solid #faad14; padding:12px 14px; border-radius:6px; font-size:0.68em;">
+							<p style="margin:0 0 6px 0; color:#856404; font-weight:600;">Rearranged Form:</p>
+							<p style="margin:0; color:#333; line-height:1.6; font-size:0.96em;">$\displaystyle \sum_{y
+								\in \{0,1\}^n} \ket{y}_A \otimes \left( \delta_{\pi(x)=y} \cdot (-1)^{f(x)} \right)
+								\ket{\pi}_P \ket{f}_F$</p>
+							<p style="margin:5px 0 0 0; color:#666; font-size:0.85em; font-style:italic;">Sum over all
+								possible output states</p>
+						</div>
+					</div>
+
+					<!-- Right: Initial State Setup -->
+					<div style="flex:1;">
+						<p
+							style="color:#555; font-size:0.75em; font-weight:600; margin-bottom:10px; text-align:center;">
+							Initial Quantum State $|\Psi_0\rangle$</p>
+
+						<!-- Layer 1: Adversary -->
+						<div
+							style="background:#e3f2fd; border-left:4px solid #0077b6; padding:12px 14px; border-radius:6px; margin-bottom:12px;">
+							<p style="margin:0 0 6px 0; font-size:0.75em; font-weight:700; color:#0050b3;">Adversary
+								Register: $A$</p>
+							<p style="margin:0; font-size:0.75em; color:#0050b3;">$|0^n\rangle_A$</p>
+							<p style="margin:3px 0 0 0; font-size:0.65em; color:#0077b6; font-style:italic;">(known
+								initial state)</p>
+						</div>
+
+						<!-- Tensor connector -->
+						<div style="text-align:center; font-size:1.2em; color:#666; margin:6px 0; font-weight:700;">⊗
+						</div>
+
+						<!-- Layer 2: Permutations -->
+						<div
+							style="background:#f3e5f5; border-left:4px solid #8b44ac; padding:12px 14px; border-radius:6px; margin-bottom:12px;">
+							<p style="margin:0 0 6px 0; font-size:0.75em; font-weight:700; color:#6a1b9a;">Permutation
+								Register: $P$</p>
+							<p style="margin:0; font-size:0.75em; color:#6a1b9a; line-height:1.4;">
+								$\frac{1}{\sqrt{2^n!}} \sum_{\pi \in S_{2^n}} |\pi\rangle_P$</p>
+							<p style="margin:3px 0 0 0; font-size:0.65em; color:#8b44ac; font-style:italic;">All $2^n!$
+								permutations, uniform</p>
+						</div>
+
+						<!-- Tensor connector -->
+						<div style="text-align:center; font-size:1.2em; color:#666; margin:6px 0; font-weight:700;">⊗
+						</div>
+
+						<!-- Layer 3: Functions -->
+						<div
+							style="background:#ffe0b2; border-left:4px solid #d48806; padding:12px 14px; border-radius:6px;">
+							<p style="margin:0 0 6px 0; font-size:0.75em; font-weight:700; color:#e65100;">Function
+								Register: $F$</p>
+							<p style="margin:0; font-size:0.75em; color:#e65100; line-height:1.4;">
+								$\frac{1}{\sqrt{2^{2^n}}} \sum_{f \in \{0,1\}^{2^n}} |f\rangle_F$</p>
+							<p style="margin:3px 0 0 0; font-size:0.65em; color:#d48806; font-style:italic;">All
+								$2^{2^n}$ functions, uniform</p>
+						</div>
+
+						<!-- Key insight -->
+						<div
+							style="background:#e8f4f8; border:1px solid #0077b6; padding:8px 10px; border-radius:4px; margin-top:12px; font-size:0.70em; text-align:center;">
+							<p style="margin:0; color:#0050b3; font-weight:600;">✓ Superposition replaces random
+								sampling</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- ═══════════════ SLIDE 15: QUERY 1 ═══════════════ -->
+			<section>
+				<h3 style="color:#0077b6; text-transform:none; margin-bottom:16px; font-size:1.15em;">
+					Query 1
+				</h3>
+
+				<!-- Top: Adversary Creates Superposition -->
+				<div
+					style="background:#e3f2fd; border-left:4px solid #0077b6; padding:12px 14px; border-radius:6px; margin-bottom:14px; font-size:0.72em;">
+					<p style="margin:0 0 4px 0; color:#0050b3; font-weight:600;">Step 1: Adversary Operator $A_1$</p>
+					<p style="margin:0; color:#333;">$A_1 |0^n\rangle_A = \sum_{x_1} \alpha_{x_1} |x_1\rangle_A$</p>
+				</div>
+
+				<!-- Middle: Two-column layout -->
+				<div style="display:flex; gap:18px; margin-bottom:14px;">
+					<!-- Left column -->
+					<div style="flex:1;">
+						<p style="color:#555; font-size:0.70em; font-weight:600; margin-bottom:8px;">Before Oracle</p>
+						<div
+							style="background:#f5f5f5; border:2px solid #ddd; border-radius:6px; padding:10px; font-size:0.68em; text-align:center;">
+							<p style="margin:0 0 3px 0; color:#333; font-weight:600;">All $(\pi, f)$ pairs</p>
+							<p style="margin:0; color:#666;">$2^n! \times 2^{2^n}$ terms</p>
+							<p style="margin:3px 0 0 0; color:#0077b6; font-weight:500;">Uniform superposition</p>
+						</div>
+					</div>
+
+					<!-- Arrow -->
+					<div style="flex:0.3; display:flex; align-items:center; justify-content:center;">
+						<div style="font-size:1.8em; color:#d48806; font-weight:700;">→</div>
+					</div>
+
+					<!-- Right column -->
+					<div style="flex:1;">
+						<p style="color:#555; font-size:0.70em; font-weight:600; margin-bottom:8px;">After Oracle</p>
+						<div
+							style="background:#fff3cd; border:2px solid #faad14; border-radius:6px; padding:10px; font-size:0.68em; text-align:center;">
+							<p style="margin:0 0 3px 0; color:#856404; font-weight:600;">Only consistent pairs</p>
+							<p style="margin:0; color:#856404;">$\pi(x_1) = y_1$</p>
+							<p style="margin:3px 0 0 0; color:#d48806; font-weight:500;">Weighted by $(-1)^{f(x_1)}$</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Bottom: Oracle Mapping -->
+				<div
+					style="background:#ffe0b2; border-left:4px solid #d48806; padding:12px 14px; border-radius:6px; font-size:0.70em;">
+					<p style="margin:0 0 6px 0; color:#e65100; font-weight:600;">Oracle Action on Each Basis State:</p>
+					<p style="margin:0; color:#333; line-height:1.4;">$|x_1\rangle |\pi,f\rangle \mapsto \sum_{y_1}
+						|y_1\rangle \left(\delta_{\pi(x_1)=y_1} \cdot (-1)^{f(x_1)}\right) |\pi,f\rangle$</p>
+				</div>
+
+				<!-- Key insight at bottom -->
+				<div
+					style="margin-top:14px; padding:10px 12px; background:#f0f7ff; border:2px solid #0077b6; border-radius:6px; font-size:0.68em; text-align:center; color:#0050b3; font-weight:600;">
+					The oracle constrains the superposition: only $(\pi,f)$ pairs consistent with the query-response
+					collapse
+				</div>
+			</section>
+
+			<!-- ═══════════════ SLIDE 16: QUERY 2 ═══════════════ -->
+			<section>
+				<h3 style="color:#0077b6; text-transform:none; margin-bottom:16px; font-size:1.15em;">
+					Query 2
+				</h3>
+
+				<!-- Top: Adversary acting on register A -->
+				<div
+					style="background:#e3f2fd; border-left:4px solid #0077b6; padding:12px 14px; border-radius:6px; margin-bottom:14px; font-size:0.72em;">
+					<p style="margin:0 0 4px 0; color:#0050b3; font-weight:600;">Step 2: Adversary Operator $A_2$</p>
+					<p style="margin:0; color:#333;">The adversary holds $|y_1\rangle$ in register $A$ and applies
+						$A_2$:
+						$A_2|y_1\rangle_A = \sum_{x_2} \beta_{x_2}|x_2\rangle_A$</p>
+				</div>
+
+				<!-- Middle: Oracle firing -->
+				<div
+					style="background:#ffe0b2; border-left:4px solid #d48806; padding:12px 14px; border-radius:6px; margin-bottom:14px; font-size:0.70em;">
+					<p style="margin:0 0 6px 0; color:#e65100; font-weight:600;">Oracle Mapping (Basis Step):</p>
+					<p style="margin:0; color:#333; line-height:1.4;">$|x_2\rangle \otimes |\pi,f\rangle \mapsto
+						\sum_{y_2}|y_2\rangle \otimes \Bigl(\delta_{\pi(x_2)=y_2}\cdot(-1)^{f(x_2)}\Bigr)|\pi,f\rangle$
+					</p>
+				</div>
+
+				<!-- Global State Result - Major Highlight -->
+				<div
+					style="background:#f0f7ff; border:2px solid #0077b6; border-radius:10px; padding:18px; margin-bottom:14px; font-size:0.62em; box-shadow: 0 4px 12px rgba(0,119,182,0.1);">
+					<p style="margin:0 0 10px 0; color:#0050b3; font-weight:800; text-align:center; font-size:1.1em;">
+						Combined Global State $|\Psi_2\rangle$
+					</p>
+					<div
+						style="background:white; padding:12px; border-radius:8px; border:1px dashed #0077b6; text-align:center;">
+						$$ |\Psi_2\rangle \propto \sum_{\substack{x_1,y_1 \\ x_2,y_2}} \Bigl(|y_2\rangle\langle
+						x_2|\cdot
+						A_2 |y_1\rangle\langle x_1|\cdot A_1|0^n\rangle\Bigr)_A \otimes \underbrace{\sum_{\pi,f}
+						\delta_{\pi(x_1)=y_1} \delta_{\pi(x_2)=y_2} (-1)^{f(x_1)+f(x_2)}
+						|\pi\rangle_P|f\rangle_F}_{\text{Consistent with both query pairs}} $$
+					</div>
+				</div>
+
+				<!-- Observations -->
+				<div style="display:flex; gap:15px; font-size:0.60em;">
+					<div
+						style="flex:1; background:#f6ffed; border:1px solid #b7eb8f; border-radius:8px; padding:12px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+						<div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
+							<div
+								style="width:20px; height:20px; background:#52c41a; color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:bold; font-size:0.8em;">
+								1</div>
+							<p style="margin:0; color:#237804; font-weight:700;">Delta Constraints</p>
+						</div>
+						<p style="margin:0; color:#555; line-height:1.5;">The purifying register now carries
+							<strong>two</strong> delta constraints, summing only over $(\pi,f)$ consistent with
+							<em>both</em> revealed mappings.</p>
+					</div>
+					<div
+						style="flex:1; background:#f6ffed; border:1px solid #b7eb8f; border-radius:8px; padding:12px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+						<div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
+							<div
+								style="width:20px; height:20px; background:#52c41a; color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:bold; font-size:0.8em;">
+								2</div>
+							<p style="margin:0; color:#237804; font-weight:700;">Phase Accumulation</p>
+						</div>
+						<p style="margin:0; color:#555; line-height:1.5;">The phase exponent is additive:
+							$(-1)^{f(x_1)+f(x_2)}$, accumulating one factor of $f$ per query.</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- ═══════════════ SLIDE 17: AFTER T QUERIES ═══════════════ -->
+			<section>
+				<h3 style="color:#0077b6; text-transform:none; margin-bottom:10px; font-size:1.1em;">
+					Generalization: After $t$ Queries
+				</h3>
+
+				<div
+					style="font-size:0.48em; display:flex; flex-direction:column; gap:8px; max-width:1150px; margin:0 auto;">
+
+					<!-- General State Evolution -->
+					<div
+						style="background:#f0f7ff; border-left:4px solid #0077b6; padding:8px 12px; border-radius:8px;">
+						<!-- <p style="margin:0 0 4px 0; color:#0050b3; font-weight:700;">Quantum State Inductively Derived:</p> -->
+						<div
+							style="background:white; padding:8px; border-radius:6px; border:1px dashed #0077b6; text-align:center;">
+							$$ |\Psi_t\rangle \propto \sum_{\substack{x_1,y_1,\\ \vdots \\ x_t,y_t}} \Bigl(
+							|y_t\rangle\langle x_t|\cdot A_t \;\dots\; |y_1\rangle\langle x_1|\cdot A_1 \,|0^n\rangle
+							\Bigr)_A \otimes \underbrace{ \sum_{\pi \in S_{2^n}}\;\sum_{f \in \{0,1\}^{2^n}}
+							\delta_{\pi(x_1)=y_1} \dots \delta_{\pi(x_t)=y_t} \cdot (-1)^{\sum_{i=1}^t f(x_i)}
+							\,|\pi\rangle_P\,|f\rangle_F }_{\text{(i)}} $$
+						</div>
+					</div>
+
+					<!-- Feynman Paths -->
+					<div style="background:#fffbe6; border:1px solid #faad14; padding:8px 12px; border-radius:8px;">
+						<p style="margin:0 0 4px 0; color:#856404; font-weight:700; font-size:1.1em;">Analyzing fixed
+							path $R = \{(x_1,y_1), \dots, (x_t,y_t)\}$:</p>
+						<p style="margin:0 0 6px 0; color:#333; line-height:1.4;">The purifying factor $\Phi_R$ depends
+							only on the set of revealed pairs $R$, independent of their order. We denote this as
+							$|\mathsf{pf}_R\rangle$:</p>
+
+						<!-- Boxed Definition -->
+						<div
+							style="background:#fffde6; border:2px solid #faad14; border-radius:10px; padding:10px; box-shadow:0 4px 12px rgba(250,173,20,0.06); text-align:center;">
+							<div
+								style="background:white; padding:8px; border-radius:6px; font-size:1.15em; display:inline-block; border:1px solid #ffe58f;">
+								$$ \boxed{ |\mathsf{pf}_R\rangle_{PF} \propto \sum_{\pi \in S_{2^n}} \prod_{(x,y)\in
+								R}\delta_{\pi(x)=y} \;|\pi\rangle_P \otimes \sum_{f \in \{0,1\}^{2^n}}
+								(-1)^{\sum_{(x,y)\in R} f(x)} |f\rangle_F } $$
+							</div>
+						</div>
+					</div>
+
+					<!-- Conclusion -->
+					<div
+						style="background:#f6ffed; border-left:4px solid #52c41a; padding:8px 12px; border-radius:8px; text-align:center;">
+						<p style="margin:0 0 4px 0; color:#237804; font-weight:700;">Final $t$-query state in compact
+							form:</p>
+						<p style="margin:0; color:#333; font-size:1.1em;">
+							$$ |\Psi_t\rangle \propto \sum_{x_1,y_1,\dots,x_t,y_t} \Bigl( |y_t\rangle\langle x_t|\cdot
+							A_t \dots |y_1\rangle\langle x_1|\cdot A_1 |0^n\rangle \Bigr)_A \otimes
+							|\mathsf{pf}_{\{(x_1,y_1),\dots,x_t,y_t\}\}}\rangle_{PF} $$
+						</p>
+					</div>
+				</div>
+			</section>
+
+
+
 
 		</div>
 	</div>
