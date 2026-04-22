@@ -20,23 +20,23 @@
 		<div class="slides">
 			<section>
 				<h3
-					style="color: #0077b6; margin-top: -20px; font-size: 1.25em; margin-bottom: 30px; text-transform: none;">
+					style="color: #0077b6; margin-top: -20px; font-size: 1.45em; margin-bottom: 30px; text-transform: none;">
 					Basic Quantum We'll Need</h3>
 
 				<div
-					style="display: flex; justify-content: space-between; align-items: flex-start; text-align: left; font-size: 0.65em;">
+					style="display: flex; justify-content: space-between; align-items: center; text-align: left; font-size: 0.85em;">
 					<!-- Text Section -->
 					<div style="width: 58%;">
 						<p style="margin-bottom: 5px; color: #333; line-height: 1.3;"><strong>Quantum States
 								(Qubits):</strong> Unlike classical computing, quantum bits can exist in combinations
 							via <strong>superposition</strong>.</p>
 						<div
-							style="background: #f8f9fa; padding: 5px 15px; border-left: 4px solid #0077b6; font-size: 1.2em; margin: 15px 0; color: #111;">
+							style="background: #f8f9fa; padding: 5px 15px; border-left: 4px solid #0077b6; font-size: 1.2em; margin: 10px 0; color: #111;">
 							$| \psi \rangle = \alpha|0\rangle + \beta|1\rangle = \begin{pmatrix} \alpha \\ \beta
 							\end{pmatrix}$
 						</div>
 
-						<div style="margin-top: 25px;">
+						<div style="margin-top: 15px;">
 							<p style="margin-bottom: 2px; color: #333;"><strong>Manipulating States:</strong></p>
 							<p style="color: #d62828; margin-top: 0; font-weight: 500;">$\rightarrow$ We apply
 								<em>unitary transformations</em> (geometric rotations)
@@ -44,10 +44,10 @@
 						</div>
 
 						<div
-							style="margin-top: 30px; padding: 15px 20px; border: 1px solid #dee2e6; border-radius: 8px; background: #e9ecef; color: #222;">
-							<p style="margin-top: 0; margin-bottom: 10px; font-weight: 600;">The Mathematical View:</p>
+							style="margin-top: 20px; padding: 10px 20px; border: 1px solid #dee2e6; border-radius: 8px; background: #e9ecef; color: #222;">
+							<p style="margin-top: 0; margin-bottom: 5px; font-weight: 600;">The Mathematical View:</p>
 							<ul style="line-height: 1.4; margin: 0; padding-left: 20px;">
-								<li style="margin-bottom: 5px;">An $n$-qubit state is a <strong>$2^n$-dimensional
+								<li style="margin-bottom: 3px;">An $n$-qubit state is a <strong>$2^n$-dimensional
 										vector</strong>.</li>
 								<li>An $n$-qubit operation is a <strong>$2^n \times 2^n$ unitary matrix</strong>.</li>
 							</ul>
@@ -120,16 +120,16 @@
 			<!-- ═══════════════ SLIDE 2: CLASSICAL RANDOMNESS ═══════════════ -->
 			<!-- ═══════════════ SLIDE 2: CLASSICAL RANDOMNESS ═══════════════ -->
 			<section>
-				<h3 style="color:#0077b6; text-transform:none; margin-bottom:15px; font-size:1.20em;">
+				<h3 style="color:#0077b6; text-transform:none; margin-top:-20px; margin-bottom:15px; font-size: 1.45em;">
 					Randomness in the Classical World
 				</h3>
 
 				<div
-					style="font-size:0.65em; max-width:1100px; margin:0 auto; display:flex; flex-direction:column; gap:16px;">
+					style="font-size: 0.85em; max-width: 1200px; margin:0 auto; display:flex; flex-direction:column; gap:12px;">
 
 					<!-- 1. Truly Random String -->
 					<div
-						style="display:flex; align-items:center; gap:25px; background:#f0f6ff; border-left:5px solid #0077b6; border-radius:12px; padding:15px 25px; box-shadow:0 4px 10px rgba(0,0,0,0.05);">
+						style="display:flex; align-items:center; gap:25px; background:#f0f6ff; border-left:5px solid #0077b6; border-radius:12px; padding:12px 25px; box-shadow:0 4px 10px rgba(0,0,0,0.05);">
 						<svg width="60" height="60" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg"
 							style="flex-shrink:0;">
 							<circle cx="26" cy="26" r="23" fill="#ffd166" stroke="#d4950a" stroke-width="2.5" />
@@ -137,7 +137,7 @@
 								font-family="Georgia,serif">$</text>
 						</svg>
 						<div style="text-align:left;">
-							<p style="margin:0 0 5px 0; font-weight:700; color:#003f6e; font-size:1.15em;">Truly Random
+							<p style="margin:0 0 5px 0; font-weight:700; color:#003f6e; font-size: 1.45em;">Truly Random
 								String</p>
 							<p style="margin:0; color:#333; font-size:1.1em;">$s \overset{\$}{\leftarrow} \{0,1\}^n$
 							</p>
@@ -189,7 +189,7 @@
 							</div>
 						</div>
 						<div style="text-align:left;">
-							<p style="margin:0 0 5px 0; font-weight:700; color:#003f6e; font-size:1.15em;">Truly Random
+							<p style="margin:0 0 5px 0; font-weight:700; color:#003f6e; font-size: 1.45em;">Truly Random
 								Function</p>
 							<p style="margin:0; color:#333; font-size:1.1em;">$f \overset{}{\leftarrow} \mathrm{Func}_n$
 								&nbsp;:&nbsp; every input gets a <strong>uniformly random</strong> output</p>
@@ -215,7 +215,7 @@
 								<circle cx="22" cy="22" r="2.5" fill="white" />
 							</svg>
 							<div style="text-align:center;">
-								<p style="margin:0; font-weight:700; color:#7c5000; font-size:1.15em;">Algorithm Design
+								<p style="margin:0; font-weight:700; color:#7c5000; font-size: 1.45em;">Algorithm Design
 								</p>
 								<p style="margin:5px 0 0 0; color:#555; font-size:0.92em; line-height:1.2;">Primality
 									testing, Monte Carlo, randomized sorting</p>
@@ -233,7 +233,7 @@
 								<circle cx="16" cy="21" r="2" fill="white" />
 							</svg>
 							<div style="text-align:center;">
-								<p style="margin:0; font-weight:700; color:#1b5e20; font-size:1.15em;">Cryptography</p>
+								<p style="margin:0; font-weight:700; color:#1b5e20; font-size: 1.45em;">Cryptography</p>
 								<p style="margin:5px 0 0 0; color:#555; font-size:0.92em; line-height:1.2;">Encryption,
 									Authentication, Key Generation</p>
 							</div>
@@ -249,7 +249,7 @@
 								<text x="6" y="28" font-family="monospace" font-size="7" fill="#ffd166">1 1 0</text>
 							</svg>
 							<div style="text-align:center;">
-								<p style="margin:0; font-weight:700; color:#4a148c; font-size:1.15em;">Probabilistic
+								<p style="margin:0; font-weight:700; color:#4a148c; font-size: 1.45em;">Probabilistic
 									Constructions</p>
 								<p style="margin:5px 0 0 0; color:#555; font-size:0.92em; line-height:1.2;">Random Error
 									Correcting codes
@@ -263,11 +263,11 @@
 
 			<!-- ═══════════════ SLIDE 3 ═══════════════
 			<section>
-				<h3 style="color: #0077b6; text-transform: none; margin-bottom: 14px; font-size: 1.15em;">
+				<h3 style="color: #0077b6; text-transform: none; margin-bottom: 14px; font-size: 1.45em;">
 					The Problem: Truly Random Functions Are Exponential
 				</h3>
 
-				<div style="font-size:0.61em; text-align:left;">
+				<div style="font-size: 0.81em; text-align:left;">
 
 
 					<div style="display:flex; gap:28px; align-items:flex-start; margin-bottom:16px;">
@@ -279,7 +279,7 @@
 								one $n$-bit output per input:
 							</p>
 							<div
-								style="background:#fff9e6; border:2px solid #ffc107; border-radius:9px; padding:13px 18px; text-align:center; font-size:1.15em; color:#333;">
+								style="background:#fff9e6; border:2px solid #ffc107; border-radius:9px; padding:13px 18px; text-align:center; font-size: 1.45em; color:#333;">
 								$$\underbrace{n}_{\text{bits/output}} \;\times\; \underbrace{2^n}_{\text{\# inputs}}
 								\;=\; n\cdot 2^n \;\text{bits}$$
 							</div>
@@ -357,11 +357,11 @@
 
 			<!-- ═══════════════ SLIDE 4: APPLICATIONS ═══════════════ -->
 			<section>
-				<h3 style="color:#0077b6; text-transform:none; margin-bottom:10px; font-size:1.20em;">
+				<h3 style="color:#0077b6; text-transform:none; margin-bottom:10px; font-size: 1.45em;">
 					Randomness in the Quantum World
 				</h3>
 
-				<div style="font-size:0.58em; max-width:1100px; margin:0 auto;">
+				<div style="font-size: 0.78em; max-width: 1200px; margin:0 auto;">
 
 					<!-- 1. Quantum Random Object: Random Unitary -->
 					<div
@@ -403,7 +403,7 @@
 									opacity="0.4" />
 							</svg>
 							<div style="text-align:center;">
-								<p style="margin:0; font-weight:700; color:#023e8a; font-size:1.15em;">Black Holes</p>
+								<p style="margin:0; font-weight:700; color:#023e8a; font-size: 1.45em;">Black Holes</p>
 								<p style="margin:5px 0 0 0; color:#555; font-size:0.9em; line-height:1.2;">Ultimate
 									scramblers of information</p>
 							</div>
@@ -421,7 +421,7 @@
 									opacity="0.5" />
 							</svg>
 							<div style="text-align:center;">
-								<p style="margin:0; font-weight:700; color:#1b4332; font-size:1.15em;">Info Scrambling
+								<p style="margin:0; font-weight:700; color:#1b4332; font-size: 1.45em;">Info Scrambling
 								</p>
 								<p style="margin:5px 0 0 0; color:#555; font-size:0.9em; line-height:1.2;">Hiding
 									information in global entanglement</p>
@@ -438,7 +438,7 @@
 								<circle cx="23" cy="8" r="4" fill="#ffffff" opacity="0.2" />
 							</svg>
 							<div style="text-align:center;">
-								<p style="margin:0; font-weight:700; color:#7c3500; font-size:1.15em;">Error Mitigation
+								<p style="margin:0; font-weight:700; color:#7c3500; font-size: 1.45em;">Error Mitigation
 								</p>
 								<p style="margin:5px 0 0 0; color:#555; font-size:0.9em; line-height:1.2;">Suppressing
 									noise in current NISQ devices</p>
@@ -457,7 +457,7 @@
 								<line x1="16" y1="14" x2="23" y2="18" stroke="#ffffff" stroke-width="1.5" />
 							</svg>
 							<div style="text-align:center;">
-								<p style="margin:0; font-weight:700; color:#4c1d95; font-size:1.15em;">Quantum Learning
+								<p style="margin:0; font-weight:700; color:#4c1d95; font-size: 1.45em;">Quantum Learning
 								</p>
 								<p style="margin:5px 0 0 0; color:#555; font-size:0.9em; line-height:1.2;">Complex
 									patterns from chaotic dynamics</p>
@@ -474,7 +474,7 @@
 								<circle cx="16" cy="22" r="2" fill="#fff" />
 							</svg>
 							<div style="text-align:center;">
-								<p style="margin:0; font-weight:700; color:#7209b7; font-size:1.15em;">Cryptography</p>
+								<p style="margin:0; font-weight:700; color:#7209b7; font-size: 1.45em;">Cryptography</p>
 								<p style="margin:5px 0 0 0; color:#555; font-size:0.9em; line-height:1.2;">Security
 									guaranteed by physical laws</p>
 							</div>
@@ -489,7 +489,7 @@
 									stroke-linecap="round" stroke-linejoin="round" />
 							</svg>
 							<div style="text-align:center;">
-								<p style="margin:0; font-weight:700; color:#854d0e; font-size:1.15em;">Error Correction
+								<p style="margin:0; font-weight:700; color:#854d0e; font-size: 1.45em;">Error Correction
 								</p>
 								<p style="margin:5px 0 0 0; color:#555; font-size:0.9em; line-height:1.2;">Encoding
 									information to resist noise</p>
@@ -520,94 +520,97 @@
 
 			<!-- ═══════════════ SLIDE 6: THE EFFICIENCY BARRIER ═══════════════ -->
 			<section>
-				<h3 style="color:#0077b6; text-transform:none; margin-bottom:20px; font-size:1.2em;">
+				<h3 style="color:#0077b6; text-transform:none; margin-top:-20px; margin-bottom:25px; font-size:1.4em;">
 					Fixing Efficiency Barrier: TRF to PRF
 				</h3>
 
-				<div style="display:flex; justify-content:space-between; align-items:start; gap:40px;">
+				<div style="display:flex; justify-content:space-between; align-items:stretch; gap:40px; font-size: 0.85em;">
 
 					<!-- Left: Truly Random (Infeasible) -->
-					<div style="width:48%; display:flex; flex-direction:column; gap:15px; text-align:left;">
+					<div style="width:48%; display:flex; flex-direction:column; gap:20px; text-align:left;">
 						<div
-							style="background:#fff1f0; border-left:5px solid #cf1322; padding:12px; border-radius:8px; height:95px; display:flex; flex-direction:column; justify-content:center;">
-							<p style="margin:0; font-weight:700; color:#cf1322; font-size:0.8em;">
+							style="background:#fff1f0; border-left:5px solid #cf1322; padding:12px 15px; border-radius:12px; min-height:135px; display:flex; flex-direction:column; justify-content:center;">
+							<p style="margin:0; font-weight:700; color:#cf1322; font-size:1.15em; line-height:1.2;">
 								Truly Random Function (TRF)</p>
-							<p style="margin:4px 0 0 0; font-size:0.65em; color:#444;">
-								$f \leftarrow \text{Func}_n$ requires $n \cdot 2^n$ bits
+							<p style="margin:8px 0 0 0; font-size: 1.05em; color:#444; line-height:1.3;">
+								$f \leftarrow \text{Func}_n$ requires $n \cdot 2^n$ bits to store.
 							</p>
 						</div>
 
 						<!-- Visual: Styled Table -->
 						<div
-							style="position:relative; height:240px; width:100%; overflow:hidden; border:1px solid #ddd; background:white; border-radius:10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+							style="position:relative; height:380px; width:100%; overflow:hidden; border:1px solid #ddd; background:white; border-radius:12px; box-shadow: 0 4px 15px rgba(0,0,0,0.06);">
 							<table
-								style="width:100%; border-collapse:collapse; font-family:monospace; font-size:11px; color:#555;">
+								style="width:100%; border-collapse:collapse; font-family:monospace; font-size:14px; color:#555;">
 								<thead style="background:#fafafa; border-bottom:1px solid #eee;">
 									<tr>
-										<th style="padding:8px;">Input (x)</th>
-										<th style="padding:8px;">Output f(x)</th>
+										<th style="padding:12px;">Input (x)</th>
+										<th style="padding:12px;">Output f(x)</th>
 									</tr>
 								</thead>
-								<tbody>
+								<tbody style="line-height: 1.5;">
 									<tr>
-										<td style="padding:6px; border-bottom:1px solid #f5f5f5;">00...00</td>
-										<td style="padding:6px; border-bottom:1px solid #f5f5f5;">10110...</td>
+										<td style="padding:8px; border-bottom:1px solid #f5f5f5;">00...00</td>
+										<td style="padding:8px; border-bottom:1px solid #f5f5f5;">10110...</td>
 									</tr>
 									<tr>
-										<td style="padding:6px; border-bottom:1px solid #f5f5f5;">00...01</td>
-										<td style="padding:6px; border-bottom:1px solid #f5f5f5;">01101...</td>
+										<td style="padding:8px; border-bottom:1px solid #f5f5f5;">00...01</td>
+										<td style="padding:8px; border-bottom:1px solid #f5f5f5;">01101...</td>
 									</tr>
 									<tr>
-										<td style="padding:6px; border-bottom:1px solid #f5f5f5;">00...10</td>
-										<td style="padding:6px; border-bottom:1px solid #f5f5f5;">11110...</td>
+										<td style="padding:8px; border-bottom:1px solid #f5f5f5;">00...10</td>
+										<td style="padding:8px; border-bottom:1px solid #f5f5f5;">11110...</td>
 									</tr>
 									<tr>
-										<td style="padding:6px; border-bottom:1px solid #f5f5f5;">00...11</td>
-										<td style="padding:6px; border-bottom:1px solid #f5f5f5;">00011...</td>
+										<td style="padding:8px; border-bottom:1px solid #f5f5f5;">00...11</td>
+										<td style="padding:8px; border-bottom:1px solid #f5f5f5;">00011...</td>
 									</tr>
 									<tr>
-										<td style="padding:6px; border-bottom:1px solid #f5f5f5;">...</td>
-										<td style="padding:6px; border-bottom:1px solid #f5f5f5;">...</td>
+										<td style="padding:8px; border-bottom:1px solid #f5f5f5;">...</td>
+										<td style="padding:8px; border-bottom:1px solid #f5f5f5;">...</td>
 									</tr>
 									<tr>
-										<td style="padding:6px; border-bottom:1px solid #f5f5f5;">01...00</td>
-										<td style="padding:6px; border-bottom:1px solid #f5f5f5;">10101...</td>
+										<td style="padding:8px; border-bottom:1px solid #f5f5f5;">01...00</td>
+										<td style="padding:8px; border-bottom:1px solid #f5f5f5;">10101...</td>
 									</tr>
 									<tr>
-										<td style="padding:6px;">11...11</td>
-										<td style="padding:6px;">00110...</td>
+										<td style="padding:8px; border-bottom:1px solid #f5f5f5;">10...11</td>
+										<td style="padding:8px; border-bottom:1px solid #f5f5f5;">11010...</td>
+									</tr>
+									<tr>
+										<td style="padding:8px;">11...11</td>
+										<td style="padding:8px;">00110...</td>
 									</tr>
 								</tbody>
 							</table>
 							<!-- Stamp Overlay -->
-							<div
-								style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%) rotate(-15deg); color:#cf1322; font-weight:900; font-size:1.3em; border:3px solid #cf1322; padding:8px 15px; background:white; z-index:10; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+							<div class="fragment"
+								style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%) rotate(-15deg); color:#cf1322; font-weight:900; font-size:1.8em; border:4px solid #cf1322; padding:15px 25px; background:white; z-index:10; box-shadow: 0 0 15px rgba(0,0,0,0.15); opacity: 0.9;">
 								EXPONENTIALLY HUGE</div>
 							<!-- Fade Out -->
 							<div
-								style="background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1)); position:absolute; bottom:0; left:0; width:100%; height:80px;">
+								style="background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1)); position:absolute; bottom:0; left:0; width:100%; height:120px;">
 							</div>
 						</div>
 					</div>
 
 					<!-- Right: PRF (The Solution) -->
-					<div style="width:48%; display:flex; flex-direction:column; gap:15px; text-align:left;">
+					<div style="width:48%; display:flex; flex-direction:column; gap:20px; text-align:left;">
 						<div
-							style="background:#f6ffed; border-left:5px solid #389e0d; padding:12px; border-radius:8px; height:95px; display:flex; flex-direction:column; justify-content:center;">
-							<p style="margin:0; font-weight:700; color:#389e0d; font-size:0.8em;">Pseudorandom Function
+							style="background:#f6ffed; border-left:5px solid #389e0d; padding:12px 15px; border-radius:12px; min-height:135px; display:flex; flex-direction:column; justify-content:center;">
+							<p style="margin:0; font-weight:700; color:#389e0d; font-size:1.15em; line-height:1.2;">Pseudorandom Function
 								(PRF)</p>
-							<p style="margin:4px 0 0 0; font-size:0.65em; color:#444;">
-								Efficiently computable in <strong>polynomial time</strong>.
-								Requires a random key $k$.
+							<p style="margin:8px 0 0 0; font-size: 1.05em; color:#444; line-height:1.3;">
+								Efficiently computable in <strong>polynomial time</strong> using a random key $k$.
 							</p>
 						</div>
 
 						<!-- Visual: PRF Box (Fixed Alignment) -->
 						<div
-							style="display:flex; justify-content:center; align-items:center; height:240px; background:#fafafa; border-radius:15px; border:2px dashed #389e0d;">
-							<svg width="320" height="200" viewBox="0 0 300 180">
+							style="display:flex; justify-content:center; align-items:center; height:380px; background:#fafafa; border-radius:15px; border:2px dashed #389e0d;">
+							<svg width="340" height="240" viewBox="0 0 300 180" style="transform: scale(1.2);">
 								<defs>
-									<linearGradient id="boxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+									<linearGradient id="boxGradSlide6" x1="0%" y1="0%" x2="100%" y2="100%">
 										<stop offset="0%" style="stop-color:#d9f7be;stop-opacity:1" />
 										<stop offset="100%" style="stop-color:#95de64;stop-opacity:1" />
 									</linearGradient>
@@ -623,7 +626,7 @@
 									marker-end="url(#arrowB)" />
 
 								<!-- The Box -->
-								<rect x="80" y="50" width="140" height="100" rx="10" fill="url(#boxGrad)"
+								<rect x="80" y="50" width="140" height="100" rx="10" fill="url(#boxGradSlide6)"
 									stroke="#389e0d" stroke-width="3" />
 								<text x="115" y="110" fill="#135200" font-weight="900" font-size="28">PRF</text>
 
@@ -638,50 +641,50 @@
 
 				<!-- Footer Summary -->
 				<div
-					style="margin-top:20px; font-size:0.85em; font-style:italic; color:#555; background:#f5f5f5; padding:8px 15px; border-radius:10px; display:inline-block; border-left: 3px solid #0077b6;">
+					style="margin-top:20px; font-size:1.0em; font-style:italic; color:#555; background:#f5f5f5; padding:10px 20px; border-radius:10px; display:inline-block; border-left: 5px solid #0077b6;">
 					"No PPT algorithm can store or read a truly random function... PRFs fix this."
 				</div>
 			</section>
 
 			<!-- ═══════════════ SLIDE 7: SECURITY & LAZY SAMPLING ═══════════════ -->
 			<section>
-				<h3 style="color:#0077b6; text-transform:none; margin-bottom:20px; font-size:1.15em;">
-					PRF Security<span class="fragment" data-fragment-index="0"> & Efficient Simulation of TRF</span>
+				<h3 style="color:#0077b6; text-transform:none; margin-bottom:20px; font-size: 1.45em;">
+					PRF Security &amp; Efficient Simulation of TRF
 				</h3>
 
 				<div
-					style="display:flex; justify-content:space-between; align-items:center; gap:30px; font-size:0.60em;">
+					style="display:flex; justify-content:space-between; align-items:center; gap:30px; font-size: 0.80em;">
 
 					<!-- Left: Indistinguishability Game -->
 					<div style="width:52%; text-align:left;">
 						<div
-							style="background:white; border:2.5px solid #0077b6; border-radius:20px; padding:25px; position:relative; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
+							style="background:white; border:2.5px solid #0077b6; border-radius:20px; padding:20px; position:relative; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
 							<div
 								style="position:absolute; top:-15px; left:25px; background:#0077b6; color:white; padding:5px 15px; border-radius:10px; font-weight:bold; font-size:1.1em;">
 								The Security Game</div>
 
-							<svg width="600" height="340" viewBox="0 0 500 300">
+							<svg width="100%" height="280" viewBox="0 0 500 300" style="margin-top: 10px;">
 								<defs>
-									<linearGradient id="challengerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+									<linearGradient id="challengerGradS7" x1="0%" y1="0%" x2="100%" y2="100%">
 										<stop offset="0%" style="stop-color:#fff7e6;stop-opacity:1" />
 										<stop offset="100%" style="stop-color:#ffe7ba;stop-opacity:1" />
 									</linearGradient>
-									<linearGradient id="distinguisherGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+									<linearGradient id="distinguisherGradS7" x1="0%" y1="0%" x2="100%" y2="100%">
 										<stop offset="0%" style="stop-color:#e6f7ff;stop-opacity:1" />
 										<stop offset="100%" style="stop-color:#91d5ff;stop-opacity:1" />
 									</linearGradient>
-									<marker id="arrowHead" markerWidth="10" markerHeight="7" refX="9" refY="3.5"
+									<marker id="arrowHeadS7" markerWidth="10" markerHeight="7" refX="9" refY="3.5"
 										orient="auto">
 										<polygon points="0 0, 10 3.5, 0 7" fill="#555" />
 									</marker>
-									<marker id="blueHead" markerWidth="10" markerHeight="7" refX="9" refY="3.5"
+									<marker id="blueHeadS7" markerWidth="10" markerHeight="7" refX="9" refY="3.5"
 										orient="auto">
 										<polygon points="0 0, 10 3.5, 0 7" fill="#1890ff" />
 									</marker>
 								</defs>
 
 								<!-- Challenger World -->
-								<rect x="10" y="40" width="200" height="240" rx="15" fill="url(#challengerGrad)"
+								<rect x="10" y="40" width="200" height="240" rx="15" fill="url(#challengerGradS7)"
 									stroke="#fa8c16" stroke-width="2.5" />
 								<text x="50" y="30" fill="#fa8c16" font-weight="900" font-size="16">CHALLENGER</text>
 
@@ -726,7 +729,7 @@
 								</foreignObject>
 
 								<!-- Distinguisher -->
-								<rect x="350" y="50" width="140" height="150" rx="15" fill="url(#distinguisherGrad)"
+								<rect x="350" y="50" width="140" height="150" rx="15" fill="url(#distinguisherGradS7)"
 									stroke="#1890ff" stroke-width="2.5" />
 								<text x="360" y="40" fill="#1890ff" font-weight="900"
 									font-size="16">DISTINGUISHER</text>
@@ -735,19 +738,19 @@
 
 								<!-- Interaction: Query -->
 								<path d="M350 100 Q280 100 210 100" fill="none" stroke="#555" stroke-width="3"
-									marker-end="url(#arrowHead)" />
+									marker-end="url(#arrowHeadS7)" />
 								<text x="280" y="90" fill="#555" font-weight="bold" font-size="11"
 									text-anchor="middle">1. Query (x)</text>
 
 								<!-- Interaction: Response -->
 								<path d="M210 200 Q280 200 350 200" fill="none" stroke="#1890ff" stroke-width="3"
-									marker-end="url(#blueHead)" />
+									marker-end="url(#blueHeadS7)" />
 								<text x="280" y="220" fill="#0050b3" font-weight="bold" font-size="11"
 									text-anchor="middle">2. Response </text>
 
 								<!-- Final Guess -->
 								<path d="M420 200 L 420 250" fill="none" stroke="#1890ff" stroke-width="3"
-									marker-end="url(#blueHead)" />
+									marker-end="url(#blueHeadS7)" />
 								<foreignObject x="410" y="255" width="40" height="30">
 									<div xmlns="http://www.w3.org/1999/xhtml"
 										style="color:#1890ff; font-weight:bold; font-size:18px;">
@@ -757,21 +760,20 @@
 							</svg>
 
 							<div
-								style="background:#f0f7ff; border-left:5px solid #0077b6; padding:12px; border-radius:0 8px 8px 0; margin-top:5px;">
+								style="background:#f0f7ff; border-left:5px solid #0077b6; padding:8px 12px; border-radius:0 8px 8px 0; margin-top:5px;">
 
-								<p style="margin:8px 0; font-size:0.9em; color:#01579b; text-align:center;">
-									$\left| \text{Pr}[D^{F_k(\cdot)}(1^n)=1] - \text{Pr}[D^{f(\cdot)}(1^n)=1] \right|
-									\leq \text{negl}(n)$
+								<p style="margin:5px 0; font-size:0.85em; color:#01579b; text-align:center;">
+									$\left| \text{Pr}[D^{F_k}(1^n)=1] - \text{Pr}[D^f(1^n)=1] \right| \leq \text{negl}(n)$
 								</p>
-								<p style="margin:0; color:#444; line-height:1.3; font-size:0.85em;">
-									The difference in output behavior must be negligible for all PPT distinguishers.
+								<p style="margin:0; color:#444; line-height:1.2; font-size:0.8em;">
+									Difference in output behavior must be negligible for all PPT distinguishers.
 								</p>
 							</div>
 						</div>
 					</div>
 
 					<!-- Right: Lazy Sampling Infographic -->
-					<div style="width:50%; text-align:left;" class="fragment" data-fragment-index="0">
+					<div style="width:50%; text-align:left;" class="fragment">
 						<div
 							style="background:#e6f7ff; border-radius:15px; border-left:8px solid #1890ff; padding:20px;">
 							<p style="margin:0; font-weight:800; color:#0050b3; font-size:1.3em;">On-the-Fly Simulation
@@ -807,43 +809,40 @@
 							</div>
 							<p style="margin:15px 0 0 0; font-style:italic; font-size:1.05em; color:#0050b3;">
 								"Assign random output to queried input on the fly, storing only the queried
-								input-output
-								pairs in a table"
+								input-output pairs in a table"
 							</p>
 						</div>
 					</div>
-
 				</div>
 			</section>
 
-			<!-- ═══════════════ SLIDE 7: PSEUDORANDOM UNITARIES (PRUs) ═══════════════ -->
 			<section>
-				<h3 style="color:#0077b6; text-transform:none; margin-bottom:10px; font-size:1.2em;">
+				<h3 style="color:#0077b6; text-transform:none; margin-top:-20px; margin-bottom:15px; font-size:1.4em;">
 					Fixing Efficiency Barrier: Haar Random unitaries to Pseudorandom unitaries
 				</h3>
 
 				<div
-					style="display:flex; justify-content:space-between; align-items:flex-start; gap:25px; font-size:0.54em;">
+					style="display:flex; justify-content:space-between; align-items:flex-start; gap:25px; font-size: 0.74em;">
 
 					<div
 						style="width:42%; text-align:left; border-right: 1px solid #eee; padding-right:15px; display:flex; flex-direction:column;">
 						<!-- Header + Diagram alignment container -->
 						<div
-							style="height: 165px; display: flex; flex-direction: column; justify-content: space-between; margin-bottom: 10px;">
+							style="height: 160px; display: flex; flex-direction: column; justify-content: space-between; margin-bottom: 10px;">
 							<div style="font-weight:600; color:#003f6e; font-size:1.0em;">The Challenge: Haar Randomness
 							</div>
 
-							<div style="height:115px; display:flex; flex-direction:column; justify-content:center;">
+							<div style="height:110px; display:flex; flex-direction:column; justify-content:center;">
 								<!-- Haar Ellipse -->
 								<div style="display:flex; justify-content:center;">
 									<svg width="150" height="90" viewBox="0 0 190 160">
 										<defs>
-											<radialGradient id="haarGradFinal" cx="38%" cy="38%" r="62%">
+											<radialGradient id="haarGradFinalSlide16" cx="38%" cy="38%" r="62%">
 												<stop offset="0%" stop-color="#deeeff" />
 												<stop offset="100%" stop-color="#9ac8ee" />
 											</radialGradient>
 										</defs>
-										<ellipse cx="95" cy="80" rx="85" ry="55" fill="url(#haarGradFinal)"
+										<ellipse cx="95" cy="80" rx="85" ry="55" fill="url(#haarGradFinalSlide16)"
 											stroke="#0077b6" stroke-width="2" opacity="0.95" />
 										<circle cx="82" cy="72" r="8" fill="#e63946" stroke="#fff" stroke-width="1.5" />
 										<text x="96" y="76" fill="#003f6e" font-size="20" font-family="serif"
@@ -861,7 +860,7 @@
 							<p
 								style="margin:0 0 8px 0; font-weight:600; color:#0077b6; font-size:1.1em; text-align:center;">
 								Truly Random = Inefficient</p>
-							<svg width="300" height="180" viewBox="15 -10 250 220"
+							<svg width="300" height="170" viewBox="15 -10 250 220"
 								style="display:block; margin:0 auto;">
 								<!-- Wires -->
 								<line x1="45" y1="50" x2="215" y2="50" stroke="#112b4d" stroke-width="2.5" />
@@ -895,17 +894,14 @@
 					<div style="width:55%; text-align:left; display:flex; flex-direction:column;">
 						<!-- Header + PRU Box alignment container -->
 						<div
-							style="height: 165px; display: flex; flex-direction: column; justify-content: space-between; margin-bottom: 10px;">
+							style="height: 160px; display: flex; flex-direction: column; justify-content: space-between; margin-bottom: 10px;">
 							<div style="font-weight:600; color:#135200; font-size:1.0em;">The Solution: PRUs
 							</div>
 
-							<div style="height:115px; display:flex; flex-direction:column; justify-content:center;">
+							<div style="height:110px; display:flex; flex-direction:column; justify-content:center;">
 								<!-- PRU Solution Box -->
 								<div
 									style="background:#f6ffed; border-left:5px solid #389e0d; padding:10px 15px; border-radius:8px; box-shadow:0 4px 10px rgba(56,158,13,0.05); box-sizing:border-box; margin:0;">
-									<!-- <p
-										style="margin:0 0 4px 0; font-weight:600; color:#135200; font-size:1.05em; text-transform:uppercase; letter-spacing:0.5px;">
-										The PRU Solution</p> -->
 									<ul
 										style="margin:0; padding-left:22px; list-style-type: square; color:#389e0d; font-size:0.95em; line-height:1.3;">
 										<li>Efficiently computable (poly(n) depth)</li>
@@ -917,11 +913,11 @@
 
 						<!-- PRU Adversary Diagram Container -->
 						<div
-							style="background:white; border:1px solid #d9f7be; border-radius:15px; padding:12px 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); position:relative; box-sizing:border-box;margin: 20px;">
+							style="background:white; border:1px solid #d9f7be; border-radius:15px; padding:12px 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); position:relative; box-sizing:border-box;margin: 5px 0;">
 							<div
-								style="font-weight:600; color:#135200; font-size:1.1em; margin-bottom:8px; text-align:center;">
+								style="font-weight:600; color:#135200; font-size:1.1em; margin-bottom:5px; text-align:center;">
 								Quantum Oracle Adversary ($\mathcal{A}$)</div>
-							<svg width="100%" height="130" viewBox="-15 0 520 150"
+							<svg width="100%" height="120" viewBox="-15 0 520 150"
 								style="display:block; margin:0 auto; max-width:450px;">
 								<!-- Rails Labels -->
 								<text x="-12" y="45" font-size="13" fill="#666" font-weight="700">$\mathsf{A}$
@@ -971,20 +967,19 @@
 								</foreignObject>
 							</svg>
 						</div>
-
 					</div>
 				</div>
 
 				<!-- Security Definition -->
 				<div
-					style="margin-top:5px; border-top:1px solid #eee; padding-top:5px; width:98%; max-width:960px; margin-left:auto; margin-right:auto;">
+					style="margin-top:2px; border-top:1px solid #eee; padding-top:2px; width:100%;">
 					<p
-						style="margin:0 0 2px 0; font-weight:normal; color:#1b4332; font-size:0.60em; text-align:center; opacity:0.8;">
+						style="margin:0 0 2px 0; font-weight:normal; color:#1b4332; font-size: 0.75em; text-align:center; opacity:0.8;">
 						Security Definition: Let $\{\mathcal{U}_n\}_{n \in \mathbb{N}} = \{U_k\}_{k \in \mathcal{K}_n}$
 						be a family of $n$-qubit unitaries.
 					</p>
 					<div
-						style="font-size:0.55em; color:#135200; margin:0; text-align:center; background:#f9fff0; padding:5px 25px; border-radius:10px; border:1px solid #d9f7be; overflow-x:auto;">
+						style="font-size: 0.65em; color:#135200; margin:0; text-align:center; background:#f9fff0; padding:5px 15px; border-radius:10px; border:1px solid #d9f7be; overflow:hidden;">
 						$$
 						\left|\,
 						\underset{\mathcal{O} \leftarrow \mathcal{U}_n}{\mathbb{E}}\,
@@ -994,22 +989,23 @@
 						\underset{\mathcal{O} \sim \mathrm{Haar}}{\mathbb{E}}\,
 						\mathrm{Tr}\!\left(D_{\mathcal{A}} \cdot
 						|\mathcal{A}^{\mathcal{O}}\rangle\!\langle \mathcal{A}^{\mathcal{O}}|_{\mathsf{AB}}\right)
-						\right| \leq \mathrm{negl}(n),
+						\right| \leq \mathrm{negl}(n)
 						$$
 					</div>
 				</div>
 			</section>
 
+
 			<!-- ═══════════════ SLIDE 8: SPOOFING HAAR ═══════════════ -->
 			<section>
-				<h3 style="color:#0077b6; text-transform:none; margin-bottom:10px; font-size:1.15em;">
+				<h3 style="color:#0077b6; text-transform:none; margin-bottom:10px; font-size: 1.45em;">
 					Simulating Haar-Random Unitaries
 				</h3>
-				<p style="font-size:0.65em; font-weight:bold; color:#555; margin-top:0; margin-bottom:25px;">
+				<p style="font-size: 0.85em; font-weight:bold; color:#555; margin-top:0; margin-bottom:25px;">
 					How do we efficiently mimic a Haar-random $U$ for a querying quantum algorithm?
 				</p>
 
-				<div style="display:flex; justify-content:center; align-items:stretch; font-size:0.58em;">
+				<div style="display:flex; justify-content:center; align-items:stretch; font-size: 0.78em;">
 
 					<!-- Main Content: The Quantum Solution -->
 					<div style="width:75%; max-width:850px; text-align:left; display:flex; flex-direction:column;">
@@ -1026,13 +1022,13 @@
 									Path-Recording Oracle</h4>
 							</div>
 
-							<p style="margin:0 0 20px 0; color:#333; line-height:1.5; font-size:1.15em;">
+							<p style="margin:0 0 20px 0; color:#333; line-height:1.5; font-size: 1.45em;">
 								Use <strong>entanglement with a hidden data structure</strong> that "remembers" enough
 								information as the adversary
 								queries.
 							</p>
 
-							<!-- <ul style="color:#389e0d; line-height:1.6; margin:0; padding-left:25px; font-size:1.15em;">
+							<!-- <ul style="color:#389e0d; line-height:1.6; margin:0; padding-left:25px; font-size: 1.45em;">
 								<li style="margin-bottom:12px;"><strong style="color:#135200;">Succinct Memory:</strong>
 									</li>
 							</ul> -->
@@ -1067,15 +1063,15 @@
 
 			<!-- ═══════════════ SLIDE 9: EXAMPLE 1 ═══════════════ -->
 			<section>
-				<h3 style="color:#0077b6; text-transform:none; margin-bottom:15px; font-size:1.15em;">
+				<h3 style="color:#0077b6; text-transform:none; margin-bottom:15px; font-size: 1.45em;">
 					Example 1
 				</h3>
-				<p style="font-size:0.65em; font-weight:bold; color:#555; margin-top:0; margin-bottom:25px;">
+				<p style="font-size: 0.85em; font-weight:bold; color:#555; margin-top:0; margin-bottom:25px;">
 					Simulating the behavior of a single query $\lvert 0 \rangle$
 				</p>
 
 				<div
-					style="font-size:0.55em; display:flex; justify-content:space-between; align-items:stretch; gap:20px;">
+					style="font-size: 0.75em; display:flex; justify-content:space-between; align-items:stretch; gap:20px;">
 
 					<!-- Left Column: Exact Simulation (The Impossible) -->
 					<div
@@ -1087,19 +1083,19 @@
 								<line x1="12" y1="8" x2="12" y2="12"></line>
 								<line x1="12" y1="16" x2="12.01" y2="16"></line>
 							</svg>
-							<h4 style="margin:0; color:#cf1322; font-size:1.35em; font-weight:800;">Exact Simulation
+							<h4 style="margin:0; color:#cf1322; font-size: 1.45em; font-weight:800;">Exact Simulation
 							</h4>
 						</div>
-						<p style="margin:0 0 15px 0; color:#555; line-height:1.5; font-size:1.15em; text-align:left;">
+						<p style="margin:0 0 15px 0; color:#555; line-height:1.5; font-size: 1.45em; text-align:left;">
 							Implementing a true Haar-random unitary $U$ is computationally infeasible.
 						</p>
 
 						<div
 							style="margin-top:auto; background:white; padding:20px; border-radius:10px; border:1px dashed #ffa39e; text-align:center;">
-							<div style="color:#820014; font-size:1.25em; margin-bottom:5px;">
+							<div style="color:#820014; font-size: 1.45em; margin-bottom:5px;">
 								$$U \sim \text{Haar}$$
 							</div>
-							<div style="color:#a8071a; font-size:1.25em; font-weight:bold; margin-bottom:10px;">
+							<div style="color:#a8071a; font-size: 1.45em; font-weight:bold; margin-bottom:10px;">
 								$$\lvert 0 \rangle_a \longmapsto U \lvert 0 \rangle_a$$
 							</div>
 							<div style="color:#cf1322; font-style:italic; font-size:1.0em; margin-top:5px;">
@@ -1117,17 +1113,17 @@
 								<path d="M22 11.08V12a10 10 10 0 1-5.93 9.14"></path>
 								<polyline points="22 4 12 14.01 9 11.01"></polyline>
 							</svg>
-							<h4 style="margin:0; color:#237804; font-size:1.35em; font-weight:800;">Efficient Simulation
+							<h4 style="margin:0; color:#237804; font-size: 1.45em; font-weight:800;">Efficient Simulation
 							</h4>
 						</div>
-						<p style="margin:0 0 15px 0; color:#333; line-height:1.5; font-size:1.15em; text-align:left;">
+						<p style="margin:0 0 15px 0; color:#333; line-height:1.5; font-size: 1.45em; text-align:left;">
 							A QPT algorithm can efficiently realize the identical mixed state by <strong>entangling the
 								query space $a$</strong> with a hidden register $s$.
 						</p>
 
 						<div
 							style="margin-top:auto; background:white; padding:20px; border-radius:10px; border:1px dashed #73d13d; text-align:center;">
-							<div style="color:#135200; font-size:1.25em; font-weight:bold; margin-bottom:10px;">
+							<div style="color:#135200; font-size: 1.45em; font-weight:bold; margin-bottom:10px;">
 								$$ \sum_{y} \lvert y \rangle_a \lvert y \rangle_s $$
 							</div>
 							<div style="color:#237804; font-size:1.05em; font-weight:bold; margin-bottom:5px;">
@@ -1146,15 +1142,15 @@
 
 			<!-- ═══════════════ SLIDE 10: EXAMPLE 2 ═══════════════ -->
 			<section>
-				<h3 style="color:#0077b6; text-transform:none; margin-bottom:15px; font-size:1.15em;">
+				<h3 style="color:#0077b6; text-transform:none; margin-bottom:15px; font-size: 1.45em;">
 					Example 2
 				</h3>
-				<p style="font-size:0.65em; font-weight:bold; color:#555; margin-top:0; margin-bottom:25px;">
+				<p style="font-size: 0.85em; font-weight:bold; color:#555; margin-top:0; margin-bottom:25px;">
 					Simulating the behavior of two parallel queries $\lvert 0 \rangle_a$ and $\lvert 0 \rangle_b$
 				</p>
 
 				<div
-					style="font-size:0.55em; display:flex; justify-content:space-between; align-items:stretch; gap:20px;">
+					style="font-size: 0.75em; display:flex; justify-content:space-between; align-items:stretch; gap:20px;">
 
 					<!-- Left Column: Exact Simulation (The Impossible) -->
 					<div
@@ -1166,16 +1162,16 @@
 								<line x1="12" y1="8" x2="12" y2="12"></line>
 								<line x1="12" y1="16" x2="12.01" y2="16"></line>
 							</svg>
-							<h4 style="margin:0; color:#cf1322; font-size:1.35em; font-weight:800;">Exact Simulation
+							<h4 style="margin:0; color:#cf1322; font-size: 1.45em; font-weight:800;">Exact Simulation
 							</h4>
 						</div>
-						<p style="margin:0 0 15px 0; color:#555; line-height:1.5; font-size:1.15em; text-align:left;">
+						<p style="margin:0 0 15px 0; color:#555; line-height:1.5; font-size: 1.45em; text-align:left;">
 							Evaluating parallel queries where $U \sim \text{Haar}$ is completely infeasible.
 						</p>
 
 						<div
 							style="margin-top:auto; background:white; padding:20px; border-radius:10px; border:1px dashed #ffa39e; text-align:center;">
-							<div style="color:#820014; font-size:1.25em; margin-bottom:10px;">
+							<div style="color:#820014; font-size: 1.45em; margin-bottom:10px;">
 								$$U \sim \text{Haar}$$
 							</div>
 							<div style="color:#a8071a; font-size:1.1em; font-weight:bold; margin-bottom:15px;">
@@ -1198,17 +1194,17 @@
 								<path d="M22 11.08V12a10 10 10 0 1-5.93 9.14"></path>
 								<polyline points="22 4 12 14.01 9 11.01"></polyline>
 							</svg>
-							<h4 style="margin:0; color:#237804; font-size:1.35em; font-weight:800;">Efficient Simulation
+							<h4 style="margin:0; color:#237804; font-size: 1.45em; font-weight:800;">Efficient Simulation
 							</h4>
 						</div>
-						<p style="margin:0 0 15px 0; color:#333; line-height:1.5; font-size:1.15em; text-align:left;">
+						<p style="margin:0 0 15px 0; color:#333; line-height:1.5; font-size: 1.45em; text-align:left;">
 							A QPT algorithm can efficiently realize the identical state by <strong>entangling the
 								queries</strong> with a hidden structure that enforces swap symmetry.
 						</p>
 
 						<div
 							style="margin-top:auto; background:white; padding:20px; border-radius:10px; border:1px dashed #73d13d; text-align:center;">
-							<div style="color:#135200; font-size:1.15em; font-weight:bold; margin-bottom:10px;">
+							<div style="color:#135200; font-size: 1.45em; font-weight:bold; margin-bottom:10px;">
 								$$ \sum_{y_1,y_2} \lvert y_1 \rangle_a \lvert y_2 \rangle_b \lvert \{y_1,y_2\} \rangle_s
 								$$
 							</div>
@@ -1226,15 +1222,15 @@
 
 			<!-- ═══════════════ SLIDE 11: EXAMPLE 3 ═══════════════ -->
 			<section>
-				<h3 style="color:#0077b6; text-transform:none; margin-bottom:15px; font-size:1.15em;">
+				<h3 style="color:#0077b6; text-transform:none; margin-bottom:15px; font-size: 1.45em;">
 					Example 3
 				</h3>
-				<p style="font-size:0.65em; font-weight:bold; color:#555; margin-top:0; margin-bottom:25px;">
+				<p style="font-size: 0.85em; font-weight:bold; color:#555; margin-top:0; margin-bottom:25px;">
 					Simulating mixed queries $\lvert 0 \rangle_a$, $\lvert 0 \rangle_b$, and $\lvert 1 \rangle_c$
 				</p>
 
 				<div
-					style="font-size:0.55em; display:flex; justify-content:space-between; align-items:stretch; gap:20px;">
+					style="font-size: 0.75em; display:flex; justify-content:space-between; align-items:stretch; gap:20px;">
 
 					<!-- Left Column: Exact Simulation (The Impossible) -->
 					<div
@@ -1246,7 +1242,7 @@
 								<line x1="12" y1="8" x2="12" y2="12"></line>
 								<line x1="12" y1="16" x2="12.01" y2="16"></line>
 							</svg>
-							<h4 style="margin:0; color:#cf1322; font-size:1.35em; font-weight:800;">Exact Simulation
+							<h4 style="margin:0; color:#cf1322; font-size: 1.45em; font-weight:800;">Exact Simulation
 							</h4>
 						</div>
 						<p style="margin:0 0 15px 0; color:#555; line-height:1.5; font-size:1.05em; text-align:left;">
@@ -1278,7 +1274,7 @@
 								<path d="M22 11.08V12a10 10 10 0 1-5.93 9.14"></path>
 								<polyline points="22 4 12 14.01 9 11.01"></polyline>
 							</svg>
-							<h4 style="margin:0; color:#237804; font-size:1.35em; font-weight:800;">Efficient Simulation
+							<h4 style="margin:0; color:#237804; font-size: 1.45em; font-weight:800;">Efficient Simulation
 							</h4>
 						</div>
 						<p style="margin:0 0 15px 0; color:#333; line-height:1.5; font-size:1.05em; text-align:left;">
@@ -1307,15 +1303,15 @@
 
 			<!-- ═══════════════ SLIDE 12: GENERALIZED MAP V ═══════════════ -->
 			<section>
-				<h3 style="color:#0077b6; text-transform:none; margin-bottom:5px; font-size:1.15em;">
+				<h3 style="color:#0077b6; text-transform:none; margin-bottom:5px; font-size: 1.45em;">
 					Formalizing the Path-Recording Oracle
 				</h3>
-				<p style="font-size:0.65em; font-weight:bold; color:#555; margin-top:0; margin-bottom:10px;">
+				<p style="font-size: 0.85em; font-weight:bold; color:#555; margin-top:0; margin-bottom:10px;">
 					Generalizing the query behavior into a formal linear map $V$
 				</p>
 
 				<div
-					style="background:#f9f9fa; border:1px solid #d9d9d9; border-radius:12px; padding:10px 20px 10px 20px; box-shadow:0 8px 24px rgba(0,0,0,0.06); text-align:left; max-width:1150px; margin:0 auto; font-size:0.60em;">
+					style="background:#f9f9fa; border:1px solid #d9d9d9; border-radius:12px; padding:10px 20px 10px 20px; box-shadow:0 8px 24px rgba(0,0,0,0.06); text-align:left; max-width: 1250px; margin:0 auto; font-size: 0.80em;">
 
 					<p style="margin:0 0 5px 0; color:#333; line-height:1.4; font-size:1.0em;">
 						We can achieve our simulation efficiently by replacing each query to $U$ with a lazily evaluated
@@ -1377,7 +1373,7 @@
 										style="font-size:0.9em; text-align:left; color:#0050b3; line-height:1.2;">
 										$ \lvert y \rangle_A $
 										<div
-											style="font-size:0.55em; color:#555; font-weight:bold; margin-top:2px; white-space:nowrap;">
+											style="font-size: 0.75em; color:#555; font-weight:bold; margin-top:2px; white-space:nowrap;">
 											(superposition over $y$)</div>
 									</div>
 								</foreignObject>
@@ -1419,7 +1415,7 @@
 				</h3>
 
 				<div
-					style="background:#f9f9fa; border:1px solid #d9d9d9; border-radius:12px; padding:18px 30px 14px 30px; box-shadow:0 8px 24px rgba(0,0,0,0.06); max-width:1000px; margin:0 auto; font-size:0.60em;">
+					style="background:#f9f9fa; border:1px solid #d9d9d9; border-radius:12px; padding:18px 30px 14px 30px; box-shadow:0 8px 24px rgba(0,0,0,0.06); max-width: 1250px; margin:0 auto; font-size: 0.80em;">
 
 					<!-- Key sentence -->
 					<p style="margin:0 0 16px 0; color:#333; line-height:1.7; font-size:1.1em; text-align:center;">
@@ -1555,12 +1551,12 @@
 				<h3 style="color:#0077b6; text-transform:none; margin-bottom:6px; font-size:1.1em;">
 					The PRU Construction: $P_\pi \cdot F_f \cdot C$
 				</h3>
-				<p style="font-size:0.58em; font-weight:bold; color:#555; margin-top:0; margin-bottom:12px;">
+				<p style="font-size: 0.78em; font-weight:bold; color:#555; margin-top:0; margin-bottom:12px;">
 					A candidate PRU built from a permutation, a phase function, and a Clifford
 				</p>
 
 				<div
-					style="display:flex; gap:12px; max-width:1160px; margin:0 auto; font-size:0.58em; align-items:stretch;">
+					style="display:flex; gap:12px; max-width:1160px; margin:0 auto; font-size: 0.78em; align-items:stretch;">
 
 					<!-- Left: Construction definition -->
 					<div
@@ -1681,7 +1677,7 @@
 
 			<!-- ═══════════════ SLIDE 14: INITIAL STATE ═══════════════ -->
 			<section>
-				<h3 style="color:#0077b6; text-transform:none; margin-bottom:18px; font-size:1.15em;">
+				<h3 style="color:#0077b6; text-transform:none; margin-bottom:18px; font-size: 1.45em;">
 					Initializing PfO Oracle
 				</h3>
 
@@ -1732,7 +1728,7 @@
 								<p style="margin:0 0 6px 0; font-size:0.75em; font-weight:700; color:#0050b3;">Adversary
 									Register: $A$</p>
 								<p style="margin:0; font-size:0.75em; color:#0050b3;">$|0^n\rangle_A$</p>
-								<p style="margin:3px 0 0 0; font-size:0.65em; color:#0077b6; font-style:italic;">(known
+								<p style="margin:3px 0 0 0; font-size: 0.85em; color:#0077b6; font-style:italic;">(known
 									initial state)</p>
 							</div>
 
@@ -1746,7 +1742,7 @@
 									Permutation Register: $P$</p>
 								<p style="margin:0; font-size:0.75em; color:#6a1b9a; line-height:1.4;">
 									$\frac{1}{\sqrt{N!}} \sum_{\pi \in S_{2^n}} |\pi\rangle_P$</p>
-								<p style="margin:3px 0 0 0; font-size:0.65em; color:#8b44ac; font-style:italic;">All
+								<p style="margin:3px 0 0 0; font-size: 0.85em; color:#8b44ac; font-style:italic;">All
 									$N!$ permutations</p>
 							</div>
 
@@ -1760,7 +1756,7 @@
 									Register: $F$</p>
 								<p style="margin:0; font-size:0.75em; color:#e65100; line-height:1.4;">
 									$\frac{1}{\sqrt{2^{N}}} \sum_{f \in \{0,1\}^{N}} |f\rangle_F$</p>
-								<p style="margin:3px 0 0 0; font-size:0.65em; color:#d48806; font-style:italic;">All
+								<p style="margin:3px 0 0 0; font-size: 0.85em; color:#d48806; font-style:italic;">All
 									$2^{N}$ functions</p>
 							</div>
 						</div>
@@ -1777,7 +1773,7 @@
 
 			<!-- ═══════════════ SLIDE 15: QUERY 1 ═══════════════ -->
 			<section>
-				<h3 style="color:#0077b6; text-transform:none; margin-bottom:16px; font-size:1.15em;">
+				<h3 style="color:#0077b6; text-transform:none; margin-bottom:16px; font-size: 1.45em;">
 					Query 1
 				</h3>
 
@@ -1798,7 +1794,7 @@
 
 				<!-- Global State Result -->
 				<div
-					style="background:#f0f7ff; border:2px solid #0077b6; border-radius:10px; padding:16px; margin-top:14px; font-size:0.62em; box-shadow: 0 4px 12px rgba(0,119,182,0.1);">
+					style="background:#f0f7ff; border:2px solid #0077b6; border-radius:10px; padding:16px; margin-top:14px; font-size: 0.82em; box-shadow: 0 4px 12px rgba(0,119,182,0.1);">
 					<p style="margin:0 0 10px 0; color:#0050b3; font-weight:700; text-align:center; font-size:1.1em;">
 						Applying this across the entire superposition, the global state becomes:
 					</p>
@@ -1831,7 +1827,7 @@
 
 			<!-- ═══════════════ SLIDE 16: QUERY 2 ═══════════════ -->
 			<section>
-				<h3 style="color:#0077b6; text-transform:none; margin-bottom:16px; font-size:1.15em;">
+				<h3 style="color:#0077b6; text-transform:none; margin-bottom:16px; font-size: 1.45em;">
 					Query 2
 				</h3>
 
@@ -1855,7 +1851,7 @@
 
 				<!-- Global State Result - Major Highlight -->
 				<div
-					style="background:#f0f7ff; border:2px solid #0077b6; border-radius:10px; padding:18px; margin-bottom:14px; font-size:0.62em; box-shadow: 0 4px 12px rgba(0,119,182,0.1);">
+					style="background:#f0f7ff; border:2px solid #0077b6; border-radius:10px; padding:18px; margin-bottom:14px; font-size: 0.82em; box-shadow: 0 4px 12px rgba(0,119,182,0.1);">
 					<p style="margin:0 0 10px 0; color:#0050b3; font-weight:800; text-align:center; font-size:1.1em;">
 						Combined Global State $|\Psi_2\rangle$
 					</p>
@@ -1879,7 +1875,7 @@
 				</h3>
 
 				<div
-					style="font-size:0.48em; display:flex; flex-direction:column; gap:8px; max-width:1150px; margin:0 auto;">
+					style="font-size: 0.68em; display:flex; flex-direction:column; gap:8px; max-width: 1250px; margin:0 auto;">
 
 					<!-- General State Evolution -->
 					<div
@@ -1900,7 +1896,7 @@
 						style="background:#fffbe6; border:1px solid #faad14; padding:12px; border-radius:8px; text-align:center;">
 						<p style="margin:0 0 4px 0; color:#856404; font-weight:700; font-size:1.1em;">For relation $R =
 							\{(x_1,y_1), \dots, (x_t,y_t)\}$:</p>
-						<div style="font-size:1.15em;">
+						<div style="font-size: 1.45em;">
 							$$ |\mathsf{pf}_R\rangle_{PF} \propto \sum_{\pi \in S_{2^n}} \prod_{(x,y)\in
 							R}\delta_{\pi(x)=y} \;|\pi\rangle_P \otimes \sum_{f \in \{0,1\}^{2^n}} (-1)^{\sum_{(x,y)\in
 							R} f(x)} |f\rangle_F $$
@@ -1923,12 +1919,12 @@
 
 			<!-- ═══════════════ SLIDE 18: RELATION TO V ORACLE ═══════════════ -->
 			<section>
-				<h3 style="color:#0077b6; text-transform:none; margin-bottom:12px; font-size:1.15em;">
+				<h3 style="color:#0077b6; text-transform:none; margin-bottom:12px; font-size: 1.45em;">
 					Intuition: Relation to Path-Recording Oracles
 				</h3>
 
 				<div
-					style="font-size:0.50em; max-width:1150px; margin:0 auto; display:flex; flex-direction:column; gap:12px;">
+					style="font-size: 0.70em; max-width: 1250px; margin:0 auto; display:flex; flex-direction:column; gap:12px;">
 
 					<!-- Key Observation -->
 					<div
@@ -1988,7 +1984,7 @@
 
 			<!-- ═══════════════ SLIDE 19: SECURITY HYBRIDS ═══════════════ -->
 			<section>
-				<h3 style="color:#0077b6; text-transform:none; margin-bottom:12px; font-size:1.15em;">
+				<h3 style="color:#0077b6; text-transform:none; margin-bottom:12px; font-size: 1.45em;">
 					Security Hybrids
 				</h3>
 
@@ -2163,12 +2159,12 @@
 
 			<!-- ═══════════════ SLIDE 20: PROOF HYBRID 2 TO 3 (Part 1) ═══════════════ -->
 			<section>
-				<h3 style="color:#0077b6; text-transform:none; margin-bottom:12px; font-size:1.15em;">
+				<h3 style="color:#0077b6; text-transform:none; margin-bottom:12px; font-size: 1.45em;">
 					Proof: Hybrid 2 $\approx$ Hybrid 3
 				</h3>
 
 				<div
-					style="font-size:0.55em; max-width:1150px; margin:0 auto; display:flex; flex-direction:column; gap:12px;">
+					style="font-size: 0.75em; max-width: 1250px; margin:0 auto; display:flex; flex-direction:column; gap:12px;">
 					<!-- Main Equation -->
 					<div
 						style="background:#e6f7ff; border-left:5px solid #1890ff; padding:15px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.05);">
@@ -2240,11 +2236,11 @@
 
 			<!-- ═══════════════ SLIDE 21: PROOF HYBRID 2 TO 3 (Part 2) ═══════════════ -->
 			<section>
-				<h3 style="color:#0077b6; text-transform:none; margin-bottom:12px; font-size:1.15em;">
+				<h3 style="color:#0077b6; text-transform:none; margin-bottom:12px; font-size: 1.45em;">
 					Density Matrices for Hybrids
 				</h3>
 
-				<div style="font-size:0.50em; max-width:1150px; margin:0 auto;">
+				<div style="font-size: 0.70em; max-width: 1250px; margin:0 auto;">
 					<p style="color:#555; margin-top:0; margin-bottom:15px; text-align:left; font-size:1.05em;">
 						By tracing out the oracle registers, we define the density matrices corresponding to our
 						intermediate states:
@@ -2307,7 +2303,7 @@
 									<div
 										style="position:absolute; left:-18px; top:50%; transform:translateY(-50%); font-size:1.8em; color:#ff4d4f; font-weight:bold;">
 										&larr;</div>
-									<div style="font-size:1.15em; color:#cf1322; text-align:center;">
+									<div style="font-size: 1.45em; color:#cf1322; text-align:center;">
 										$$ \left\|\rho_1^{(\mathfrak{D})} - \rho_2^{(\mathfrak{D})} \right\|_1 \leq
 										\frac{t(t-1)}{N+1} $$
 									</div>
@@ -2338,7 +2334,7 @@
 									<div
 										style="position:absolute; left:-18px; top:50%; transform:translateY(-50%); font-size:1.8em; color:#52c41a; font-weight:bold;">
 										&larr;</div>
-									<div style="font-size:1.15em; color:#389e0d; text-align:center;">
+									<div style="font-size: 1.45em; color:#389e0d; text-align:center;">
 										$$ \left\|\rho_3^{(\mathfrak{D})} - \rho_4^{(\mathfrak{D})} \right\|_1 \leq
 										\frac{t(t-1)}{N+1} $$
 									</div>
@@ -2366,7 +2362,7 @@
 				</h3>
 
 				<div
-					style="font-size:0.75em; max-width:1150px; margin:0 auto; display:flex; flex-direction:column; gap:15px;">
+					style="font-size:0.75em; max-width: 1250px; margin:0 auto; display:flex; flex-direction:column; gap:15px;">
 
 					<div
 						style="background:#f6ffed; border-left:4px solid #52c41a; padding:10px 14px; border-radius:8px; line-height:1.4;">
@@ -2400,7 +2396,7 @@
 						<div
 							style="background:#fffbe6; border:2px solid #faad14; border-radius:12px; padding:18px; box-shadow:0 6px 16px rgba(250,173,20,0.12); text-align:center;">
 							<div
-								style="font-size:1.15em; color:#856404; font-weight:800; margin-bottom:10px; text-transform:uppercase; letter-spacing:1px;">
+								style="font-size: 1.45em; color:#856404; font-weight:800; margin-bottom:10px; text-transform:uppercase; letter-spacing:1px;">
 								Final Indistinguishability Bound
 							</div>
 							<div
@@ -2426,7 +2422,7 @@
 					Future Work / Open Questions
 				</h3>
 				<div
-					style="font-size:1.05em; max-width:1150px; margin:0 auto; text-align:left; display:flex; flex-direction:column; gap:20px;">
+					style="font-size:1.05em; max-width: 1250px; margin:0 auto; text-align:left; display:flex; flex-direction:column; gap:20px;">
 					<div
 						style="background:#f0f7ff; border-left:5px solid #0077b6; padding:20px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.05);">
 						<ul style="list-style-type: none; padding-left: 0; margin: 0;">
