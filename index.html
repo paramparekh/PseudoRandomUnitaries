@@ -896,16 +896,16 @@
 						<!-- Header + PRU Box alignment container -->
 						<div
 							style="height: 165px; display: flex; flex-direction: column; justify-content: space-between; margin-bottom: 10px;">
-							<div style="font-weight:600; color:#135200; font-size:1.0em;">The Solution: Quantum PRUs
+							<div style="font-weight:600; color:#135200; font-size:1.0em;">The Solution: PRUs
 							</div>
 
 							<div style="height:115px; display:flex; flex-direction:column; justify-content:center;">
 								<!-- PRU Solution Box -->
 								<div
 									style="background:#f6ffed; border-left:5px solid #389e0d; padding:10px 15px; border-radius:8px; box-shadow:0 4px 10px rgba(56,158,13,0.05); box-sizing:border-box; margin:0;">
-									<p
+									<!-- <p
 										style="margin:0 0 4px 0; font-weight:600; color:#135200; font-size:1.05em; text-transform:uppercase; letter-spacing:0.5px;">
-										The PRU Solution</p>
+										The PRU Solution</p> -->
 									<ul
 										style="margin:0; padding-left:22px; list-style-type: square; color:#389e0d; font-size:0.95em; line-height:1.3;">
 										<li>Efficiently computable (poly(n) depth)</li>
@@ -980,7 +980,7 @@
 					style="margin-top:5px; border-top:1px solid #eee; padding-top:5px; width:98%; max-width:960px; margin-left:auto; margin-right:auto;">
 					<p
 						style="margin:0 0 2px 0; font-weight:normal; color:#1b4332; font-size:0.60em; text-align:center; opacity:0.8;">
-						Formal PRU Security: Let $\{\mathcal{U}_n\}_{n \in \mathbb{N}} = \{U_k\}_{k \in \mathcal{K}_n}$
+						Security Definition: Let $\{\mathcal{U}_n\}_{n \in \mathbb{N}} = \{U_k\}_{k \in \mathcal{K}_n}$
 						be a family of $n$-qubit unitaries.
 					</p>
 					<div
@@ -1068,7 +1068,7 @@
 			<!-- ═══════════════ SLIDE 9: EXAMPLE 1 ═══════════════ -->
 			<section>
 				<h3 style="color:#0077b6; text-transform:none; margin-bottom:15px; font-size:1.15em;">
-					Deriving the Oracle: Example 1
+					Example 1
 				</h3>
 				<p style="font-size:0.65em; font-weight:bold; color:#555; margin-top:0; margin-bottom:25px;">
 					Simulating the behavior of a single query $\lvert 0 \rangle$
@@ -1147,7 +1147,7 @@
 			<!-- ═══════════════ SLIDE 10: EXAMPLE 2 ═══════════════ -->
 			<section>
 				<h3 style="color:#0077b6; text-transform:none; margin-bottom:15px; font-size:1.15em;">
-					Deriving the Oracle: Example 2
+					Example 2
 				</h3>
 				<p style="font-size:0.65em; font-weight:bold; color:#555; margin-top:0; margin-bottom:25px;">
 					Simulating the behavior of two parallel queries $\lvert 0 \rangle_a$ and $\lvert 0 \rangle_b$
@@ -1227,7 +1227,7 @@
 			<!-- ═══════════════ SLIDE 11: EXAMPLE 3 ═══════════════ -->
 			<section>
 				<h3 style="color:#0077b6; text-transform:none; margin-bottom:15px; font-size:1.15em;">
-					Deriving the Oracle: Example 3
+					Example 3
 				</h3>
 				<p style="font-size:0.65em; font-weight:bold; color:#555; margin-top:0; margin-bottom:25px;">
 					Simulating mixed queries $\lvert 0 \rangle_a$, $\lvert 0 \rangle_b$, and $\lvert 1 \rangle_c$
@@ -1296,8 +1296,8 @@
 								Tracing out the hidden subsystem $s$:
 							</div>
 							<div style="color:#389e0d; font-style:italic; font-size:0.95em;">
-								The reduced state is swap-symmetric between $a$ &amp; $b$,<br>but not between $b$ &amp;
-								$c$.
+								The reduced state is swap-symmetric between $a$ &amp; $b$,<br>but neither is symmetric
+								with $c$.
 							</div>
 						</div>
 					</div>
@@ -1392,9 +1392,9 @@
 
 						<!-- Bottom: Math Formalization -->
 						<div style="width:100%; display:flex; flex-direction:column; align-items:center;">
-							<p style="margin:0 0 5px 0; color:#333; line-height:1.4; font-size:0.9em;">
+							<!-- <p style="margin:0 0 5px 0; color:#333; line-height:1.4; font-size:0.9em;">
 								For any query input $x \in [N]$ and database state $R \in \mathcal{R}^{\mathrm{inj}}$
-								(with $|R| N$), $V$ acts as: </p>
+								(with $|R| N$), $V$ acts as: </p> -->
 
 							<!-- Core Equation Box -->
 							<div
@@ -1594,7 +1594,7 @@
 							style="background:white; border-left:4px solid #27ae60; border-radius:6px; padding:8px 12px;">
 							<div style="font-weight:700; color:#27ae60; margin-bottom:2px;">Random Clifford $C$</div>
 							<div style="color:#333; line-height:1.5;">
-								$C$ is a uniformly random $n$-qubit Clifford unitary
+								$C$ is a random $n$-qubit Clifford unitary
 							</div>
 						</div>
 					</div>
@@ -1602,8 +1602,8 @@
 					<!-- Right: pfO Circuit diagram -->
 					<div
 						style="width:60%; background:#f9f9fa; border:1px solid #d9d9d9; border-radius:12px; padding:12px 16px; box-shadow:0 4px 16px rgba(0,0,0,0.05); display:flex; flex-direction:column; justify-content:center; align-items:center;">
-						<div style="font-weight:800; color:#0050b3; font-size:1.5em; margin-bottom:8px;">Oracle pfO
-						</div>
+						<!-- <div style="font-weight:800; color:#0050b3; font-size:1.5em; margin-bottom:8px;">Oracle pfO
+						</div> -->
 
 						<svg viewBox="0 0 1000 600"
 							style="width:100%; max-width:700px; height:auto; max-height:420px; overflow:visible; display:block;">
@@ -1682,84 +1682,87 @@
 			<!-- ═══════════════ SLIDE 14: INITIAL STATE ═══════════════ -->
 			<section>
 				<h3 style="color:#0077b6; text-transform:none; margin-bottom:18px; font-size:1.15em;">
-					Initial State & Oracle Rearrangement
+					Initializing PfO Oracle
 				</h3>
 
-				<div style="display:flex; gap:25px; align-items:flex-start;">
-					<!-- Left: Oracle Rearrangement -->
-					<div style="flex:1;">
+				<div style="display:flex; flex-direction:column; gap:25px; align-items:center; width:100%;">
+					<!-- Top: Oracle Rearrangement -->
+					<div style="width:100%;">
 						<p
 							style="color:#555; font-size:0.75em; font-weight:600; margin-bottom:10px; text-align:center;">
-							Oracle Output Expansion</p>
+							Oracle Output Expansion
+						</p>
 
-						<!-- Equation boxes showing rearrangement -->
-						<div
-							style="background:#f0f7ff; border-left:4px solid #0077b6; padding:12px 14px; border-radius:6px; margin-bottom:12px; font-size:0.68em;">
-							<p style="margin:0 0 8px 0; color:#0050b3; font-weight:600;">Standard Form:</p>
-							<p style="margin:0; color:#333; line-height:1.5;">$\texttt{pfO} \ket{x}_A \ket{\pi}_P
-								\ket{f}_F = (-1)^{f(x)} \ket{\pi(x)}_A \ket{\pi}_P \ket{f}_F$</p>
-						</div>
+						<div style="display:flex; align-items:center; justify-content:center; gap:15px;">
+							<!-- Standard form -->
+							<div
+								style="flex:1; background:#f0f7ff; border-left:4px solid #0077b6; padding:12px 14px; border-radius:6px; font-size:0.68em;">
+								<p style="margin:0 0 8px 0; color:#0050b3; font-weight:600;">Standard Form:</p>
+								<p style="margin:0; color:#333; line-height:1.5;">$\texttt{pfO} \ket{x}_A \ket{\pi}_P
+									\ket{f}_F = (-1)^{f(x)} \ket{\pi(x)}_A \ket{\pi}_P \ket{f}_F$</p>
+							</div>
 
-						<!-- Arrow -->
-						<div style="text-align:center; font-size:1.2em; color:#0077b6; margin:8px 0; font-weight:700;">⬇
-						</div>
+							<!-- Arrow -->
+							<div style="font-size:1.2em; color:#0077b6; font-weight:700;">➡</div>
 
-						<!-- Rearranged form -->
-						<div
-							style="background:#fff3cd; border-left:4px solid #faad14; padding:12px 14px; border-radius:6px; font-size:0.68em;">
-							<p style="margin:0 0 6px 0; color:#856404; font-weight:600;">Rearranged Form:</p>
-							<p style="margin:0; color:#333; line-height:1.6; font-size:0.96em;">$\displaystyle \sum_{y
-								\in \{0,1\}^n} \ket{y}_A \otimes \left( \delta_{\pi(x)=y} \cdot (-1)^{f(x)} \right)
-								\ket{\pi}_P \ket{f}_F$</p>
-							<p style="margin:5px 0 0 0; color:#666; font-size:0.85em; font-style:italic;">Sum over all
-								possible output states</p>
+							<!-- Rearranged form -->
+							<div
+								style="flex:1; background:#fff3cd; border-left:4px solid #faad14; padding:12px 14px; border-radius:6px; font-size:0.68em;">
+								<p style="margin:0 0 6px 0; color:#856404; font-weight:600;">Rearranged Form:</p>
+								<p style="margin:0; color:#333; line-height:1.6; font-size:0.96em;">$\displaystyle
+									\sum_{y \in \{0,1\}^n} \ket{y}_A \otimes \left( \delta_{\pi(x)=y} \cdot (-1)^{f(x)}
+									\right) \ket{\pi}_P \ket{f}_F$</p>
+								<p style="margin:5px 0 0 0; color:#666; font-size:0.85em; font-style:italic;">Sum over
+									all possible output states</p>
+							</div>
 						</div>
 					</div>
 
-					<!-- Right: Initial State Setup -->
-					<div style="flex:1;">
+					<!-- Bottom: Initial State Setup -->
+					<div style="width:100%;">
 						<p
 							style="color:#555; font-size:0.75em; font-weight:600; margin-bottom:10px; text-align:center;">
-							Initial Quantum State $|\Psi_0\rangle$</p>
+							Initial Quantum State $|\Psi_0\rangle$
+						</p>
 
-						<!-- Layer 1: Adversary -->
-						<div
-							style="background:#e3f2fd; border-left:4px solid #0077b6; padding:12px 14px; border-radius:6px; margin-bottom:12px;">
-							<p style="margin:0 0 6px 0; font-size:0.75em; font-weight:700; color:#0050b3;">Adversary
-								Register: $A$</p>
-							<p style="margin:0; font-size:0.75em; color:#0050b3;">$|0^n\rangle_A$</p>
-							<p style="margin:3px 0 0 0; font-size:0.65em; color:#0077b6; font-style:italic;">(known
-								initial state)</p>
-						</div>
+						<div style="display:flex; align-items:center; justify-content:center; gap:15px;">
+							<!-- Layer 1: Adversary -->
+							<div
+								style="flex:1; background:#e3f2fd; border-left:4px solid #0077b6; padding:12px 14px; border-radius:6px;">
+								<p style="margin:0 0 6px 0; font-size:0.75em; font-weight:700; color:#0050b3;">Adversary
+									Register: $A$</p>
+								<p style="margin:0; font-size:0.75em; color:#0050b3;">$|0^n\rangle_A$</p>
+								<p style="margin:3px 0 0 0; font-size:0.65em; color:#0077b6; font-style:italic;">(known
+									initial state)</p>
+							</div>
 
-						<!-- Tensor connector -->
-						<div style="text-align:center; font-size:1.2em; color:#666; margin:6px 0; font-weight:700;">⊗
-						</div>
+							<!-- Tensor connector -->
+							<div style="font-size:1.2em; color:#666; font-weight:700;">⊗</div>
 
-						<!-- Layer 2: Permutations -->
-						<div
-							style="background:#f3e5f5; border-left:4px solid #8b44ac; padding:12px 14px; border-radius:6px; margin-bottom:12px;">
-							<p style="margin:0 0 6px 0; font-size:0.75em; font-weight:700; color:#6a1b9a;">Permutation
-								Register: $P$</p>
-							<p style="margin:0; font-size:0.75em; color:#6a1b9a; line-height:1.4;">
-								$\frac{1}{\sqrt{2^n!}} \sum_{\pi \in S_{2^n}} |\pi\rangle_P$</p>
-							<p style="margin:3px 0 0 0; font-size:0.65em; color:#8b44ac; font-style:italic;">All $2^n!$
-								permutations, uniform</p>
-						</div>
+							<!-- Layer 2: Permutations -->
+							<div
+								style="flex:1.5; background:#f3e5f5; border-left:4px solid #8b44ac; padding:12px 14px; border-radius:6px;">
+								<p style="margin:0 0 6px 0; font-size:0.75em; font-weight:700; color:#6a1b9a;">
+									Permutation Register: $P$</p>
+								<p style="margin:0; font-size:0.75em; color:#6a1b9a; line-height:1.4;">
+									$\frac{1}{\sqrt{N!}} \sum_{\pi \in S_{2^n}} |\pi\rangle_P$</p>
+								<p style="margin:3px 0 0 0; font-size:0.65em; color:#8b44ac; font-style:italic;">All
+									$N!$ permutations</p>
+							</div>
 
-						<!-- Tensor connector -->
-						<div style="text-align:center; font-size:1.2em; color:#666; margin:6px 0; font-weight:700;">⊗
-						</div>
+							<!-- Tensor connector -->
+							<div style="font-size:1.2em; color:#666; font-weight:700;">⊗</div>
 
-						<!-- Layer 3: Functions -->
-						<div
-							style="background:#ffe0b2; border-left:4px solid #d48806; padding:12px 14px; border-radius:6px;">
-							<p style="margin:0 0 6px 0; font-size:0.75em; font-weight:700; color:#e65100;">Function
-								Register: $F$</p>
-							<p style="margin:0; font-size:0.75em; color:#e65100; line-height:1.4;">
-								$\frac{1}{\sqrt{2^{2^n}}} \sum_{f \in \{0,1\}^{2^n}} |f\rangle_F$</p>
-							<p style="margin:3px 0 0 0; font-size:0.65em; color:#d48806; font-style:italic;">All
-								$2^{2^n}$ functions, uniform</p>
+							<!-- Layer 3: Functions -->
+							<div
+								style="flex:1.5; background:#ffe0b2; border-left:4px solid #d48806; padding:12px 14px; border-radius:6px;">
+								<p style="margin:0 0 6px 0; font-size:0.75em; font-weight:700; color:#e65100;">Function
+									Register: $F$</p>
+								<p style="margin:0; font-size:0.75em; color:#e65100; line-height:1.4;">
+									$\frac{1}{\sqrt{2^{N}}} \sum_{f \in \{0,1\}^{N}} |f\rangle_F$</p>
+								<p style="margin:3px 0 0 0; font-size:0.65em; color:#d48806; font-style:italic;">All
+									$2^{N}$ functions</p>
+							</div>
 						</div>
 
 						<!-- Key insight -->
@@ -1785,36 +1788,6 @@
 					<p style="margin:0; color:#333;">$A_1 |0^n\rangle_A = \sum_{x_1} \alpha_{x_1} |x_1\rangle_A$</p>
 				</div>
 
-				<!-- Middle: Two-column layout -->
-				<div style="display:flex; gap:18px; margin-bottom:14px;">
-					<!-- Left column -->
-					<div style="flex:1;">
-						<p style="color:#555; font-size:0.70em; font-weight:600; margin-bottom:8px;">Before Oracle</p>
-						<div
-							style="background:#f5f5f5; border:2px solid #ddd; border-radius:6px; padding:10px; font-size:0.68em; text-align:center;">
-							<p style="margin:0 0 3px 0; color:#333; font-weight:600;">All $(\pi, f)$ pairs</p>
-							<p style="margin:0; color:#666;">$2^n! \times 2^{2^n}$ terms</p>
-							<p style="margin:3px 0 0 0; color:#0077b6; font-weight:500;">Uniform superposition</p>
-						</div>
-					</div>
-
-					<!-- Arrow -->
-					<div style="flex:0.3; display:flex; align-items:center; justify-content:center;">
-						<div style="font-size:1.8em; color:#d48806; font-weight:700;">→</div>
-					</div>
-
-					<!-- Right column -->
-					<div style="flex:1;">
-						<p style="color:#555; font-size:0.70em; font-weight:600; margin-bottom:8px;">After Oracle</p>
-						<div
-							style="background:#fff3cd; border:2px solid #faad14; border-radius:6px; padding:10px; font-size:0.68em; text-align:center;">
-							<p style="margin:0 0 3px 0; color:#856404; font-weight:600;">Only consistent pairs</p>
-							<p style="margin:0; color:#856404;">$\pi(x_1) = y_1$</p>
-							<p style="margin:3px 0 0 0; color:#d48806; font-weight:500;">Weighted by $(-1)^{f(x_1)}$</p>
-						</div>
-					</div>
-				</div>
-
 				<!-- Bottom: Oracle Mapping -->
 				<div
 					style="background:#ffe0b2; border-left:4px solid #d48806; padding:12px 14px; border-radius:6px; font-size:0.70em;">
@@ -1823,11 +1796,36 @@
 						|y_1\rangle \left(\delta_{\pi(x_1)=y_1} \cdot (-1)^{f(x_1)}\right) |\pi,f\rangle$</p>
 				</div>
 
+				<!-- Global State Result -->
+				<div
+					style="background:#f0f7ff; border:2px solid #0077b6; border-radius:10px; padding:16px; margin-top:14px; font-size:0.62em; box-shadow: 0 4px 12px rgba(0,119,182,0.1);">
+					<p style="margin:0 0 10px 0; color:#0050b3; font-weight:700; text-align:center; font-size:1.1em;">
+						Applying this across the entire superposition, the global state becomes:
+					</p>
+					<div
+						style="background:white; padding:12px; border-radius:8px; border:1px dashed #0077b6; text-align:center;">
+						$$ |\Psi_1\rangle
+						\;\propto\;
+						\sum_{x_1,\, y_1}
+						\Bigl(|y_1\rangle\langle x_1| \cdot A_1|0^n\rangle\Bigr)_A
+						\;\otimes\;
+						\underbrace{
+						\frac{1}{\sqrt{N!}}
+						\frac{1}{\sqrt{2^N}}
+						\sum_{\pi}
+						\sum_{f}
+						\delta_{\pi(x_1)=y_1}
+						\cdot (-1)^{f(x_1)}
+						|\pi\rangle_P |f\rangle_F
+						}_{\text{sum restricted to } \pi,f \text{ consistent with } \pi(x_1)=y_1} $$
+					</div>
+				</div>
+
 				<!-- Key insight at bottom -->
 				<div
-					style="margin-top:14px; padding:10px 12px; background:#f0f7ff; border:2px solid #0077b6; border-radius:6px; font-size:0.68em; text-align:center; color:#0050b3; font-weight:600;">
-					The oracle constrains the superposition: only $(\pi,f)$ pairs consistent with the query-response
-					collapse
+					style="margin-top:14px; padding:10px 12px; background:#e8f4f8; border:1px solid #0077b6; border-radius:4px; font-size:0.68em; text-align:center; color:#0050b3; font-weight:600;">
+					✓ The oracle constrains the superposition: only $(\pi,f)$ pairs consistent with the query-response
+					collapse are kept.
 				</div>
 			</section>
 
@@ -1849,7 +1847,7 @@
 				<!-- Middle: Oracle firing -->
 				<div
 					style="background:#ffe0b2; border-left:4px solid #d48806; padding:12px 14px; border-radius:6px; margin-bottom:14px; font-size:0.70em;">
-					<p style="margin:0 0 6px 0; color:#e65100; font-weight:600;">Oracle Mapping (Basis Step):</p>
+					<p style="margin:0 0 6px 0; color:#e65100; font-weight:600;">Oracle Action on Each Basis State:</p>
 					<p style="margin:0; color:#333; line-height:1.4;">$|x_2\rangle \otimes |\pi,f\rangle \mapsto
 						\sum_{y_2}|y_2\rangle \otimes \Bigl(\delta_{\pi(x_2)=y_2}\cdot(-1)^{f(x_2)}\Bigr)|\pi,f\rangle$
 					</p>
@@ -1871,33 +1869,7 @@
 					</div>
 				</div>
 
-				<!-- Observations -->
-				<div style="display:flex; gap:15px; font-size:0.60em;">
-					<div
-						style="flex:1; background:#f6ffed; border:1px solid #b7eb8f; border-radius:8px; padding:12px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
-						<div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
-							<div
-								style="width:20px; height:20px; background:#52c41a; color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:bold; font-size:0.8em;">
-								1</div>
-							<p style="margin:0; color:#237804; font-weight:700;">Delta Constraints</p>
-						</div>
-						<p style="margin:0; color:#555; line-height:1.5;">The purifying register now carries
-							<strong>two</strong> delta constraints, summing only over $(\pi,f)$ consistent with
-							<em>both</em> revealed mappings.
-						</p>
-					</div>
-					<div
-						style="flex:1; background:#f6ffed; border:1px solid #b7eb8f; border-radius:8px; padding:12px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
-						<div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
-							<div
-								style="width:20px; height:20px; background:#52c41a; color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:bold; font-size:0.8em;">
-								2</div>
-							<p style="margin:0; color:#237804; font-weight:700;">Phase Accumulation</p>
-						</div>
-						<p style="margin:0; color:#555; line-height:1.5;">The phase exponent is additive:
-							$(-1)^{f(x_1)+f(x_2)}$, accumulating one factor of $f$ per query.</p>
-					</div>
-				</div>
+
 			</section>
 
 			<!-- ═══════════════ SLIDE 17: AFTER T QUERIES ═══════════════ -->
@@ -1924,21 +1896,14 @@
 					</div>
 
 					<!-- Feynman Paths -->
-					<div style="background:#fffbe6; border:1px solid #faad14; padding:8px 12px; border-radius:8px;">
-						<p style="margin:0 0 4px 0; color:#856404; font-weight:700; font-size:1.1em;">Analyzing fixed
-							path $R = \{(x_1,y_1), \dots, (x_t,y_t)\}$:</p>
-						<p style="margin:0 0 6px 0; color:#333; line-height:1.4;">The purifying factor $\Phi_R$ depends
-							only on the set of revealed pairs $R$, independent of their order. We denote this as
-							$|\mathsf{pf}_R\rangle$:</p>
-						<!-- Boxed Definition -->
-						<div
-							style="background:#fffde6; border:2px solid #faad14; border-radius:10px; padding:10px; box-shadow:0 4px 12px rgba(250,173,20,0.06); text-align:center;">
-							<div
-								style="background:white; padding:8px; border-radius:6px; font-size:1.15em; display:inline-block; border:1px solid #ffe58f;">
-								$$ |\mathsf{pf}_R\rangle_{PF} \propto \sum_{\pi \in S_{2^n}} \prod_{(x,y)\in
-								R}\delta_{\pi(x)=y} \;|\pi\rangle_P \otimes \sum_{f \in \{0,1\}^{2^n}}
-								(-1)^{\sum_{(x,y)\in R} f(x)} |f\rangle_F $$
-							</div>
+					<div
+						style="background:#fffbe6; border:1px solid #faad14; padding:12px; border-radius:8px; text-align:center;">
+						<p style="margin:0 0 4px 0; color:#856404; font-weight:700; font-size:1.1em;">For relation $R =
+							\{(x_1,y_1), \dots, (x_t,y_t)\}$:</p>
+						<div style="font-size:1.15em;">
+							$$ |\mathsf{pf}_R\rangle_{PF} \propto \sum_{\pi \in S_{2^n}} \prod_{(x,y)\in
+							R}\delta_{\pi(x)=y} \;|\pi\rangle_P \otimes \sum_{f \in \{0,1\}^{2^n}} (-1)^{\sum_{(x,y)\in
+							R} f(x)} |f\rangle_F $$
 						</div>
 					</div>
 
@@ -1968,13 +1933,10 @@
 					<!-- Key Observation -->
 					<div
 						style="background:#e6f7ff; border-left:4px solid #1890ff; padding:10px 14px; border-radius:8px; line-height:1.4;">
-						<p style="margin:0; color:#0050b3;"><strong>Key Observation:</strong> If all inputs $x_1, \dots,
-							x_t$
-							are distinct, the state $|\mathsf{pf}_{\{(x_1,y_1), \dots, (x_t,y_t)\}}\rangle$ is
-							orthogonal
-							to states with different revealed pairs. It acts as a <strong>purified version</strong> of
-							the
-							recorded path $|R\rangle$.</p>
+						<p style="margin:0; color:#0050b3;"><strong>Key Observation:</strong> if all the $x_1,
+							\cdots,x_t$ are
+							distinct then $|\mathsf{pf}_{\{(x_1,y_1), \cdots, (x_t,y_t) \}}\rangle$ states are
+							orthogonal and is isometric to $|\{(x_1,y_1), \cdots, (x_t,y_t)\}\rangle$.</p>
 					</div>
 
 					<div style="display:flex; gap:15px;">
@@ -2027,154 +1989,175 @@
 			<!-- ═══════════════ SLIDE 19: SECURITY HYBRIDS ═══════════════ -->
 			<section>
 				<h3 style="color:#0077b6; text-transform:none; margin-bottom:12px; font-size:1.15em;">
-					Security Hybrids (The Full Chain H0 → H4)
+					Security Hybrids
 				</h3>
 
+				<!-- Main Container with internal scale to fit screen space -->
 				<div
-					style="display:flex; justify-content:center; align-items:stretch; gap:8px; width:100%; max-width:1320px; margin:0 auto;">
+					style="position:relative; width:114%; max-width:none; margin-left:-7%; transform: scale(1.03); transform-origin: top center; margin-top: 25px;">
 
-					<!-- Hybrid 0 Block -->
-					<div style="flex:1; display:flex; flex-direction:column;">
-						<div
-							style="background:white; border:1px solid #e8e8e8; border-radius:12px; padding:10px; box-shadow:0 4px 12px rgba(0,0,0,0.05); height:100%; display:flex; flex-direction:column; justify-content:space-between;">
+					<!-- Focus Boxes (Reveal.js Fragments) -->
+					<!-- H0 to H1 -->
+					<div class="fragment current-visible" data-fragment-index="1"
+						style="position:absolute; top:-20px; bottom:-20px; left:-1.5%; width:40%; border:4px solid #fbc02d; background:rgba(251, 192, 45, 0.15); border-radius:20px; z-index:10; pointer-events:none; box-shadow: 0 4px 16px rgba(251,192,45,0.4); transition:opacity 0.3s;">
+					</div>
+					<!-- H1 to H2 -->
+					<div class="fragment current-visible" data-fragment-index="2"
+						style="position:absolute; top:-20px; bottom:-20px; left:18.5%; width:42.5%; border:4px solid #fbc02d; background:rgba(251, 192, 45, 0.15); border-radius:20px; z-index:10; pointer-events:none; box-shadow: 0 4px 16px rgba(251,192,45,0.4); transition:opacity 0.3s;">
+					</div>
+					<!-- H2 to H3 -->
+					<div class="fragment current-visible" data-fragment-index="3"
+						style="position:absolute; top:-20px; bottom:-20px; left:40%; width:42.5%; border:4px solid #fbc02d; background:rgba(251, 192, 45, 0.15); border-radius:20px; z-index:10; pointer-events:none; box-shadow: 0 4px 16px rgba(251,192,45,0.4); transition:opacity 0.3s;">
+					</div>
+					<!-- H3 to H4 -->
+					<div class="fragment current-visible" data-fragment-index="4"
+						style="position:absolute; top:-20px; bottom:-20px; left:61.5%; width:40%; border:4px solid #fbc02d; background:rgba(251, 192, 45, 0.15); border-radius:20px; z-index:10; pointer-events:none; box-shadow: 0 4px 16px rgba(251,192,45,0.4); transition:opacity 0.3s;">
+					</div>
+
+					<div style="display:flex; justify-content:center; align-items:stretch; gap:12px; width:100%;">
+
+						<!-- Hybrid 0 Block -->
+						<div style="flex:1; display:flex; flex-direction:column;">
 							<div
-								style="height:140px; display:flex; align-items:center; justify-content:center; overflow:visible;">
-								<svg width="100%" height="110" viewBox="0 0 140 110" style="overflow:visible;">
-									<line x1="0" y1="55" x2="140" y2="55" stroke="#555" stroke-width="3"
-										stroke-linecap="round" />
-									<rect x="30" y="25" width="80" height="60" fill="#fce8e6" stroke="#c0392b"
-										stroke-width="2.5" rx="4" />
-									<text x="70" y="61" text-anchor="middle" font-family="serif" font-weight="bold"
-										font-size="28" fill="#c0392b">U</text>
-								</svg>
+								style="background:white; border:2px solid #e8e8e8; border-radius:16px; padding:20px 10px; box-shadow:0 6px 16px rgba(0,0,0,0.08); height:100%; display:flex; flex-direction:column; justify-content:space-between;">
+								<div
+									style="min-height:160px; display:flex; align-items:center; justify-content:center; overflow:visible;">
+									<svg width="100%" viewBox="0 0 140 110" style="overflow:visible;">
+										<line x1="0" y1="55" x2="140" y2="55" stroke="#555" stroke-width="4"
+											stroke-linecap="round" />
+										<rect x="30" y="25" width="80" height="60" fill="#fce8e6" stroke="#c0392b"
+											stroke-width="3" rx="4" />
+										<text x="70" y="61" text-anchor="middle" font-family="serif" font-weight="bold"
+											font-size="32" fill="#c0392b">U</text>
+									</svg>
+								</div>
+								<div style="margin-top:20px; line-height:1.3;">
+									<div style="font-size:0.8em; font-weight:bold; color:#c0392b;">Hybrid 0</div>
+									<div style="font-size:0.5em; color:#666;">(Ideal Haar)</div>
+								</div>
 							</div>
-							<div style="margin-top:10px;">
-								<div style="font-size:0.55em; font-weight:bold; color:#c0392b;">Hybrid 0</div>
-								<div style="font-size:0.38em; color:#666;">(Ideal Haar)</div>
+						</div>
+
+						<!-- Approx -->
+						<div style="display:flex; align-items:center; font-size:2.5em; color:#888;">$\approx$</div>
+
+						<!-- Hybrid 1 Block -->
+						<div style="flex:1.2; display:flex; flex-direction:column;">
+							<div
+								style="background:white; border:2px solid #e8e8e8; border-radius:16px; padding:20px 10px; box-shadow:0 6px 16px rgba(0,0,0,0.08); height:100%; display:flex; flex-direction:column; justify-content:space-between;">
+								<div
+									style="min-height:160px; display:flex; align-items:center; justify-content:center; overflow:visible;">
+									<svg width="100%" viewBox="0 0 190 110" style="overflow:visible;">
+										<line x1="0" y1="55" x2="190" y2="55" stroke="#555" stroke-width="4"
+											stroke-linecap="round" />
+										<rect x="25" y="25" width="80" height="60" fill="#fffbe6" stroke="#faad14"
+											stroke-width="3" rx="4" />
+										<text x="65" y="61" text-anchor="middle" font-family="serif" font-weight="bold"
+											font-size="18" fill="#d48806">P_π · F_f</text>
+										<rect x="120" y="25" width="45" height="60" fill="#fce8e6" stroke="#c0392b"
+											stroke-width="3" rx="4" />
+										<text x="142.5" y="61" text-anchor="middle" font-family="serif"
+											font-weight="bold" font-size="28" fill="#c0392b">U</text>
+									</svg>
+								</div>
+								<div style="margin-top:20px; line-height:1.3;">
+									<div style="font-size:0.8em; font-weight:bold; color:#faad14;">Hybrid 1</div>
+									<div style="font-size:0.5em; color:#666;">(Factored)</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Approx -->
+						<div style="display:flex; align-items:center; font-size:2.5em; color:#888;">$\approx$</div>
+
+						<!-- Hybrid 2 Block -->
+						<div style="flex:1.2; display:flex; flex-direction:column;">
+							<div
+								style="background:white; border:2px solid #e8e8e8; border-radius:16px; padding:20px 10px; box-shadow:0 6px 16px rgba(0,0,0,0.08); height:100%; display:flex; flex-direction:column; justify-content:space-between;">
+								<div
+									style="min-height:160px; display:flex; align-items:center; justify-content:center; overflow:visible;">
+									<svg width="100%" viewBox="0 0 190 140" style="overflow:visible;">
+										<line x1="0" y1="30" x2="190" y2="30" stroke="#8b44ac" stroke-width="4"
+											stroke-dasharray="6" stroke-linecap="round" />
+										<circle cx="65" cy="30" r="9" fill="#8b44ac" />
+										<line x1="0" y1="110" x2="190" y2="110" stroke="#555" stroke-width="4"
+											stroke-linecap="round" />
+										<line x1="65" y1="30" x2="65" y2="80" stroke="#8b44ac" stroke-width="4" />
+										<rect x="25" y="80" width="80" height="50" fill="#fffbe6" stroke="#faad14"
+											stroke-width="3" rx="4" />
+										<text x="65" y="110" text-anchor="middle" font-family="serif" font-weight="bold"
+											font-size="18" fill="#d48806">P_π · F_f</text>
+										<rect x="120" y="80" width="45" height="50" fill="#fce8e6" stroke="#c0392b"
+											stroke-width="3" rx="4" />
+										<text x="142.5" y="110" text-anchor="middle" font-family="serif"
+											font-weight="bold" font-size="28" fill="#c0392b">U</text>
+									</svg>
+								</div>
+								<div style="margin-top:20px; line-height:1.3;">
+									<div style="font-size:0.8em; font-weight:bold; color:#8b44ac;">Hybrid 2</div>
+									<div style="font-size:0.5em; color:#666;">(Controlled)</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Approx -->
+						<div style="display:flex; align-items:center; font-size:2.5em; color:#888;">$\approx$</div>
+
+						<!-- Hybrid 3 Block -->
+						<div style="flex:1.2; display:flex; flex-direction:column;">
+							<div
+								style="background:white; border:2px solid #e8e8e8; border-radius:16px; padding:20px 10px; box-shadow:0 6px 16px rgba(0,0,0,0.08); height:100%; display:flex; flex-direction:column; justify-content:space-between;">
+								<div
+									style="min-height:160px; display:flex; align-items:center; justify-content:center; overflow:visible;">
+									<svg width="100%" viewBox="0 0 190 140" style="overflow:visible;">
+										<line x1="0" y1="30" x2="190" y2="30" stroke="#8b44ac" stroke-width="4"
+											stroke-dasharray="6" stroke-linecap="round" />
+										<line x1="0" y1="110" x2="190" y2="110" stroke="#555" stroke-width="4"
+											stroke-linecap="round" />
+										<rect x="35" y="20" width="70" height="100" fill="#fffbe6" stroke="#faad14"
+											stroke-width="3" rx="4" />
+										<text x="70" y="75" text-anchor="middle" font-family="serif" font-weight="bold"
+											font-size="32" fill="#d48806">V</text>
+										<rect x="125" y="80" width="45" height="50" fill="#fce8e6" stroke="#c0392b"
+											stroke-width="3" rx="4" />
+										<text x="147.5" y="110" text-anchor="middle" font-family="serif"
+											font-weight="bold" font-size="28" fill="#c0392b">U</text>
+									</svg>
+								</div>
+								<div style="margin-top:20px; line-height:1.3;">
+									<div style="font-size:0.8em; font-weight:bold; color:#d48806;">Hybrid 3</div>
+									<div style="font-size:0.5em; color:#666;">(Oracle V)</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Approx -->
+						<div style="display:flex; align-items:center; font-size:2.5em; color:#888;">$\approx$</div>
+
+						<!-- Hybrid 4 Block -->
+						<div style="flex:1; display:flex; flex-direction:column;">
+							<div
+								style="background:white; border:2px solid #e8e8e8; border-radius:16px; padding:20px 10px; box-shadow:0 6px 16px rgba(0,0,0,0.08); height:100%; display:flex; flex-direction:column; justify-content:space-between;">
+								<div
+									style="min-height:160px; display:flex; align-items:center; justify-content:center; overflow:visible;">
+									<svg width="100%" viewBox="0 0 140 140" style="overflow:visible;">
+										<line x1="0" y1="30" x2="140" y2="30" stroke="#8b44ac" stroke-width="4"
+											stroke-dasharray="6" stroke-linecap="round" />
+										<line x1="0" y1="110" x2="140" y2="110" stroke="#555" stroke-width="4"
+											stroke-linecap="round" />
+										<rect x="30" y="20" width="80" height="100" fill="#fffbe6" stroke="#faad14"
+											stroke-width="3" rx="4" />
+										<text x="70" y="75" text-anchor="middle" font-family="serif" font-weight="bold"
+											font-size="32" fill="#d48806">V</text>
+									</svg>
+								</div>
+								<div style="margin-top:20px; line-height:1.3;">
+									<div style="font-size:0.8em; font-weight:bold; color:#faad14;">Hybrid 4</div>
+									<div style="font-size:0.5em; color:#666;">(Final Oracle)</div>
+								</div>
 							</div>
 						</div>
 					</div>
-
-					<!-- Approx -->
-					<div style="display:flex; align-items:center; font-size:1.2em; color:#888;">$\approx$</div>
-
-					<!-- Hybrid 1 Block -->
-					<div style="flex:1.2; display:flex; flex-direction:column;">
-						<div
-							style="background:white; border:1px solid #e8e8e8; border-radius:12px; padding:10px; box-shadow:0 4px 12px rgba(0,0,0,0.05); height:100%; display:flex; flex-direction:column; justify-content:space-between;">
-							<div
-								style="height:140px; display:flex; align-items:center; justify-content:center; overflow:visible;">
-								<svg width="100%" height="110" viewBox="0 0 190 110" style="overflow:visible;">
-									<line x1="0" y1="55" x2="190" y2="55" stroke="#555" stroke-width="3"
-										stroke-linecap="round" />
-									<rect x="25" y="25" width="80" height="60" fill="#fffbe6" stroke="#faad14"
-										stroke-width="2.5" rx="4" />
-									<text x="65" y="61" text-anchor="middle" font-family="serif" font-weight="bold"
-										font-size="16" fill="#d48806">P_π · F_f</text>
-									<rect x="120" y="25" width="45" height="60" fill="#fce8e6" stroke="#c0392b"
-										stroke-width="2.5" rx="4" />
-									<text x="142.5" y="61" text-anchor="middle" font-family="serif" font-weight="bold"
-										font-size="24" fill="#c0392b">U</text>
-								</svg>
-							</div>
-							<div style="margin-top:10px;">
-								<div style="font-size:0.55em; font-weight:bold; color:#faad14;">Hybrid 1</div>
-								<div style="font-size:0.38em; color:#666;">(Factored)</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Approx -->
-					<div style="display:flex; align-items:center; font-size:1.2em; color:#888;">$\approx$</div>
-
-					<!-- Hybrid 2 Block -->
-					<div style="flex:1.2; display:flex; flex-direction:column;">
-						<div
-							style="background:white; border:1px solid #e8e8e8; border-radius:12px; padding:10px; box-shadow:0 4px 12px rgba(0,0,0,0.05); height:100%; display:flex; flex-direction:column; justify-content:space-between;">
-							<div
-								style="height:140px; display:flex; align-items:center; justify-content:center; overflow:visible;">
-								<svg width="100%" height="140" viewBox="0 0 190 140" style="overflow:visible;">
-									<line x1="0" y1="30" x2="190" y2="30" stroke="#8b44ac" stroke-width="3"
-										stroke-dasharray="4" stroke-linecap="round" />
-									<circle cx="65" cy="30" r="8" fill="#8b44ac" />
-									<line x1="0" y1="110" x2="190" y2="110" stroke="#555" stroke-width="3"
-										stroke-linecap="round" />
-									<line x1="65" y1="30" x2="65" y2="80" stroke="#8b44ac" stroke-width="3" />
-									<rect x="25" y="80" width="80" height="50" fill="#fffbe6" stroke="#faad14"
-										stroke-width="2.5" rx="4" />
-									<text x="65" y="110" text-anchor="middle" font-family="serif" font-weight="bold"
-										font-size="16" fill="#d48806">P_π · F_f</text>
-									<rect x="120" y="80" width="45" height="50" fill="#fce8e6" stroke="#c0392b"
-										stroke-width="2.5" rx="4" />
-									<text x="142.5" y="110" text-anchor="middle" font-family="serif" font-weight="bold"
-										font-size="24" fill="#c0392b">U</text>
-								</svg>
-							</div>
-							<div style="margin-top:10px;">
-								<div style="font-size:0.55em; font-weight:bold; color:#8b44ac;">Hybrid 2</div>
-								<div style="font-size:0.38em; color:#666;">(Controlled)</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Approx -->
-					<div style="display:flex; align-items:center; font-size:1.2em; color:#888;">$\approx$</div>
-
-					<!-- Hybrid 3 Block -->
-					<div style="flex:1.2; display:flex; flex-direction:column;">
-						<div
-							style="background:white; border:1px solid #e8e8e8; border-radius:12px; padding:10px; box-shadow:0 4px 12px rgba(0,0,0,0.05); height:100%; display:flex; flex-direction:column; justify-content:space-between;">
-							<div
-								style="height:140px; display:flex; align-items:center; justify-content:center; overflow:visible;">
-								<svg width="100%" height="140" viewBox="0 0 190 140" style="overflow:visible;">
-									<line x1="0" y1="30" x2="190" y2="30" stroke="#8b44ac" stroke-width="3"
-										stroke-dasharray="4" stroke-linecap="round" />
-									<line x1="0" y1="110" x2="190" y2="110" stroke="#555" stroke-width="3"
-										stroke-linecap="round" />
-									<rect x="35" y="20" width="70" height="100" fill="#fffbe6" stroke="#faad14"
-										stroke-width="2.5" rx="4" />
-									<text x="70" y="75" text-anchor="middle" font-family="serif" font-weight="bold"
-										font-size="28" fill="#d48806">V</text>
-									<rect x="125" y="80" width="45" height="50" fill="#fce8e6" stroke="#c0392b"
-										stroke-width="2.5" rx="4" />
-									<text x="147.5" y="110" text-anchor="middle" font-family="serif" font-weight="bold"
-										font-size="24" fill="#c0392b">U</text>
-								</svg>
-							</div>
-							<div style="margin-top:10px;">
-								<div style="font-size:0.55em; font-weight:bold; color:#d48806;">Hybrid 3</div>
-								<div style="font-size:0.38em; color:#666;">(Oracle V)</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Approx -->
-					<div style="display:flex; align-items:center; font-size:1.2em; color:#888;">$\approx$</div>
-
-					<!-- Hybrid 4 Block -->
-					<div style="flex:1; display:flex; flex-direction:column;">
-						<div
-							style="background:white; border:1px solid #e8e8e8; border-radius:12px; padding:10px; box-shadow:0 4px 12px rgba(0,0,0,0.05); height:100%; display:flex; flex-direction:column; justify-content:space-between;">
-							<div
-								style="height:140px; display:flex; align-items:center; justify-content:center; overflow:visible;">
-								<svg width="100%" height="140" viewBox="0 0 140 140" style="overflow:visible;">
-									<line x1="0" y1="30" x2="140" y2="30" stroke="#8b44ac" stroke-width="3"
-										stroke-dasharray="4" stroke-linecap="round" />
-									<line x1="0" y1="110" x2="140" y2="110" stroke="#555" stroke-width="3"
-										stroke-linecap="round" />
-									<rect x="30" y="20" width="80" height="100" fill="#fffbe6" stroke="#faad14"
-										stroke-width="2.5" rx="4" />
-									<text x="70" y="75" text-anchor="middle" font-family="serif" font-weight="bold"
-										font-size="28" fill="#d48806">V</text>
-								</svg>
-							</div>
-							<div style="margin-top:10px;">
-								<div style="font-size:0.55em; font-weight:bold; color:#faad14;">Hybrid 4</div>
-								<div style="font-size:0.38em; color:#666;">(Final Oracle)</div>
-							</div>
-						</div>
-					</div>
-
 				</div>
 			</section>
 
