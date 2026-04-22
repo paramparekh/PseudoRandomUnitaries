@@ -2166,14 +2166,19 @@
 				<h3 style="color:#0077b6; text-transform:none; margin-bottom:12px; font-size:1.15em;">
 					Proof: Hybrid 2 $\approx$ Hybrid 3
 				</h3>
-				
-				<div style="font-size:0.55em; max-width:1150px; margin:0 auto; display:flex; flex-direction:column; gap:12px;">
+
+				<div
+					style="font-size:0.55em; max-width:1150px; margin:0 auto; display:flex; flex-direction:column; gap:12px;">
 					<!-- Main Equation -->
-					<div style="background:#e6f7ff; border-left:5px solid #1890ff; padding:15px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.05);">
-						<div style="color:#0050b3; font-weight:700; font-size:1.1em; margin-bottom:5px;">Core Equivalence</div>
-						<div style="background:white; padding:10px; border-radius:6px; border:1px dashed #91d5ff; text-align:center;">
-							$$ 
-							\mathrm{Comp} \cdot \widetilde{\Pi}^{\mathrm{dist}}_{\mathrm{PF}} \cdot \bigl|\mathcal{A}^{\mathrm{pfO} \cdot U}_{t}\bigr\rangle_{\!\mathrm{ABPF}}
+					<div
+						style="background:#e6f7ff; border-left:5px solid #1890ff; padding:15px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.05);">
+						<div style="color:#0050b3; font-weight:700; font-size:1.1em; margin-bottom:5px;">Core
+							Equivalence</div>
+						<div
+							style="background:white; padding:10px; border-radius:6px; border:1px dashed #91d5ff; text-align:center;">
+							$$
+							\mathrm{Comp} \cdot \widetilde{\Pi}^{\mathrm{dist}}_{\mathrm{PF}} \cdot
+							\bigl|\mathcal{A}^{\mathrm{pfO} \cdot U}_{t}\bigr\rangle_{\!\mathrm{ABPF}}
 							=
 							\Pi^{\mathrm{dist}}_{R^{(t)}_{X}} \cdot \bigl|\mathcal{A}^{V \cdot U}_{t}\bigr\rangle
 							$$
@@ -2183,35 +2188,49 @@
 					<!-- Definitions -->
 					<div style="display:flex; gap:15px; margin-top:5px;">
 						<!-- Comp Box -->
-						<div style="flex:1; background:#fffbe6; border:1px solid #faad14; border-radius:10px; padding:15px; box-shadow:0 4px 10px rgba(0,0,0,0.03);">
-							<div style="color:#d48806; font-weight:700; margin-bottom:8px; font-size:1.05em; border-bottom:1px solid #ffe58f; padding-bottom:5px;">
+						<div
+							style="flex:1; background:#fffbe6; border:1px solid #faad14; border-radius:10px; padding:15px; box-shadow:0 4px 10px rgba(0,0,0,0.03);">
+							<div
+								style="color:#d48806; font-weight:700; margin-bottom:8px; font-size:1.05em; border-bottom:1px solid #ffe58f; padding-bottom:5px;">
 								Compression Operator
 							</div>
-							<div style="background:white; padding:8px; border-radius:6px; text-align:center; margin-bottom:10px;">
-								$$ \mathrm{Comp} := \sum_{R \,\in\, \mathcal{R}_{\mathrm{bij}}} |R\rangle\langle \mathrm{pf}_R| $$
+							<div
+								style="background:white; padding:8px; border-radius:6px; text-align:center; margin-bottom:10px;">
+								$$ \mathrm{Comp} := \sum_{R \,\in\, \mathcal{R}_{\mathrm{bij}}} |R\rangle\langle
+								\mathrm{pf}_R| $$
 							</div>
 							<p style="color:#555; line-height:1.4; margin:0; font-size:0.9em; text-align:left;">
-								<strong>Intuitively:</strong> "Compresses" the state $|\mathrm{pf}_R\rangle$ (requires exponential qubits) to $|R\rangle$ (size of the relation).
+								<strong>Intuitively:</strong> "Compresses" the state $|\mathrm{pf}_R\rangle$ (requires
+								exponential qubits) to $|R\rangle$ (size of the relation).
 							</p>
 						</div>
 
 						<!-- Projectors Box -->
 						<div style="flex:1; display:flex; flex-direction:column; gap:10px;">
-							<div style="background:#f6ffed; border:1px solid #b7eb8f; border-radius:10px; padding:12px; box-shadow:0 4px 10px rgba(0,0,0,0.03);">
-								<div style="color:#389e0d; font-weight:700; margin-bottom:5px; font-size:1.05em; text-align:left;">
+							<div
+								style="background:#f6ffed; border:1px solid #b7eb8f; border-radius:10px; padding:12px; box-shadow:0 4px 10px rgba(0,0,0,0.03);">
+								<div
+									style="color:#389e0d; font-weight:700; margin-bottom:5px; font-size:1.05em; text-align:left;">
 									Path-Recording Projector
 								</div>
 								<p style="color:#555; line-height:1.4; margin:0; font-size:0.9em; text-align:left;">
-									<span style="color:#237804; font-weight:bold;">$\Pi^{\mathrm{dist}}_{R^{(t)}_X}$</span> projects onto the subspace in which all queried inputs are distinct.
+									<span
+										style="color:#237804; font-weight:bold;">$\Pi^{\mathrm{dist}}_{R^{(t)}_X}$</span>
+									projects onto the subspace in which all queried inputs are distinct.
 								</p>
 							</div>
 
-							<div style="background:#fff0f6; border:1px solid #ffadd2; border-radius:10px; padding:12px; box-shadow:0 4px 10px rgba(0,0,0,0.03);">
-								<div style="color:#c41d7f; font-weight:700; margin-bottom:5px; font-size:1.05em; text-align:left;">
+							<div
+								style="background:#fff0f6; border:1px solid #ffadd2; border-radius:10px; padding:12px; box-shadow:0 4px 10px rgba(0,0,0,0.03);">
+								<div
+									style="color:#c41d7f; font-weight:700; margin-bottom:5px; font-size:1.05em; text-align:left;">
 									Purified-Oracle Projector
 								</div>
 								<p style="color:#555; line-height:1.4; margin:0; font-size:0.9em; text-align:left;">
-									<span style="color:#9e1068; font-weight:bold;">$\widetilde{\Pi}^{\mathrm{dist}}_{\mathrm{PF}}$</span> projects onto the span of purified-oracle states whose recorded queries are all distinct.
+									<span
+										style="color:#9e1068; font-weight:bold;">$\widetilde{\Pi}^{\mathrm{dist}}_{\mathrm{PF}}$</span>
+									projects onto the span of purified-oracle states whose recorded queries are all
+									distinct.
 								</p>
 							</div>
 						</div>
@@ -2224,48 +2243,116 @@
 				<h3 style="color:#0077b6; text-transform:none; margin-bottom:12px; font-size:1.15em;">
 					Density Matrices for Hybrids
 				</h3>
-				
+
 				<div style="font-size:0.50em; max-width:1150px; margin:0 auto;">
 					<p style="color:#555; margin-top:0; margin-bottom:15px; text-align:left; font-size:1.05em;">
-						By tracing out the oracle registers, we define the density matrices corresponding to our intermediate states:
+						By tracing out the oracle registers, we define the density matrices corresponding to our
+						intermediate states:
 					</p>
 
-					<div style="background:white; border:1px solid #e8e8e8; border-radius:12px; padding:20px; box-shadow:0 6px 16px rgba(0,0,0,0.05); position:relative;">
-						
-						<!-- Highlight rho 1 and 2 -->
-						<div style="position:relative; padding-bottom:5px;">
-							<div class="fragment" data-fragment-index="1" style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(255, 173, 173, 0.15); border:2px dashed #ff4d4f; border-radius:10px; z-index:0; pointer-events:none;">
-								<div style="position:absolute; top:-12px; right:15px; background:#ff4d4f; color:white; padding:2px 10px; border-radius:4px; font-weight:bold; font-size:0.9em;">Quantum Birthday Bound</div>
-							</div>
-							<div style="position:relative; z-index:1; overflow-x:auto; font-size: 1.1em; padding: 10px;">
-								$$ 
-								\begin{aligned}
-								\rho_1^{(\mathfrak{D})} &:= \mathrm{Tr}_{\mathrm{PF}} \left( \mathop{\mathbb{E}}_{U \leftarrow \mathfrak{D}} |\mathcal{A}_t^{\mathrm{pfO} \cdot U}\rangle\langle\mathcal{A}_t^{\mathrm{pfO} \cdot U}|_{\mathrm{ABPF}} \right) \\[10pt]
-								\rho_2^{(\mathfrak{D})} &:= \mathrm{Tr}_{\mathrm{PF}} \left( \widetilde{\Pi}^{\mathrm{dist}}_{\mathrm{PF}} \cdot \mathop{\mathbb{E}}_{U \leftarrow \mathfrak{D}} |\mathcal{A}_t^{\mathrm{pfO} \cdot U}\rangle\langle\mathcal{A}_t^{\mathrm{pfO} \cdot U}|_{\mathrm{ABPF}} \cdot \widetilde{\Pi}^{\mathrm{dist}}_{\mathrm{PF}} \right)
-								\end{aligned}
-								$$
-							</div>
-						</div>
+					<div
+						style="background:white; border:1px solid #e8e8e8; border-radius:12px; padding:20px; box-shadow:0 6px 16px rgba(0,0,0,0.05);">
+						<div style="display:flex; gap:15px; position:relative; align-items:stretch;">
 
-						<!-- Highlight rho 3 and 4 -->
-						<div style="position:relative; margin-top:5px;">
-							<div class="fragment" data-fragment-index="2" style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(183, 235, 143, 0.2); border:2px dashed #52c41a; border-radius:10px; z-index:0; pointer-events:none;">
-								<div style="position:absolute; top:-12px; right:15px; background:#52c41a; color:white; padding:2px 10px; border-radius:4px; font-weight:bold; font-size:0.9em;">Quantum Birthday Bound</div>
+							<!-- Left Side: Density Matrices -->
+							<div style="flex:7; position:relative; padding:15px 10px;">
+								<!-- Fragment 1: rho 1 and 2 -->
+								<div class="fragment current-visible" data-fragment-index="1"
+									style="position:absolute; top:0%; bottom:48%; left:0; right:0; background:rgba(255, 173, 173, 0.15); border:2px dashed #ff4d4f; border-radius:10px; z-index:0; pointer-events:none;">
+								</div>
+
+								<!-- Fragment 2: rho 2 and 3 -->
+								<div class="fragment current-visible" data-fragment-index="2"
+									style="position:absolute; top:25%; bottom:23%; left:0; right:0; background:rgba(145, 213, 255, 0.2); border:2px dashed #1890ff; border-radius:10px; z-index:0; pointer-events:none;">
+								</div>
+
+								<!-- Fragment 3: rho 3 and 4 -->
+								<div class="fragment" data-fragment-index="3"
+									style="position:absolute; top:50%; bottom:0%; left:0; right:0; background:rgba(183, 235, 143, 0.2); border:2px dashed #52c41a; border-radius:10px; z-index:0; pointer-events:none;">
+								</div>
+
+								<div
+									style="position:relative; z-index:1; overflow-x:auto; font-size: 1.1em; display:flex; flex-direction:column; justify-content:center;">
+									$$
+									\begin{aligned}
+									\rho_1^{(\mathfrak{D})} &:= \mathrm{Tr}_{\mathrm{PF}} \left( \mathop{\mathbb{E}}_{U
+									\leftarrow \mathfrak{D}} |\mathcal{A}_t^{\mathrm{pfO} \cdot
+									U}\rangle\langle\mathcal{A}_t^{\mathrm{pfO} \cdot U}|_{\mathrm{ABPF}} \right)
+									\\[14pt]
+									\rho_2^{(\mathfrak{D})} &:= \mathrm{Tr}_{\mathrm{PF}} \left(
+									\widetilde{\Pi}^{\mathrm{dist}}_{\mathrm{PF}} \cdot \mathop{\mathbb{E}}_{U
+									\leftarrow \mathfrak{D}} |\mathcal{A}_t^{\mathrm{pfO} \cdot
+									U}\rangle\langle\mathcal{A}_t^{\mathrm{pfO} \cdot U}|_{\mathrm{ABPF}} \cdot
+									\widetilde{\Pi}^{\mathrm{dist}}_{\mathrm{PF}} \right) \\[14pt]
+									\rho_3^{(\mathfrak{D})} &:= \mathrm{Tr}_{R} \left( \Pi^{\mathrm{dist}}_{R^{(t)}_X}
+									\cdot \mathop{\mathbb{E}}_{U \leftarrow \mathfrak{D}} |\mathcal{A}_t^{V \cdot
+									U}\rangle\langle\mathcal{A}_t^{V \cdot U}|_{\mathrm{ABR}} \cdot
+									\Pi^{\mathrm{dist}}_{R^{(t)}_X} \right) \\[14pt]
+									\rho_4^{(\mathfrak{D})} &:= \mathrm{Tr}_{R} \left( \mathop{\mathbb{E}}_{U \leftarrow
+									\mathfrak{D}} |\mathcal{A}_t^{V \cdot U}\rangle\langle\mathcal{A}_t^{V \cdot
+									U}|_{\mathrm{ABR}} \right)
+									\end{aligned}
+									$$
+								</div>
 							</div>
-							<div style="position:relative; z-index:1; overflow-x:auto; font-size: 1.1em; padding: 10px;">
-								$$ 
-								\begin{aligned}
-								\rho_3^{(\mathfrak{D})} &:= \mathrm{Tr}_{R} \left( \Pi^{\mathrm{dist}}_{R^{(t)}_X} \cdot \mathop{\mathbb{E}}_{U \leftarrow \mathfrak{D}} |\mathcal{A}_t^{V \cdot U}\rangle\langle\mathcal{A}_t^{V \cdot U}|_{\mathrm{ABR}} \cdot \Pi^{\mathrm{dist}}_{R^{(t)}_X} \right)  \\[10pt]
-								\rho_4^{(\mathfrak{D})} &:= \mathrm{Tr}_{R} \left( \mathop{\mathbb{E}}_{U \leftarrow \mathfrak{D}} |\mathcal{A}_t^{V \cdot U}\rangle\langle\mathcal{A}_t^{V \cdot U}|_{\mathrm{ABR}} \right)
-								\end{aligned}
-								$$
+
+							<!-- Right Side: Annotations -->
+							<div style="flex:3; position:relative; padding:15px 0;">
+								<!-- Annotation 1 (rho 1 and 2) -->
+								<div class="fragment current-visible" data-fragment-index="1"
+									style="position:absolute; top:0%; bottom:48%; left:0; right:0; background:#fff1f0; border:2px solid #ffa39e; border-radius:10px; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:10px; box-shadow:0 2px 8px rgba(255,77,79,0.1);">
+									<div
+										style="position:absolute; top:-12px; right:15px; background:#ff4d4f; color:white; padding:2px 10px; border-radius:4px; font-weight:bold; font-size:0.8em;">
+										Quantum Birthday Bound</div>
+									<div
+										style="position:absolute; left:-18px; top:50%; transform:translateY(-50%); font-size:1.8em; color:#ff4d4f; font-weight:bold;">
+										&larr;</div>
+									<div style="font-size:1.15em; color:#cf1322; text-align:center;">
+										$$ \left\|\rho_1^{(\mathfrak{D})} - \rho_2^{(\mathfrak{D})} \right\|_1 \leq
+										\frac{t(t-1)}{N+1} $$
+									</div>
+								</div>
+
+								<!-- Annotation 2 (rho 2 and 3) -->
+								<div class="fragment current-visible" data-fragment-index="2"
+									style="position:absolute; top:25%; bottom:23%; left:0; right:0; background:#e6f7ff; border:2px solid #91d5ff; border-radius:10px; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:10px; box-shadow:0 2px 8px rgba(24,144,255,0.1);">
+									<div
+										style="position:absolute; top:-12px; right:15px; background:#1890ff; color:white; padding:2px 10px; border-radius:4px; font-weight:bold; font-size:0.8em;">
+										Isometry Equivalence</div>
+									<div
+										style="position:absolute; left:-18px; top:50%; transform:translateY(-50%); font-size:1.8em; color:#1890ff; font-weight:bold;">
+										&larr;</div>
+									<div style="font-size:1.1em; color:#0050b3; text-align:center;">
+										$$ \rho_2^{(\mathfrak{D})} = \rho_3^{(\mathfrak{D})} $$
+										<div style="font-size:0.8em; margin-top:5px; font-weight:bold;">(using
+											$\mathrm{Comp}$ isometry)</div>
+									</div>
+								</div>
+
+								<!-- Annotation 3 (rho 3 and 4) -->
+								<div class="fragment" data-fragment-index="3"
+									style="position:absolute; top:50%; bottom:0%; left:0; right:0; background:#f6ffed; border:2px solid #b7eb8f; border-radius:10px; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:10px; box-shadow:0 2px 8px rgba(82,196,26,0.1);">
+									<div
+										style="position:absolute; top:-12px; right:15px; background:#52c41a; color:white; padding:2px 10px; border-radius:4px; font-weight:bold; font-size:0.8em;">
+										Quantum Birthday Bound</div>
+									<div
+										style="position:absolute; left:-18px; top:50%; transform:translateY(-50%); font-size:1.8em; color:#52c41a; font-weight:bold;">
+										&larr;</div>
+									<div style="font-size:1.15em; color:#389e0d; text-align:center;">
+										$$ \left\|\rho_3^{(\mathfrak{D})} - \rho_4^{(\mathfrak{D})} \right\|_1 \leq
+										\frac{t(t-1)}{N+1} $$
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-					
-					<div style="background:#e6f7ff; border-left:4px solid #1890ff; padding:10px 15px; border-radius:6px; margin-top:15px; text-align:left;">
+
+					<div
+						style="background:#e6f7ff; border-left:4px solid #1890ff; padding:10px 15px; border-radius:6px; margin-top:15px; text-align:left;">
 						<p style="margin:0; color:#0050b3; font-size:1.05em;">
-							<strong class="fragment" data-fragment-index="3" style="color:#d48806;">Conclusion:</strong> Bound the trace distance to $\mathcal{O}(t^2/N)$ by the probability of a collision in the quantum queries.
+							<strong class="fragment" data-fragment-index="3" style="color:#d48806;">Conclusion:</strong>
+							Bound the trace distance to $\mathcal{O}(t^2/N)$ by the probability of a collision in the
+							quantum queries.
 						</p>
 					</div>
 				</div>
@@ -2274,12 +2361,12 @@
 
 			<!-- ═══════════════ SLIDE 19: FINAL PROOF COMPLETION ═══════════════ -->
 			<section>
-				<h3 style="color:#237804; text-transform:none; margin-bottom:15px; font-size:1.1em;">
+				<h3 style="color:#237804; text-transform:none; margin-bottom:20px; font-size:1.4em;">
 					Completion of the Proof
 				</h3>
 
 				<div
-					style="font-size:0.52em; max-width:1150px; margin:0 auto; display:flex; flex-direction:column; gap:12px;">
+					style="font-size:0.75em; max-width:1150px; margin:0 auto; display:flex; flex-direction:column; gap:15px;">
 
 					<div
 						style="background:#f6ffed; border-left:4px solid #52c41a; padding:10px 14px; border-radius:8px; line-height:1.4;">
@@ -2332,23 +2419,45 @@
 				</div>
 			</section>
 
-			<!-- ═══════════════ SLIDE 21: STRONG PRUs ═══════════════ -->
-			<section>
-				<h3 style="color:#0077b6; text-transform:none; margin-bottom:20px; font-size:1.15em;">
-					Strong PRUs
-				</h3>
-				<div style="font-size:0.6em; color:#666; text-align:center;">
-					<p><i>Content placeholder for Strong PRU definitions and properties...</i></p>
-				</div>
-			</section>
 
 			<!-- ═══════════════ SLIDE 22: FUTURE WORK ═══════════════ -->
 			<section>
-				<h3 style="color:#0077b6; text-transform:none; margin-bottom:20px; font-size:1.15em;">
+				<h3 style="color:#0077b6; text-transform:none; margin-bottom:25px; font-size:1.4em;">
 					Future Work / Open Questions
 				</h3>
-				<div style="font-size:0.6em; color:#666; text-align:center;">
-					<p><i>Future directions and remaining open problems in PRU research...</i></p>
+				<div
+					style="font-size:1.05em; max-width:1150px; margin:0 auto; text-align:left; display:flex; flex-direction:column; gap:20px;">
+					<div
+						style="background:#f0f7ff; border-left:5px solid #0077b6; padding:20px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.05);">
+						<ul style="list-style-type: none; padding-left: 0; margin: 0;">
+							<li style="margin-bottom: 15px; display: flex; align-items: flex-start; gap: 12px;">
+								<span style="color:#0077b6; font-size: 0.8em; margin-top: 4px;">■</span>
+								<span>Relationship to Pseudorandom Permutations (PRP)</span>
+							</li>
+							<li style="margin-bottom: 15px; display: flex; align-items: flex-start; gap: 12px;">
+								<span style="color:#0077b6; font-size: 0.8em; margin-top: 4px;">■</span>
+								<span>Applications to Unclonable Cryptography <span
+										style="color:#666; font-size:0.9em;">(March 26: arXiv:2603.11437)</span></span>
+							</li>
+							<li style="margin-bottom: 15px; display: flex; align-items: flex-start; gap: 12px;">
+								<span style="color:#0077b6; font-size: 0.8em; margin-top: 4px;">■</span>
+								<span>Can we build PRUs without One-Way Functions?</span>
+							</li>
+							<li style="margin-bottom: 15px; display: flex; align-items: flex-start; gap: 12px;">
+								<span style="color:#0077b6; font-size: 0.8em; margin-top: 4px;">■</span>
+								<span>New Constructions of PRUs</span>
+							</li>
+							<li style="margin-bottom: 15px; display: flex; align-items: flex-start; gap: 12px;">
+								<span style="color:#0077b6; font-size: 0.8em; margin-top: 4px;">■</span>
+								<span>Relation with Random Matrix Theory</span>
+							</li>
+							<li style="display: flex; align-items: flex-start; gap: 12px;">
+								<span style="color:#0077b6; font-size: 0.8em; margin-top: 4px;">■</span>
+								<span>Are they Noise Robust? <span style="color:#cf1322; font-weight:bold;">No!</span>
+									<span style="color:#666; font-size:0.9em;">(May 25, arXiv:2306.11677)</span></span>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</section>
 
