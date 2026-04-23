@@ -1318,29 +1318,22 @@
 				<h3 style="color:#0077b6; text-transform:none; margin-bottom:5px; font-size: 1.45em;">
 					Formalizing the Path-Recording Oracle
 				</h3>
-				<p style="font-size: 0.85em; font-weight:bold; color:#555; margin-top:0; margin-bottom:10px;">
-					Generalizing the query behavior into a formal linear map $V$
-				</p>
+
 
 				<div
 					style="background:#f9f9fa; border:1px solid #d9d9d9; border-radius:12px; padding:10px 20px 10px 20px; box-shadow:0 8px 24px rgba(0,0,0,0.06); text-align:left; max-width: 1250px; margin:0 auto; font-size: 0.80em;">
 
 					<p style="margin:0 0 5px 0; color:#333; line-height:1.4; font-size:1.0em;">
 						We can achieve our simulation efficiently by replacing each query to $U$ with a lazily evaluated
-						map $V$. The path-recording oracle is defined as a linear map:
+						map $V$.
 					</p>
 
-					<!-- Operator Space -->
-					<div
-						style="text-align:center; color:#0050b3; font-size:1.1em; font-weight:bold; margin-bottom:5px;">
-						$$ V : \mathcal{H}_A \otimes \mathcal{H}_\mathsf{R} \to \mathcal{H}_A \otimes
-						\mathcal{H}_\mathsf{R} $$
-					</div>
 
-					<div style="display:flex; flex-direction:column; align-items:center; gap:5px;">
+
+					<div style="display:flex; flex-direction:column; align-items:center; gap:15px;">
 
 						<!-- Top: Circuit Diagram -->
-						<div style="width:100%; max-width:480px; display:flex; justify-content:center;">
+						<div style="width:100%; max-width:750px; display:flex; justify-content:center;">
 							<svg width="100%" viewBox="0 0 850 220"
 								style="background:#ffffff; border:1px solid #e8e8e8; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.05); overflow:visible;">
 								<!-- Wire A (Query) -->
@@ -1348,7 +1341,9 @@
 									stroke-linecap="round" />
 								<line x1="480" y1="65" x2="540" y2="65" stroke="#0050b3" stroke-width="4"
 									stroke-linecap="round" />
-								...
+								<!-- Wire R (Relation) -->
+								<line x1="80" y1="155" x2="240" y2="155" stroke="#cf1322" stroke-width="4"
+									stroke-linecap="round" />
 								<line x1="480" y1="155" x2="540" y2="155" stroke="#cf1322" stroke-width="4"
 									stroke-linecap="round" />
 
@@ -1433,13 +1428,12 @@
 						unitaries.
 					</p>
 
-					<!-- SVG Circuit Diagram -->
-					<div style="display:flex; justify-content:center;">
-						<svg viewBox="0 0 580 260" width="580" height="260" style="overflow:visible; display:block;">
+					<div style="display:flex; justify-content:center; margin-top:10px;">
+						<svg viewBox="0 0 580 260" width="850" height="380" style="overflow:visible; display:block;">
 
 							<!-- ── TOP: U ← Haar ── -->
 							<!-- Wire A at y=60, Wire B at y=100 -->
-							<text x="290" y="18" text-anchor="middle" font-size="13" font-weight="bold"
+							<text x="290" y="18" text-anchor="middle" font-size="16" font-weight="bold"
 								font-family="sans-serif" fill="#c0392b">U ← Haar</text>
 
 							<!-- A wire top (y=60) -->
@@ -1455,27 +1449,27 @@
 							<line x1="144" y1="100" x2="510" y2="100" stroke="#555" stroke-width="1.8" />
 
 							<!-- A / B labels -->
-							<text x="16" y="64" text-anchor="middle" font-size="12" font-family="sans-serif"
+							<text x="16" y="64" text-anchor="middle" font-size="14" font-family="sans-serif"
 								fill="#333">A</text>
-							<text x="16" y="104" text-anchor="middle" font-size="12" font-family="sans-serif"
+							<text x="16" y="104" text-anchor="middle" font-size="14" font-family="sans-serif"
 								fill="#333">B</text>
 
 							<!-- A1 box top: spans both wires, x=82..144, y=45..115 -->
 							<rect x="82" y="45" width="62" height="70" fill="white" stroke="#777" stroke-width="1.4"
 								rx="3" />
-							<text x="113" y="84" text-anchor="middle" font-size="13" font-family="sans-serif"
+							<text x="113" y="84" text-anchor="middle" font-size="15" font-family="sans-serif"
 								fill="#333">A₁</text>
 
 							<!-- U1 Haar: centered on A wire (y=60), height=24 → top=48, bottom=72 -->
 							<rect x="194" y="48" width="44" height="24" fill="#fce8e6" stroke="#c0392b"
 								stroke-width="1.5" rx="3" />
-							<text x="216" y="64" text-anchor="middle" dominant-baseline="middle" font-size="13"
+							<text x="216" y="64" text-anchor="middle" dominant-baseline="middle" font-size="15"
 								font-weight="bold" font-family="sans-serif" fill="#c0392b">U</text>
 
 							<!-- At box top: x=362..416 -->
 							<rect x="362" y="45" width="54" height="70" fill="white" stroke="#777" stroke-width="1.4"
 								rx="3" />
-							<text x="389" y="84" text-anchor="middle" font-size="13" font-family="sans-serif"
+							<text x="389" y="84" text-anchor="middle" font-size="15" font-family="sans-serif"
 								fill="#333">Aₜ</text>
 
 							<!-- wire gap between At and Ut -->
@@ -1484,18 +1478,18 @@
 							<!-- Ut Haar: centered on A wire (y=60), starts at x=434 -->
 							<rect x="434" y="48" width="44" height="24" fill="#fce8e6" stroke="#c0392b"
 								stroke-width="1.5" rx="3" />
-							<text x="456" y="64" text-anchor="middle" dominant-baseline="middle" font-size="13"
+							<text x="456" y="64" text-anchor="middle" dominant-baseline="middle" font-size="15"
 								font-weight="bold" font-family="sans-serif" fill="#c0392b">U</text>
 							<!-- wire after Ut -->
 							<line x1="478" y1="60" x2="510" y2="60" stroke="#555" stroke-width="1.8" />
 
 							<!-- ≈ -->
-							<text x="290" y="142" text-anchor="middle" font-size="26" font-family="serif"
+							<text x="290" y="142" text-anchor="middle" font-size="32" font-family="serif"
 								fill="#666">≈</text>
 
 							<!-- ── BOTTOM: U ← PRU ── -->
 							<!-- Wire A at y=180, Wire B at y=220 -->
-							<text x="290" y="162" text-anchor="middle" font-size="13" font-weight="bold"
+							<text x="290" y="162" text-anchor="middle" font-size="16" font-weight="bold"
 								font-family="sans-serif" fill="#27ae60">U ← PRU</text>
 
 							<!-- A wire bottom (y=180) -->
@@ -1510,27 +1504,27 @@
 							<line x1="28" y1="220" x2="82" y2="220" stroke="#555" stroke-width="1.8" />
 							<line x1="144" y1="220" x2="510" y2="220" stroke="#555" stroke-width="1.8" />
 
-							<text x="16" y="184" text-anchor="middle" font-size="12" font-family="sans-serif"
+							<text x="16" y="184" text-anchor="middle" font-size="14" font-family="sans-serif"
 								fill="#333">A</text>
-							<text x="16" y="224" text-anchor="middle" font-size="12" font-family="sans-serif"
+							<text x="16" y="224" text-anchor="middle" font-size="14" font-family="sans-serif"
 								fill="#333">B</text>
 
 							<!-- A1 box bottom -->
 							<rect x="82" y="165" width="62" height="70" fill="white" stroke="#777" stroke-width="1.4"
 								rx="3" />
-							<text x="113" y="204" text-anchor="middle" font-size="13" font-family="sans-serif"
+							<text x="113" y="204" text-anchor="middle" font-size="15" font-family="sans-serif"
 								fill="#333">A₁</text>
 
 							<!-- U1 PRU: centered on A wire (y=180) -->
 							<rect x="194" y="168" width="44" height="24" fill="#d5f5e3" stroke="#27ae60"
 								stroke-width="1.5" rx="3" />
-							<text x="216" y="184" text-anchor="middle" dominant-baseline="middle" font-size="13"
+							<text x="216" y="184" text-anchor="middle" dominant-baseline="middle" font-size="15"
 								font-weight="bold" font-family="sans-serif" fill="#27ae60">U</text>
 
 							<!-- At box bottom -->
 							<rect x="362" y="165" width="54" height="70" fill="white" stroke="#777" stroke-width="1.4"
 								rx="3" />
-							<text x="389" y="204" text-anchor="middle" font-size="13" font-family="sans-serif"
+							<text x="389" y="204" text-anchor="middle" font-size="15" font-family="sans-serif"
 								fill="#333">Aₜ</text>
 
 							<!-- wire gap between At and Ut -->
@@ -1539,7 +1533,7 @@
 							<!-- Ut PRU: centered on A wire (y=180), starts at x=434 -->
 							<rect x="434" y="168" width="44" height="24" fill="#d5f5e3" stroke="#27ae60"
 								stroke-width="1.5" rx="3" />
-							<text x="456" y="184" text-anchor="middle" dominant-baseline="middle" font-size="13"
+							<text x="456" y="184" text-anchor="middle" dominant-baseline="middle" font-size="15"
 								font-weight="bold" font-family="sans-serif" fill="#27ae60">U</text>
 							<!-- wire after Ut -->
 							<line x1="478" y1="180" x2="510" y2="180" stroke="#555" stroke-width="1.8" />
@@ -1547,10 +1541,7 @@
 						</svg>
 					</div>
 
-					<!-- Bottom note -->
-					<p style="margin:10px 0 0 0; text-align:center; font-size:0.92em; color:#888; font-style:italic;">
-						$U$ ← Haar can be replaced with $V$ — we now focus on constructions of PRU.
-					</p>
+
 
 				</div>
 			</section>
@@ -2241,15 +2232,15 @@
 						<div style="display:flex; gap:15px; position:relative; align-items:stretch;">
 
 							<!-- Left Side: Density Matrices -->
-							<div style="flex:7; position:relative; padding:15px 10px;">
+							<div style="flex:6; position:relative; padding:15px 10px;">
 								<!-- Fragment 1: rho 1 and 2 -->
 								<div class="fragment current-visible" data-fragment-index="1"
-									style="position:absolute; top:0%; bottom:48%; left:0; right:0; background:rgba(255, 173, 173, 0.15); border:2px dashed #ff4d4f; border-radius:10px; z-index:0; pointer-events:none;">
+									style="position:absolute; top:0%; bottom:50%; left:0; right:0; background:rgba(255, 173, 173, 0.15); border:2px dashed #ff4d4f; border-radius:10px; z-index:0; pointer-events:none;">
 								</div>
 
 								<!-- Fragment 2: rho 2 and 3 -->
 								<div class="fragment current-visible" data-fragment-index="2"
-									style="position:absolute; top:25%; bottom:23%; left:0; right:0; background:rgba(145, 213, 255, 0.2); border:2px dashed #1890ff; border-radius:10px; z-index:0; pointer-events:none;">
+									style="position:absolute; top:25%; bottom:25%; left:0; right:0; background:rgba(145, 213, 255, 0.2); border:2px dashed #1890ff; border-radius:10px; z-index:0; pointer-events:none;">
 								</div>
 
 								<!-- Fragment 3: rho 3 and 4 -->
@@ -2283,17 +2274,17 @@
 							</div>
 
 							<!-- Right Side: Annotations -->
-							<div style="flex:3; position:relative; padding:15px 0;">
+							<div style="flex:4; position:relative; padding:15px 0;">
 								<!-- Annotation 1 (rho 1 and 2) -->
 								<div class="fragment current-visible" data-fragment-index="1"
-									style="position:absolute; top:0%; bottom:48%; left:0; right:0; background:#fff1f0; border:2px solid #ffa39e; border-radius:10px; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:10px; box-shadow:0 2px 8px rgba(255,77,79,0.1);">
+									style="position:absolute; top:0%; bottom:50%; left:0; right:0; background:#fff1f0; border:2px solid #ffa39e; border-radius:10px; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:10px; box-shadow:0 2px 8px rgba(255,77,79,0.1);">
 									<div
-										style="position:absolute; top:-12px; right:15px; background:#ff4d4f; color:white; padding:2px 10px; border-radius:4px; font-weight:bold; font-size:0.8em;">
+										style="position:absolute; top:-14px; right:15px; background:#ff4d4f; color:white; padding:2px 10px; border-radius:4px; font-weight:bold; font-size:0.85em; z-index:10;">
 										Quantum Birthday Bound</div>
 									<div
-										style="position:absolute; left:-18px; top:50%; transform:translateY(-50%); font-size:1.8em; color:#ff4d4f; font-weight:bold;">
+										style="position:absolute; left:-22px; top:50%; transform:translateY(-50%); font-size:1.8em; color:#ff4d4f; font-weight:bold;">
 										&larr;</div>
-									<div style="font-size: 1.45em; color:#cf1322; text-align:center;">
+									<div style="font-size: 1.15em; color:#cf1322; text-align:center;">
 										$$ \left\|\rho_1^{(\mathfrak{D})} - \rho_2^{(\mathfrak{D})} \right\|_1 \leq
 										\frac{t(t-1)}{N+1} $$
 									</div>
@@ -2301,16 +2292,16 @@
 
 								<!-- Annotation 2 (rho 2 and 3) -->
 								<div class="fragment current-visible" data-fragment-index="2"
-									style="position:absolute; top:25%; bottom:23%; left:0; right:0; background:#e6f7ff; border:2px solid #91d5ff; border-radius:10px; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:10px; box-shadow:0 2px 8px rgba(24,144,255,0.1);">
+									style="position:absolute; top:25%; bottom:25%; left:0; right:0; background:#e6f7ff; border:2px solid #91d5ff; border-radius:10px; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:10px; box-shadow:0 2px 8px rgba(24,144,255,0.1);">
 									<div
-										style="position:absolute; top:-12px; right:15px; background:#1890ff; color:white; padding:2px 10px; border-radius:4px; font-weight:bold; font-size:0.8em;">
+										style="position:absolute; top:-14px; right:15px; background:#1890ff; color:white; padding:2px 10px; border-radius:4px; font-weight:bold; font-size:0.85em; z-index:10;">
 										Isometry Equivalence</div>
 									<div
-										style="position:absolute; left:-18px; top:50%; transform:translateY(-50%); font-size:1.8em; color:#1890ff; font-weight:bold;">
+										style="position:absolute; left:-22px; top:50%; transform:translateY(-50%); font-size:1.8em; color:#1890ff; font-weight:bold;">
 										&larr;</div>
-									<div style="font-size:1.1em; color:#0050b3; text-align:center;">
+									<div style="font-size:1.15em; color:#0050b3; text-align:center;">
 										$$ \rho_2^{(\mathfrak{D})} = \rho_3^{(\mathfrak{D})} $$
-										<div style="font-size:0.8em; margin-top:5px; font-weight:bold;">(using
+										<div style="font-size:0.75em; margin-top:4px; font-weight:bold;">(using
 											$\mathrm{Comp}$ isometry)</div>
 									</div>
 								</div>
@@ -2319,12 +2310,12 @@
 								<div class="fragment" data-fragment-index="3"
 									style="position:absolute; top:50%; bottom:0%; left:0; right:0; background:#f6ffed; border:2px solid #b7eb8f; border-radius:10px; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:10px; box-shadow:0 2px 8px rgba(82,196,26,0.1);">
 									<div
-										style="position:absolute; top:-12px; right:15px; background:#52c41a; color:white; padding:2px 10px; border-radius:4px; font-weight:bold; font-size:0.8em;">
+										style="position:absolute; top:-14px; right:15px; background:#52c41a; color:white; padding:2px 10px; border-radius:4px; font-weight:bold; font-size:0.85em; z-index:10;">
 										Quantum Birthday Bound</div>
 									<div
-										style="position:absolute; left:-18px; top:50%; transform:translateY(-50%); font-size:1.8em; color:#52c41a; font-weight:bold;">
+										style="position:absolute; left:-22px; top:50%; transform:translateY(-50%); font-size:1.8em; color:#52c41a; font-weight:bold;">
 										&larr;</div>
-									<div style="font-size: 1.45em; color:#389e0d; text-align:center;">
+									<div style="font-size: 1.15em; color:#389e0d; text-align:center;">
 										$$ \left\|\rho_3^{(\mathfrak{D})} - \rho_4^{(\mathfrak{D})} \right\|_1 \leq
 										\frac{t(t-1)}{N+1} $$
 									</div>
