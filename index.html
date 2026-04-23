@@ -2469,6 +2469,105 @@
 				</div>
 			</section>
 
+
+			<section>
+				<h3 style="color:#0077b6; text-transform:none; margin-bottom:10px; font-size:1.2em;">
+					Efficient Circuit Implementation of the Path-Recording Oracle
+				</h3>
+				<div
+					style="font-size:0.80em; max-width:1250px; margin:0 auto; text-align:left; display:flex; flex-direction:column; gap:10px; max-height:590px; overflow-y:auto; padding-right:6px;">
+
+					<!-- Goal -->
+					<div
+						style="background:#f0f7ff; border-left:5px solid #0077b6; padding:14px 20px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.05); text-align:center;">
+						<strong style="color:#0077b6;">Implement $V$ efficiently as a quantum circuit:</strong>
+						$$ V : |x\rangle|R\rangle \;\mapsto\; \frac{1}{\sqrt{N-|R|}} \sum_{y \notin \mathrm{Im}(R)}
+						|y\rangle \,|R \cup \{(x,y)\}\rangle $$
+					</div>
+
+					<!-- Three steps -->
+					<div style="display:flex; gap:14px; align-items:stretch;">
+
+						<!-- Step 1 -->
+						<div
+							style="flex:1; background:#fff8e1; border-left:5px solid #f4a100; padding:16px 18px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.05);">
+							<div style="display:flex; align-items:center; gap:10px; margin-bottom:10px;">
+								<span
+									style="background:#f4a100; color:white; border-radius:50%; width:22px; height:22px; display:inline-flex; align-items:center; justify-content:center; font-size:0.8em; flex-shrink:0;">1</span>
+								<strong style="color:#f4a100;">Store Relation |R⟩</strong>
+							</div>
+							<p style="margin:0 0 8px 0;">Sorted list of pairs in |R|·2n qubits:</p>
+							<p style="margin:0; text-align:center; font-style:italic;">|x₁⟩|y₁⟩ · · ·
+								|x<sub>|R|</sub>⟩|y<sub>|R|</sub>⟩</p>
+							<p style="margin:8px 0 0 0; color:#666; font-size:0.88em;">with (x₁,y₁) ≤ · · · ≤
+								(x<sub>|R|</sub>, y<sub>|R|</sub>) lexicographically</p>
+						</div>
+
+						<!-- Step 2 -->
+						<div
+							style="flex:1.3; background:#f0fff4; border-left:5px solid #00897b; padding:16px 18px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.05);">
+							<div style="display:flex; align-items:center; gap:10px; margin-bottom:10px;">
+								<span
+									style="background:#00897b; color:white; border-radius:50%; width:22px; height:22px; display:inline-flex; align-items:center; justify-content:center; font-size:0.8em; flex-shrink:0;">2</span>
+								<strong style="color:#00897b;">Superposition over Unused Outputs</strong>
+							</div>
+							<p style="margin:0 0 6px 0;">Uniform superposition over indices, then apply bijection $f$:
+							</p>
+							<p style="margin:0; text-align:center;">
+								$\dfrac{1}{\sqrt{N-|R|}} \sum_{k} |k\rangle \;\longrightarrow\; \dfrac{1}{\sqrt{N-|R|}}
+								\sum_{y \notin \mathrm{Im}(R)} |y\rangle$
+							</p>
+							<p style="margin:8px 0 0 0; text-align:center; color:#00897b;">
+								$f(k) = k + n_k \;,\quad f^{-1}(y) = y - n_y$
+							</p>
+							<p style="margin:6px 0 0 0; color:#666; font-size:0.88em;">$n_k$ = # used outputs $\leq k$
+								&nbsp;&middot;&nbsp; computed via binary search on sorted $\mathrm{Im}(R)$</p>
+						</div>
+
+						<!-- Step 3 -->
+						<div
+							style="flex:1.2; background:#fdf0ff; border-left:5px solid #8e24aa; padding:16px 18px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.05);">
+							<div style="display:flex; align-items:center; gap:10px; margin-bottom:10px;">
+								<span
+									style="background:#8e24aa; color:white; border-radius:50%; width:22px; height:22px; display:inline-flex; align-items:center; justify-content:center; font-size:0.8em; flex-shrink:0;">3</span>
+								<strong style="color:#8e24aa;">Update Record &amp; Uncompute</strong>
+							</div>
+							<p style="margin:0 0 8px 0;">Insert $(x, y)$ into sorted $R$, then erase scratch registers:
+							</p>
+							<p style="margin:0; text-align:center;">
+								$|y\rangle|x\rangle|R\rangle|R\cup\{(x,y)\}\rangle \;\mapsto\;
+								|y\rangle\,|R\cup\{(x,y)\}\rangle$
+							</p>
+							<p style="margin:8px 0 0 0; color:#666; font-size:0.88em;">Valid since $y \notin
+								\mathrm{Im}(R) \Rightarrow (x,y)$ uniquely recoverable from $R\cup\{(x,y)\}$</p>
+						</div>
+
+					</div>
+
+					<!-- Bottom bar -->
+					<div
+						style="background:#f0f7ff; border-left:5px solid #0077b6; padding:12px 20px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.05);">
+						<ul style="list-style:none; padding-left:0; margin:0; display:flex; gap:30px; flex-wrap:wrap;">
+							<li style="display:flex; align-items:flex-start; gap:10px;">
+								<span style="color:#0077b6; font-size:0.8em; margin-top:4px;">■</span>
+								<span><strong>Efficient:</strong> O(log N) per step via binary search</span>
+							</li>
+							<li style="display:flex; align-items:flex-start; gap:10px;">
+								<span style="color:#0077b6; font-size:0.8em; margin-top:4px;">■</span>
+								<span><strong>Reversible:</strong> All steps are invertible → valid unitary
+									circuit</span>
+							</li>
+							<li style="display:flex; align-items:flex-start; gap:10px;">
+								<span style="color:#0077b6; font-size:0.8em; margin-top:4px;">■</span>
+								<span><strong>Simulates</strong> Haar-random unitary up to inverse-exponential error
+									✓</span>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</section>
+
 		</div>
 	</div>
 
