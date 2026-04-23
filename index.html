@@ -652,7 +652,7 @@
 			<!-- ═══════════════ SLIDE 7: SECURITY & LAZY SAMPLING ═══════════════ -->
 			<section>
 				<h3 style="color:#0077b6; text-transform:none; margin-bottom:20px; font-size: 1.45em;">
-					PRF Security &amp; Efficient Simulation of TRF
+					PRF Security <span class="fragment">&amp; Efficient Simulation of TRF</span>
 				</h3>
 
 				<div
@@ -1341,18 +1341,15 @@
 
 						<!-- Top: Circuit Diagram -->
 						<div style="width:100%; max-width:480px; display:flex; justify-content:center;">
-							<svg width="100%" viewBox="0 0 730 220"
+							<svg width="100%" viewBox="0 0 850 220"
 								style="background:#ffffff; border:1px solid #e8e8e8; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.05); overflow:visible;">
 								<!-- Wire A (Query) -->
 								<line x1="80" y1="65" x2="240" y2="65" stroke="#0050b3" stroke-width="4"
 									stroke-linecap="round" />
-								<line x1="480" y1="65" x2="560" y2="65" stroke="#0050b3" stroke-width="4"
+								<line x1="480" y1="65" x2="540" y2="65" stroke="#0050b3" stroke-width="4"
 									stroke-linecap="round" />
-
-								<!-- Wire R (Database) -->
-								<line x1="80" y1="155" x2="240" y2="155" stroke="#cf1322" stroke-width="4"
-									stroke-linecap="round" />
-								<line x1="480" y1="155" x2="560" y2="155" stroke="#cf1322" stroke-width="4"
+								...
+								<line x1="480" y1="155" x2="540" y2="155" stroke="#cf1322" stroke-width="4"
 									stroke-linecap="round" />
 
 								<!-- Oracle Box -->
@@ -1380,7 +1377,7 @@
 									</div>
 								</foreignObject>
 
-								<foreignObject x="565" y="48" width="160" height="80" overflow="visible">
+								<foreignObject x="545" y="48" width="300" height="80" overflow="visible">
 									<div xmlns="http://www.w3.org/1999/xhtml"
 										style="font-size:0.9em; text-align:left; color:#0050b3; line-height:1.2;">
 										$ \lvert y \rangle_A $
@@ -1389,7 +1386,7 @@
 											(superposition over $y$)</div>
 									</div>
 								</foreignObject>
-								<foreignObject x="565" y="138" width="160" height="50" overflow="visible">
+								<foreignObject x="545" y="138" width="300" height="50" overflow="visible">
 									<div xmlns="http://www.w3.org/1999/xhtml"
 										style="font-size:0.9em; text-align:left; color:#cf1322; white-space:nowrap;">
 										$ \lvert R \cup \{(x,y)\} \rangle_\mathsf{R} $
@@ -1407,10 +1404,10 @@
 							<!-- Core Equation Box -->
 							<div
 								style="background:white; border:2px dashed #0050b3; border-radius:10px; padding:10px; box-shadow:inset 0 2px 8px rgba(0,0,0,0.02); width:100%; max-width:1050px;">
-								<div style="color:#002c8c; font-size:0.9em; text-align:center;">
+								<div style="color:#002c8c; font-size:0.95em; text-align:center;">
 									$$ V : \lvert x \rangle_A \lvert R \rangle_\mathsf{R} \mapsto
-									\frac{1}{\sqrt{N - |R|}} \sum_{\substack{y \in [N],\\ y \notin
-									\mathrm{Im}(R)}} \lvert y \rangle_A \, \lvert R \cup \{(x,y)\}
+									\frac{1}{\sqrt{N - |R|}} \sum_{y \notin \mathrm{Im}(R)} \lvert y \rangle_A \, \lvert
+									R \cup \{(x,y)\}
 									\rangle_\mathsf{R} $$
 								</div>
 							</div>
@@ -1431,7 +1428,7 @@
 
 					<!-- Key sentence -->
 					<p style="margin:0 0 16px 0; color:#333; line-height:1.7; font-size:1.1em; text-align:center;">
-						The question of working with Haar-random unitaries reduces to constructing efficient unitaries
+						We can focus on constructing efficient unitaries
 						(poly-depth circuit) that are merely <em>computationally indistinguishable</em> from Haar-random
 						unitaries.
 					</p>
@@ -1613,7 +1610,7 @@
 						<!-- <div style="font-weight:800; color:#0050b3; font-size:1.5em; margin-bottom:8px;">Oracle pfO
 						</div> -->
 
-						<svg viewBox="0 0 1000 600"
+						<svg viewBox="0 0 1200 600"
 							style="width:100%; max-width:700px; height:auto; max-height:420px; overflow:visible; display:block;">
 
 							<!-- ULTRA LONG FIXED PLAN:
@@ -1648,37 +1645,37 @@
 							</foreignObject>
 
 							<!-- ─── INPUT LABELS ─── -->
-							<foreignObject x="0" y="100" width="220" height="40">
+							<foreignObject x="0" y="100" width="230" height="50" overflow="visible">
 								<div xmlns="http://www.w3.org/1999/xhtml"
-									style="height:40px; display:flex; align-items:center; justify-content:flex-end; font-size:1.8em; color:#0050b3; font-weight:700;">
+									style="height:50px; display:flex; align-items:center; justify-content:flex-end; font-size:1.6em; color:#0050b3; font-weight:700;">
 									$|x\rangle_A$</div>
 							</foreignObject>
-							<foreignObject x="0" y="280" width="220" height="40">
+							<foreignObject x="0" y="280" width="230" height="50" overflow="visible">
 								<div xmlns="http://www.w3.org/1999/xhtml"
-									style="height:40px; display:flex; align-items:center; justify-content:flex-end; font-size:1.8em; color:#8b44ac; font-weight:700;">
+									style="height:50px; display:flex; align-items:center; justify-content:flex-end; font-size:1.6em; color:#8b44ac; font-weight:700;">
 									$|\pi\rangle_P$</div>
 							</foreignObject>
-							<foreignObject x="0" y="460" width="220" height="40">
+							<foreignObject x="0" y="460" width="230" height="50" overflow="visible">
 								<div xmlns="http://www.w3.org/1999/xhtml"
-									style="height:40px; display:flex; align-items:center; justify-content:flex-end; font-size:1.8em; color:#c0392b; font-weight:700;">
+									style="height:50px; display:flex; align-items:center; justify-content:flex-end; font-size:1.6em; color:#c0392b; font-weight:700;">
 									$|f\rangle_F$</div>
 							</foreignObject>
 
 							<!-- ─── OUTPUT LABELS ─── -->
-							<foreignObject x="740" y="100" width="260" height="50">
+							<foreignObject x="720" y="100" width="450" height="60" overflow="visible">
 								<div xmlns="http://www.w3.org/1999/xhtml"
-									style="height:50px; display:flex; align-items:center; justify-content:flex-start; font-size:1.3em; color:#0050b3; font-weight:700; white-space:nowrap;">
-									$(-1)^{f(x)}|\pi(x)\rangle$</div>
+									style="height:60px; display:flex; align-items:center; justify-content:flex-start; font-size:1.6em; color:#0050b3; font-weight:700;">
+									$(-1)^{f(x)}|\pi(x)\rangle_A$</div>
 							</foreignObject>
-							<foreignObject x="740" y="280" width="260" height="40">
+							<foreignObject x="720" y="280" width="450" height="50" overflow="visible">
 								<div xmlns="http://www.w3.org/1999/xhtml"
-									style="height:40px; display:flex; align-items:center; justify-content:flex-start; font-size:1.8em; color:#8b44ac; font-weight:700;">
-									$|\pi\rangle$</div>
+									style="height:50px; display:flex; align-items:center; justify-content:flex-start; font-size:1.6em; color:#8b44ac; font-weight:700;">
+									$|\pi\rangle_P$</div>
 							</foreignObject>
-							<foreignObject x="740" y="460" width="260" height="40">
+							<foreignObject x="720" y="460" width="450" height="50" overflow="visible">
 								<div xmlns="http://www.w3.org/1999/xhtml"
-									style="height:40px; display:flex; align-items:center; justify-content:flex-start; font-size:1.8em; color:#8b44ac; font-weight:700;">
-									$|f\rangle$</div>
+									style="height:50px; display:flex; align-items:center; justify-content:flex-start; font-size:1.6em; color:#c0392b; font-weight:700;">
+									$|f\rangle_F$</div>
 							</foreignObject>
 
 						</svg>
@@ -1773,12 +1770,7 @@
 							</div>
 						</div>
 
-						<!-- Key insight -->
-						<div
-							style="background:#e8f4f8; border:1px solid #0077b6; padding:8px 10px; border-radius:4px; margin-top:12px; font-size:0.70em; text-align:center;">
-							<p style="margin:0; color:#0050b3; font-weight:600;">✓ Superposition replaces random
-								sampling</p>
-						</div>
+
 					</div>
 				</div>
 			</section>
@@ -1806,26 +1798,15 @@
 
 				<!-- Global State Result -->
 				<div
-					style="background:#f0f7ff; border:2px solid #0077b6; border-radius:10px; padding:16px; margin-top:14px; font-size: 0.82em; box-shadow: 0 4px 12px rgba(0,119,182,0.1);">
-					<p style="margin:0 0 10px 0; color:#0050b3; font-weight:700; text-align:center; font-size:1.1em;">
-						Applying this across the entire superposition, the global state becomes:
+					style="background:#f0f7ff; border:2px solid #0077b6; border-radius:10px; padding:12px; margin-top:10px; font-size: 0.78em; box-shadow: 0 4px 12px rgba(0,119,182,0.1);">
+					<p style="margin:0 0 8px 0; color:#0050b3; font-weight:700; text-align:center; font-size:1.1em;">
+						Global State becomes:
 					</p>
 					<div
-						style="background:white; padding:12px; border-radius:8px; border:1px dashed #0077b6; text-align:center;">
-						$$ |\Psi_1\rangle
-						\;\propto\;
-						\sum_{x_1,\, y_1}
-						\Bigl(|y_1\rangle\langle x_1| \cdot A_1|0^n\rangle\Bigr)_A
-						\;\otimes\;
-						\underbrace{
-						\frac{1}{\sqrt{N!}}
-						\frac{1}{\sqrt{2^N}}
-						\sum_{\pi}
-						\sum_{f}
-						\delta_{\pi(x_1)=y_1}
-						\cdot (-1)^{f(x_1)}
-						|\pi\rangle_P |f\rangle_F
-						}_{\text{sum restricted to } \pi,f \text{ consistent with } \pi(x_1)=y_1} $$
+						style="background:white; padding:8px; border-radius:8px; border:1px dashed #0077b6; text-align:center;">
+						$$ |\Psi_1\rangle \propto \sum_{x_1, y_1} \Bigl(|y_1\rangle\langle x_1| A_1|0^n\rangle\Bigr)_A
+						\otimes \underbrace{ \frac{1}{\sqrt{N! 2^N}} \sum_{\pi, f} \delta_{\pi(x_1)=y_1} (-1)^{f(x_1)}
+						|\pi, f\rangle }_{\text{Restricted to } \pi(x_1)=y_1} $$
 					</div>
 				</div>
 
@@ -1863,17 +1844,16 @@
 
 				<!-- Global State Result - Major Highlight -->
 				<div
-					style="background:#f0f7ff; border:2px solid #0077b6; border-radius:10px; padding:18px; margin-bottom:14px; font-size: 0.82em; box-shadow: 0 4px 12px rgba(0,119,182,0.1);">
-					<p style="margin:0 0 10px 0; color:#0050b3; font-weight:800; text-align:center; font-size:1.1em;">
+					style="background:#f0f7ff; border:2px solid #0077b6; border-radius:10px; padding:12px; margin-bottom:10px; font-size: 0.78em; box-shadow: 0 4px 12px rgba(0,119,182,0.1);">
+					<p style="margin:0 0 8px 0; color:#0050b3; font-weight:800; text-align:center; font-size:1.1em;">
 						Combined Global State $|\Psi_2\rangle$
 					</p>
 					<div
-						style="background:white; padding:12px; border-radius:8px; border:1px dashed #0077b6; text-align:center;">
-						$$ |\Psi_2\rangle \propto \sum_{\substack{x_1,y_1 \\ x_2,y_2}} \Bigl(|y_2\rangle\langle
-						x_2|\cdot
-						A_2 |y_1\rangle\langle x_1|\cdot A_1|0^n\rangle\Bigr)_A \otimes \underbrace{\sum_{\pi,f}
-						\delta_{\pi(x_1)=y_1} \delta_{\pi(x_2)=y_2} (-1)^{f(x_1)+f(x_2)}
-						|\pi\rangle_P|f\rangle_F}_{\text{Consistent with both query pairs}} $$
+						style="background:white; padding:8px; border-radius:8px; border:1px dashed #0077b6; text-align:center;">
+						$$ |\Psi_2\rangle \propto \sum_{\substack{x_1,y_1 \\ x_2,y_2}} \Bigl( |y_2\rangle\langle x_2|
+						A_2 |y_1\rangle\langle x_1| A_1 |0^n\rangle \Bigr)_A \otimes \underbrace{ \sum_{\pi, f}
+						\prod_{i=1}^2 \delta_{\pi(x_i)=y_i} (-1)^{\sum f(x_i)} |\pi, f\rangle }_{\text{Consistent with
+						both query pairs}} $$
 					</div>
 				</div>
 
@@ -1895,23 +1875,21 @@
 						<!-- <p style="margin:0 0 4px 0; color:#0050b3; font-weight:700;">Quantum State Inductively Derived:</p> -->
 						<div
 							style="background:white; padding:8px; border-radius:6px; border:1px dashed #0077b6; text-align:center;">
-							$$ |\Psi_t\rangle \propto \sum_{\substack{x_1,y_1,\\ \vdots \\ x_t,y_t}} \Bigl(
-							|y_t\rangle\langle x_t|\cdot A_t \;\dots\; |y_1\rangle\langle x_1|\cdot A_1 \,|0^n\rangle
-							\Bigr)_A \otimes \underbrace{ \sum_{\pi \in S_{2^n}}\;\sum_{f \in \{0,1\}^{2^n}}
-							\delta_{\pi(x_1)=y_1} \dots \delta_{\pi(x_t)=y_t} \cdot (-1)^{\sum_{i=1}^t f(x_i)}
-							\,|\pi\rangle_P\,|f\rangle_F }_{\text{(i)}} $$
+							$$ |\Psi_t\rangle \propto \sum_{\vec{x}, \vec{y}} \Bigl( \prod_{i=1}^t |y_i\rangle\langle
+							x_i| A_i \Bigr)_A |0^n\rangle \otimes \underbrace{ \sum_{\pi, f} \prod_{i=1}^t
+							\delta_{\pi(x_i)=y_i} (-1)^{\sum f(x_i)} |\pi, f\rangle }_{\text{Consistent with } R =
+							\{(x_i, y_i)\}} $$
 						</div>
 					</div>
 
 					<!-- Feynman Paths -->
 					<div
-						style="background:#fffbe6; border:1px solid #faad14; padding:12px; border-radius:8px; text-align:center;">
-						<p style="margin:0 0 4px 0; color:#856404; font-weight:700; font-size:1.1em;">For relation $R =
-							\{(x_1,y_1), \dots, (x_t,y_t)\}$:</p>
-						<div style="font-size: 1.45em;">
-							$$ |\mathsf{pf}_R\rangle_{PF} \propto \sum_{\pi \in S_{2^n}} \prod_{(x,y)\in
-							R}\delta_{\pi(x)=y} \;|\pi\rangle_P \otimes \sum_{f \in \{0,1\}^{2^n}} (-1)^{\sum_{(x,y)\in
-							R} f(x)} |f\rangle_F $$
+						style="background:#fffbe6; border:1px solid #faad14; padding:10px; border-radius:8px; text-align:center;">
+						<p style="margin:0 0 4px 0; color:#856404; font-weight:700; font-size:1.0em;">For relation $R =
+							\{(x_i,y_i)\}_{i=1}^t$:</p>
+						<div style="font-size: 1.15em;">
+							$$ |\mathsf{pf}_R\rangle_{PF} \propto \sum_{\pi : R} |\pi\rangle_P \otimes \sum_{f}
+							(-1)^{\sum_{(x,y)\in R} f(x)} |f\rangle_F $$
 						</div>
 					</div>
 
@@ -1920,11 +1898,10 @@
 						style="background:#f6ffed; border-left:4px solid #52c41a; padding:8px 12px; border-radius:8px; text-align:center;">
 						<p style="margin:0 0 4px 0; color:#237804; font-weight:700;">Final $t$-query state in compact
 							form:</p>
-						<p style="margin:0; color:#333; font-size:1.1em;">
-							$$ |\Psi_t\rangle \propto \sum_{x_1,y_1,\dots,x_t,y_t} \Bigl( |y_t\rangle\langle x_t|\cdot
-							A_t \dots |y_1\rangle\langle x_1|\cdot A_1 |0^n\rangle \Bigr)_A \otimes
-							|\mathsf{pf}_{\{(x_1,y_1),\dots,x_t,y_t\}\}}\rangle_{PF} $$
-						</p>
+						<div style="margin:0; color:#333; font-size:1.0em;">
+							$$ |\Psi_t\rangle \propto \sum_{\vec{x},\vec{y}} \Bigl( \prod_{i=1}^t |y_i\rangle\langle
+							x_i| A_i \Bigr)_A |0^n\rangle \otimes |\mathsf{pf}_{\{(\vec{x},\vec{y})\}}\rangle_{PF} $$
+						</div>
 					</div>
 				</div>
 			</section>
@@ -1936,7 +1913,7 @@
 				</h3>
 
 				<div
-					style="font-size: 0.70em; max-width: 1250px; margin:0 auto; display:flex; flex-direction:column; gap:12px;">
+					style="font-size: 0.70em; max-width: 1000px; width: 95%; margin:0 auto; display:flex; flex-direction:column; gap:12px; align-items: center;">
 
 					<!-- Key Observation -->
 					<div
@@ -1947,7 +1924,7 @@
 							orthogonal and is isometric to $|\{(x_1,y_1), \cdots, (x_t,y_t)\}\rangle$.</p>
 					</div>
 
-					<div style="display:flex; gap:15px;">
+					<div style="display:flex; gap:15px; align-items:stretch; justify-content:center; width:100%;">
 						<!-- pfO Action -->
 						<div
 							style="flex:1; background:white; border:1px solid #e8e8e8; border-radius:12px; padding:15px; box-shadow:0 4px 12px rgba(0,0,0,0.05);">
@@ -1957,10 +1934,10 @@
 							<p style="font-size:0.95em; color:#666; margin-bottom:10px;">Acts on the purifying register
 								$PF$:
 							</p>
-							<div style="background:#f9f9f9; padding:10px; border-radius:6px; text-align:center;">
-								$$ \mathsf{pf}O |x\rangle_A |\mathsf{pf}_R\rangle_{\mathrm{PF}} = \frac{1}{\sqrt{N -
-								|R|}} \sum_{y \in [N]} |y\rangle_A |\mathsf{pf}_{R \cup \{(x,y)\}}\rangle_{\mathrm{PF}}
-								$$
+							<div
+								style="background:#f9f9f9; padding:8px; border-radius:6px; text-align:center; font-size: 0.9em;">
+								$$ \mathsf{pf}O |x\rangle_A |\mathsf{pf}_R\rangle = \frac{1}{\sqrt{N-|R|}} \sum_{y}
+								|y\rangle_A |\mathsf{pf}_{R \cup \{(x,y)\}}\rangle $$
 							</div>
 						</div>
 
@@ -1971,9 +1948,10 @@
 								style="color:#faad14; font-weight:700; margin-bottom:10px; border-bottom:1px solid #f0f0f0; padding-bottom:5px;">
 								Path-Recording Oracle $V$</div>
 							<p style="font-size:0.95em; color:#666; margin-bottom:10px;">Records classical set $R$:</p>
-							<div style="background:#f9f9f9; padding:10px; border-radius:6px; text-align:center;">
-								$$ V : |x\rangle_A |R\rangle_R \mapsto \frac{1}{\sqrt{N - |R|}} \sum_{y \notin
-								\mathrm{Im}(R)} |y\rangle_A |R \cup \{(x,y)\}\rangle_R $$
+							<div
+								style="background:#f9f9f9; padding:8px; border-radius:6px; text-align:center; font-size: 0.9em;">
+								$$ V |x\rangle_A |R\rangle = \frac{1}{\sqrt{N-|R|}} \sum_{y \notin \mathrm{Im}(R)}
+								|y\rangle_A |R \cup \{(x,y)\}\rangle $$
 							</div>
 						</div>
 					</div>
@@ -2248,8 +2226,8 @@
 
 			<!-- ═══════════════ SLIDE 21: PROOF HYBRID 2 TO 3 (Part 2) ═══════════════ -->
 			<section>
-				<h3 style="color:#0077b6; text-transform:none; margin-bottom:12px; font-size: 1.45em;">
-					Density Matrices for Hybrids
+				<h3 style="color:#0077b6; text-transform:none; margin-bottom:5px; font-size: 1.45em;">
+					Proof: Hybrid 2 $\approx$ Hybrid 3
 				</h3>
 
 				<div style="font-size: 0.70em; max-width: 1250px; margin:0 auto;">
@@ -2259,7 +2237,7 @@
 					</p>
 
 					<div
-						style="background:white; border:1px solid #e8e8e8; border-radius:12px; padding:20px; box-shadow:0 6px 16px rgba(0,0,0,0.05);">
+						style="background:white; border:1px solid #e8e8e8; border-radius:12px; padding:12px; box-shadow:0 6px 16px rgba(0,0,0,0.05);">
 						<div style="display:flex; gap:15px; position:relative; align-items:stretch;">
 
 							<!-- Left Side: Density Matrices -->
@@ -2280,22 +2258,22 @@
 								</div>
 
 								<div
-									style="position:relative; z-index:1; overflow-x:auto; font-size: 1.1em; display:flex; flex-direction:column; justify-content:center;">
+									style="position:relative; z-index:1; font-size: 0.95em; display:flex; flex-direction:column; justify-content:center;">
 									$$
 									\begin{aligned}
 									\rho_1^{(\mathfrak{D})} &:= \mathrm{Tr}_{\mathrm{PF}} \left( \mathop{\mathbb{E}}_{U
 									\leftarrow \mathfrak{D}} |\mathcal{A}_t^{\mathrm{pfO} \cdot
 									U}\rangle\langle\mathcal{A}_t^{\mathrm{pfO} \cdot U}|_{\mathrm{ABPF}} \right)
-									\\[14pt]
+									\\[8pt]
 									\rho_2^{(\mathfrak{D})} &:= \mathrm{Tr}_{\mathrm{PF}} \left(
 									\widetilde{\Pi}^{\mathrm{dist}}_{\mathrm{PF}} \cdot \mathop{\mathbb{E}}_{U
 									\leftarrow \mathfrak{D}} |\mathcal{A}_t^{\mathrm{pfO} \cdot
 									U}\rangle\langle\mathcal{A}_t^{\mathrm{pfO} \cdot U}|_{\mathrm{ABPF}} \cdot
-									\widetilde{\Pi}^{\mathrm{dist}}_{\mathrm{PF}} \right) \\[14pt]
+									\widetilde{\Pi}^{\mathrm{dist}}_{\mathrm{PF}} \right) \\[8pt]
 									\rho_3^{(\mathfrak{D})} &:= \mathrm{Tr}_{R} \left( \Pi^{\mathrm{dist}}_{R^{(t)}_X}
 									\cdot \mathop{\mathbb{E}}_{U \leftarrow \mathfrak{D}} |\mathcal{A}_t^{V \cdot
 									U}\rangle\langle\mathcal{A}_t^{V \cdot U}|_{\mathrm{ABR}} \cdot
-									\Pi^{\mathrm{dist}}_{R^{(t)}_X} \right) \\[14pt]
+									\Pi^{\mathrm{dist}}_{R^{(t)}_X} \right) \\[8pt]
 									\rho_4^{(\mathfrak{D})} &:= \mathrm{Tr}_{R} \left( \mathop{\mathbb{E}}_{U \leftarrow
 									\mathfrak{D}} |\mathcal{A}_t^{V \cdot U}\rangle\langle\mathcal{A}_t^{V \cdot
 									U}|_{\mathrm{ABR}} \right)
@@ -2355,14 +2333,7 @@
 						</div>
 					</div>
 
-					<div
-						style="background:#e6f7ff; border-left:4px solid #1890ff; padding:10px 15px; border-radius:6px; margin-top:15px; text-align:left;">
-						<p style="margin:0; color:#0050b3; font-size:1.05em;">
-							<strong class="fragment" data-fragment-index="3" style="color:#d48806;">Conclusion:</strong>
-							Bound the trace distance to $\mathcal{O}(t^2/N)$ by the probability of a collision in the
-							quantum queries.
-						</p>
-					</div>
+
 				</div>
 			</section>
 
@@ -2494,13 +2465,13 @@
 							<div style="display:flex; align-items:center; gap:10px; margin-bottom:10px;">
 								<span
 									style="background:#f4a100; color:white; border-radius:50%; width:22px; height:22px; display:inline-flex; align-items:center; justify-content:center; font-size:0.8em; flex-shrink:0;">1</span>
-								<strong style="color:#f4a100;">Store Relation |R⟩</strong>
+								<strong style="color:#f4a100;">Store Relation $|R\rangle$</strong>
 							</div>
-							<p style="margin:0 0 8px 0;">Sorted list of pairs in |R|·2n qubits:</p>
-							<p style="margin:0; text-align:center; font-style:italic;">|x₁⟩|y₁⟩ · · ·
-								|x<sub>|R|</sub>⟩|y<sub>|R|</sub>⟩</p>
-							<p style="margin:8px 0 0 0; color:#666; font-size:0.88em;">with (x₁,y₁) ≤ · · · ≤
-								(x<sub>|R|</sub>, y<sub>|R|</sub>) lexicographically</p>
+							<p style="margin:0 0 8px 0;">Sorted list of pairs in $|R| \cdot 2n$ qubits:</p>
+							<p style="margin:0; text-align:center;">$|x_1\rangle|y_1\rangle \cdots
+								|x_{|R|}\rangle|y_{|R|}\rangle$</p>
+							<p style="margin:8px 0 0 0; color:#666; font-size:0.88em;">with $(x_1,y_1) \leq \cdots \leq
+								(x_{|R|}, y_{|R|})$ lexicographically</p>
 						</div>
 
 						<!-- Step 2 -->
@@ -2514,14 +2485,16 @@
 							<p style="margin:0 0 6px 0;">Uniform superposition over indices, then apply bijection $f$:
 							</p>
 							<p style="margin:0; text-align:center;">
-								$\dfrac{1}{\sqrt{N-|R|}} \sum_{k} |k\rangle \;\longrightarrow\; \dfrac{1}{\sqrt{N-|R|}}
-								\sum_{y \notin \mathrm{Im}(R)} |y\rangle$
+								$\frac{1}{\sqrt{N-|R|}} \sum_{k} |k\rangle \to$ <br />
+								$\frac{1}{\sqrt{N-|R|}} \sum_{y \notin \mathrm{Im}(R)} |y\rangle$
 							</p>
 							<p style="margin:8px 0 0 0; text-align:center; color:#00897b;">
-								$f(k) = k + n_k \;,\quad f^{-1}(y) = y - n_y$
+								$f(k) = k + n_k \;,\; f^{-1}(y) = y - n_y$
 							</p>
-							<p style="margin:6px 0 0 0; color:#666; font-size:0.88em;">$n_k$ = # used outputs $\leq k$
-								&nbsp;&middot;&nbsp; computed via binary search on sorted $\mathrm{Im}(R)$</p>
+							<p style="margin:6px 0 0 0; color:#666; font-size:0.85em; line-height: 1.2;">$n_k$ = # used
+								outputs $\leq k$
+								<br /> &middot; computed via binary search on sorted $\mathrm{Im}(R)$
+							</p>
 						</div>
 
 						<!-- Step 3 -->
@@ -2535,10 +2508,11 @@
 							<p style="margin:0 0 8px 0;">Insert $(x, y)$ into sorted $R$, then erase scratch registers:
 							</p>
 							<p style="margin:0; text-align:center;">
-								$|y\rangle|x\rangle|R\rangle|R\cup\{(x,y)\}\rangle \;\mapsto\;
-								|y\rangle\,|R\cup\{(x,y)\}\rangle$
+								$|y\rangle|x\rangle|R\rangle|R\cup\{(x,y)\}\rangle$ <br />
+								$\mapsto |y\rangle\,|R\cup\{(x,y)\}\rangle$
 							</p>
-							<p style="margin:8px 0 0 0; color:#666; font-size:0.88em;">Valid since $y \notin
+							<p style="margin:8px 0 0 0; color:#666; font-size:0.85em; line-height: 1.2;">Valid since $y
+								\notin
 								\mathrm{Im}(R) \Rightarrow (x,y)$ uniquely recoverable from $R\cup\{(x,y)\}$</p>
 						</div>
 
