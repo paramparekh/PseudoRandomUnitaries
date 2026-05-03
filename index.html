@@ -1103,7 +1103,7 @@
 								$$\lvert 0 \rangle_a \longmapsto U \lvert 0 \rangle_a$$
 							</div>
 							<div style="color:#cf1322; font-style:italic; font-size:1.0em; margin-top:5px;">
-								(A mixed state upon averaging)
+								(A maximally mixed state upon averaging)
 							</div>
 						</div>
 					</div>
@@ -1136,7 +1136,7 @@
 								Tracing out the hidden subsystem $s$:
 							</div>
 							<div style="color:#389e0d; font-style:italic; font-size:1.0em;">
-								The reduced state on $a$ is also a mixed state.
+								The reduced state on $a$ is also a maximally mixed state.
 							</div>
 						</div>
 					</div>
@@ -2345,8 +2345,11 @@
 							$$
 							\begin{aligned}
 							\rho_4^{(\mathfrak{D})}
-							&= \mathop{\mathbb{E}}_{U \leftarrow \mathfrak{D}} \mathrm{Tr}_R\left(|\mathcal{A}_t^{V \cdot U}\rangle\langle\mathcal{A}_t^{V \cdot U}|_{\mathrm{ABR}}\right) \\
-							&= \mathop{\mathbb{E}}_{U \leftarrow \mathfrak{D}} \mathrm{Tr}_R\left(|\mathcal{A}_t^{V}\rangle\langle\mathcal{A}_t^{V}|_{\mathrm{ABR}}\right) \tag{5.10}
+							&= \mathop{\mathbb{E}}_{U \leftarrow \mathfrak{D}} \mathrm{Tr}_R\left(|\mathcal{A}_t^{V
+							\cdot U}\rangle\langle\mathcal{A}_t^{V \cdot U}|_{\mathrm{ABR}}\right) \\
+							&= \mathop{\mathbb{E}}_{U \leftarrow \mathfrak{D}}
+							\mathrm{Tr}_R\left(|\mathcal{A}_t^{V}\rangle\langle\mathcal{A}_t^{V}|_{\mathrm{ABR}}\right)
+							\tag{5.10}
 							\end{aligned}
 							$$
 						</div>
@@ -2363,7 +2366,8 @@
 							For any $n$-qubit unitary $U_A$:
 						</p>
 						<div style="background:white; padding:8px; border-radius:6px; text-align:center;">
-							$$ |\mathcal{A}_t^{V \cdot U}\rangle_{\mathrm{ABR}} = \left(U_{R^{(t)}_{X,1}} \otimes \cdots \otimes U_{R^{(t)}_{X,t}}\right)|\mathcal{A}_t^{V}\rangle_{\mathrm{ABR}} $$
+							$$ |\mathcal{A}_t^{V \cdot U}\rangle_{\mathrm{ABR}} = \left(U_{R^{(t)}_{X,1}} \otimes \cdots
+							\otimes U_{R^{(t)}_{X,t}}\right)|\mathcal{A}_t^{V}\rangle_{\mathrm{ABR}} $$
 						</div>
 					</div>
 
@@ -2374,9 +2378,13 @@
 							style="background:white; padding:8px; border-radius:6px; border:1px dashed #b7eb8f; text-align:center; font-size: 0.92em;">
 							$$
 							\begin{aligned}
-							\mathrm{Tr}_R\left(|\mathcal{A}_t^{V \cdot U}\rangle\langle\mathcal{A}_t^{V \cdot U}|_{\mathrm{ABR}}\right)
-							&= \mathrm{Tr}_R\left(\left(U_{R^{(t)}_X}^{\otimes t}\right)|\mathcal{A}_t^{V}\rangle\langle\mathcal{A}_t^{V}|_{\mathrm{ABR}}\left(U_{R^{(t)}_X}^{\otimes t}\right)^\dagger\right) \\
-							&= \mathrm{Tr}_R\left(|\mathcal{A}_t^{V}\rangle\langle\mathcal{A}_t^{V}|_{\mathrm{ABR}}\right)
+							\mathrm{Tr}_R\left(|\mathcal{A}_t^{V \cdot U}\rangle\langle\mathcal{A}_t^{V \cdot
+							U}|_{\mathrm{ABR}}\right)
+							&= \mathrm{Tr}_R\left(\left(U_{R^{(t)}_X}^{\otimes
+							t}\right)|\mathcal{A}_t^{V}\rangle\langle\mathcal{A}_t^{V}|_{\mathrm{ABR}}\left(U_{R^{(t)}_X}^{\otimes
+							t}\right)^\dagger\right) \\
+							&=
+							\mathrm{Tr}_R\left(|\mathcal{A}_t^{V}\rangle\langle\mathcal{A}_t^{V}|_{\mathrm{ABR}}\right)
 							\end{aligned}
 							$$
 						</div>
@@ -2559,7 +2567,8 @@
 								$|y\rangle|x\rangle|R\rangle|R\cup\{(x,y)\}\rangle$ <br />
 								$\mapsto |y\rangle\,|R\cup\{(x,y)\}\rangle$
 							</p>
-							<p style="margin:8px 0 0 0; color:#666; font-size:0.85em; line-height: 1.2;">Valid since $y \notin \mathrm{Im}(R) \Rightarrow (x,y)$ uniquely recoverable from $R\cup\{(x,y)\}$</p>
+							<p style="margin:8px 0 0 0; color:#666; font-size:0.85em; line-height: 1.2;">Valid since $y
+								\notin \mathrm{Im}(R) \Rightarrow (x,y)$ uniquely recoverable from $R\cup\{(x,y)\}$</p>
 						</div>
 
 					</div>
@@ -2592,60 +2601,90 @@
 					Lemma 2.1 — Twirling and The Distinct Subspace
 				</h3>
 
-				<div style="font-size:0.75em; max-width:1100px; margin:0 auto; text-align:left; overflow-y:auto; overflow-x:hidden; max-height:600px; padding-right:20px;">
-					
+				<div
+					style="font-size:0.75em; max-width:1100px; margin:0 auto; text-align:left; overflow-y:auto; overflow-x:hidden; max-height:600px; padding-right:20px;">
+
 					<!-- Section: Statement -->
 					<div style="margin-bottom:25px;">
-						<p><strong>Setting:</strong> $n, t > 0$ integers, $\mathfrak{D}$ a unitary 2-design on $n$ qubits, $N = 2^n$, $\rho$ a state on $\geq nt$ qubits.</p>
-						<p><strong>Distinct Subspace Projector:</strong> 
-							$$ \Pi^{\text{dist}} := \sum_{(x_1,\ldots,x_t)\in[N]^t_{\text{dist}}} |x_1\rangle\langle x_1|\otimes\cdots\otimes|x_t\rangle\langle x_t| $$
+						<p><strong>Setting:</strong> $n, t > 0$ integers, $\mathfrak{D}$ a unitary 2-design on $n$
+							qubits, $N = 2^n$, $\rho$ a state on $\geq nt$ qubits.</p>
+						<p><strong>Distinct Subspace Projector:</strong>
+							$$ \Pi^{\text{dist}} := \sum_{(x_1,\ldots,x_t)\in[N]^t_{\text{dist}}} |x_1\rangle\langle
+							x_1|\otimes\cdots\otimes|x_t\rangle\langle x_t| $$
 						</p>
-						<p style="font-size:1.1em; border-top:1px solid #eee; border-bottom:1px solid #eee; padding:15px 0; margin:15px 0;">
-							<strong>Claim:</strong> 
-							$$ \mathrm{Tr}\!\left(\underset{C\leftarrow\mathfrak{D}}{\mathbb{E}}\,(\Pi^{\text{dist}}\otimes\mathrm{Id})\cdot(C^{\otimes t}\otimes\mathrm{Id})\cdot\rho\cdot(C^{\dagger,\otimes t}\otimes\mathrm{Id})\cdot(\Pi^{\text{dist}}\otimes\mathrm{Id})\right) \;\geq\; 1 - \frac{t(t-1)}{N+1} $$
+						<p
+							style="font-size:1.1em; border-top:1px solid #eee; border-bottom:1px solid #eee; padding:15px 0; margin:15px 0;">
+							<strong>Claim:</strong>
+							$$
+							\mathrm{Tr}\!\left(\underset{C\leftarrow\mathfrak{D}}{\mathbb{E}}\,(\Pi^{\text{dist}}\otimes\mathrm{Id})\cdot(C^{\otimes
+							t}\otimes\mathrm{Id})\cdot\rho\cdot(C^{\dagger,\otimes
+							t}\otimes\mathrm{Id})\cdot(\Pi^{\text{dist}}\otimes\mathrm{Id})\right) \;\geq\; 1 -
+							\frac{t(t-1)}{N+1} $$
 						</p>
 					</div>
 
 					<!-- Section: Ingredients -->
 					<div style="margin-bottom:25px;">
-						<h4 style="color:#ad4e00; font-size:1.1em; border-bottom:2px solid #ad4e00; display:inline-block; margin-bottom:10px;">Key Ingredients</h4>
+						<h4
+							style="color:#ad4e00; font-size:1.1em; border-bottom:2px solid #ad4e00; display:inline-block; margin-bottom:10px;">
+							Key Ingredients</h4>
 						<ul style="list-style:none; padding:0;">
-							<li style="margin-bottom:12px;"><strong>1. Complement Projector:</strong> $\mathrm{Id} - \Pi^{\text{dist}} = \sum_{\text{non-distinct } \vec{x}} |\vec{x}\rangle\langle\vec{x}|$ (colliding tuples).</li>
-							<li style="margin-bottom:12px;"><strong>2. Equality Projector:</strong> $\Pi^{\text{eq}} = \sum_{x\in[N]} |x,x\rangle\langle x,x|$ (projects onto pair collisions).</li>
-							<li style="margin-bottom:12px;"><strong>3. Standard Twirling (Claim 1):</strong> $\underset{U\leftarrow\mathfrak{D}}{\mathbb{E}}\!\left[(U\otimes U)^\dagger\cdot\Pi^{\text{eq}}\cdot(U\otimes U)\right] = \frac{2}{N+1}\,\Pi^{N,2}_{\text{sym}}$.</li>
-							<li style="margin-bottom:12px;"><strong>4. Quantum Union Bound:</strong> $\mathrm{Id} - \Pi^{\text{dist}} \;\preceq\; \sum_{i &lt; j} \Pi^{\text{eq}}_{X_i, X_j}$ (failures bounded by sum of pair collisions).</li>
+							<li style="margin-bottom:12px;"><strong>1. Complement Projector:</strong> $\mathrm{Id} -
+								\Pi^{\text{dist}} = \sum_{\text{non-distinct } \vec{x}} |\vec{x}\rangle\langle\vec{x}|$
+								(colliding tuples).</li>
+							<li style="margin-bottom:12px;"><strong>2. Equality Projector:</strong> $\Pi^{\text{eq}} =
+								\sum_{x\in[N]} |x,x\rangle\langle x,x|$ (projects onto pair collisions).</li>
+							<li style="margin-bottom:12px;"><strong>3. Standard Twirling (Claim 1):</strong>
+								$\underset{U\leftarrow\mathfrak{D}}{\mathbb{E}}\!\left[(U\otimes
+								U)^\dagger\cdot\Pi^{\text{eq}}\cdot(U\otimes U)\right] =
+								\frac{2}{N+1}\,\Pi^{N,2}_{\text{sym}}$.</li>
+							<li style="margin-bottom:12px;"><strong>4. Quantum Union Bound:</strong> $\mathrm{Id} -
+								\Pi^{\text{dist}} \;\preceq\; \sum_{i &lt; j} \Pi^{\text{eq}}_{X_i, X_j}$ (failures
+								bounded by sum of pair collisions).</li>
 						</ul>
 					</div>
 
 					<!-- Section: Proof -->
 					<div style="margin-bottom:25px;">
-						<h4 style="color:#237804; font-size:1.1em; border-bottom:2px solid #237804; display:inline-block; margin-bottom:10px;">Proof Steps</h4>
+						<h4
+							style="color:#237804; font-size:1.1em; border-bottom:2px solid #237804; display:inline-block; margin-bottom:10px;">
+							Proof Steps</h4>
 						<ol style="padding-left:20px;">
 							<li style="margin-bottom:15px;">
 								<strong>Failure Probability Expansion:</strong>
-								$$ 1 - \text{Success} = \mathrm{Tr}\!\left(\mathbb{E}_C (\mathrm{Id} - \Pi^{\text{dist}})\cdot C^{\otimes t}\cdot\rho\cdot C^{\dagger,\otimes t}\right) $$
+								$$ 1 - \text{Success} = \mathrm{Tr}\!\left(\mathbb{E}_C (\mathrm{Id} -
+								\Pi^{\text{dist}})\cdot C^{\otimes t}\cdot\rho\cdot C^{\dagger,\otimes t}\right) $$
 							</li>
 							<li style="margin-bottom:15px;">
 								<strong>Applying Union Bound:</strong>
-								$$ \leq \sum_{i &lt; j} \underset{C\leftarrow\mathfrak{D}}{\mathbb{E}}\,\mathrm{Tr}\!\left(\Pi^{\text{eq}}_{X_i,X_j}\cdot C^{\otimes t}\cdot\rho\cdot C^{\dagger,\otimes t}\right) $$
+								$$ \leq \sum_{i &lt; j}
+								\underset{C\leftarrow\mathfrak{D}}{\mathbb{E}}\,\mathrm{Tr}\!\left(\Pi^{\text{eq}}_{X_i,X_j}\cdot
+								C^{\otimes t}\cdot\rho\cdot C^{\dagger,\otimes t}\right) $$
 							</li>
 							<li style="margin-bottom:15px;">
 								<strong>Tracing Out Non-Interacting Registers:</strong>
-								$$ = \sum_{i &lt; j} \underset{C\leftarrow\mathfrak{D}}{\mathbb{E}}\,\mathrm{Tr}\!\left(\Pi^{\text{eq}}_{X_i,X_j}\cdot (C \otimes C)\cdot\rho_{X_i,X_j}\cdot (C^\dagger \otimes C^\dagger)\right) $$
+								$$ = \sum_{i &lt; j}
+								\underset{C\leftarrow\mathfrak{D}}{\mathbb{E}}\,\mathrm{Tr}\!\left(\Pi^{\text{eq}}_{X_i,X_j}\cdot
+								(C \otimes C)\cdot\rho_{X_i,X_j}\cdot (C^\dagger \otimes C^\dagger)\right) $$
 							</li>
 							<li style="margin-bottom:15px;">
 								<strong>Invoking Twirling Lemma:</strong>
-								$$ = \sum_{i &lt; j} \frac{2}{N+1} \mathrm{Tr}\!\left(\Pi^{N,2}_{\text{sym}} \cdot \rho_{X_i,X_j}\right) $$
+								$$ = \sum_{i &lt; j} \frac{2}{N+1} \mathrm{Tr}\!\left(\Pi^{N,2}_{\text{sym}} \cdot
+								\rho_{X_i,X_j}\right) $$
 							</li>
 							<li style="margin-bottom:15px;">
-								<strong>Final Bound:</strong> Since $\mathrm{Tr}(\Pi_{\text{sym}} \cdot \rho) \leq 1$ and there are $\binom{t}{2}$ pairs:
-								$$ \text{Failure Prob} \leq \binom{t}{2} \cdot \frac{2}{N+1} = \frac{t(t-1)}{N+1} \qquad \square $$
+								<strong>Final Bound:</strong> Since $\mathrm{Tr}(\Pi_{\text{sym}} \cdot \rho) \leq 1$
+								and there are $\binom{t}{2}$ pairs:
+								$$ \text{Failure Prob} \leq \binom{t}{2} \cdot \frac{2}{N+1} = \frac{t(t-1)}{N+1} \qquad
+								\square $$
 							</li>
 						</ol>
 					</div>
 
-					<p style="font-style:italic; color:#666; text-align:center; margin-top:20px; border-top:1px solid #eee; padding-top:10px;">
-						Twirling scrambles the state such that collisions become as unlikely as in the classical Birthday Problem.
+					<p
+						style="font-style:italic; color:#666; text-align:center; margin-top:20px; border-top:1px solid #eee; padding-top:10px;">
+						Twirling scrambles the state such that collisions become as unlikely as in the classical
+						Birthday Problem.
 					</p>
 
 				</div>
