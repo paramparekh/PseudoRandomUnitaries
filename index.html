@@ -1696,7 +1696,7 @@
 									\ket{f}_F = (-1)^{f(x)} \ket{\pi(x)}_A \ket{\pi}_P \ket{f}_F$</p>
 							</div>
 
-							<!-- Arrow -- >
+							[Arrow]
 							<div style="font-size:1.2em; color:#0077b6; font-weight:700;">➡</div>
 
 							[Rearranged form]
@@ -1730,7 +1730,7 @@
 									initial state)</p>
 							</div>
 
-							<!-- Tensor connector -- >
+							[Tensor connector]
 							<div style="font-size:1.2em; color:#666; font-weight:700;">⊗</div>
 
 							[Layer 2: Permutations]
@@ -1744,7 +1744,7 @@
 									$N!$ permutations</p>
 							</div>
 
-							<!-- Tensor connector -- >
+							[Tensor connector]
 							<div style="font-size:1.2em; color:#666; font-weight:700;">⊗</div>
 
 							[Layer 3: Functions]
@@ -1850,6 +1850,7 @@
 			</section> -->
 
 			<!-- ═══════════════ SLIDE 17: AFTER T QUERIES ═══════════════ -->
+			<!-- ═══════════════ SLIDE 17: AFTER T QUERIES ═══════════════
 			<section>
 				<h3 style="color:#0077b6; text-transform:none; margin-bottom:10px; font-size:1.1em;">
 					Generalization: After $t$ Queries
@@ -1858,10 +1859,10 @@
 				<div
 					style="font-size: 0.68em; display:flex; flex-direction:column; gap:8px; max-width: 1250px; margin:0 auto;">
 
-					<!-- General State Evolution -->
+					[General State Evolution]
 					<div
 						style="background:#f0f7ff; border-left:4px solid #0077b6; padding:8px 12px; border-radius:8px;">
-						<!-- <p style="margin:0 0 4px 0; color:#0050b3; font-weight:700;">Quantum State Inductively Derived:</p> -->
+						[ <p style="margin:0 0 4px 0; color:#0050b3; font-weight:700;">Quantum State Inductively Derived:</p> ]
 						<div
 							style="background:white; padding:8px; border-radius:6px; border:1px dashed #0077b6; text-align:center;">
 							$$ |\Psi_t\rangle \propto \sum_{\vec{x}, \vec{y}} \Bigl( \prod_{i=1}^t |y_i\rangle\langle
@@ -1871,7 +1872,7 @@
 						</div>
 					</div>
 
-					<!-- Feynman Paths -->
+					[Feynman Paths]
 					<div
 						style="background:#fffbe6; border:1px solid #faad14; padding:10px; border-radius:8px; text-align:center;">
 						<p style="margin:0 0 4px 0; color:#856404; font-weight:700; font-size:1.0em;">For relation $R =
@@ -1882,7 +1883,7 @@
 						</div>
 					</div>
 
-					<!-- Conclusion -->
+					[Conclusion]
 					<div
 						style="background:#f6ffed; border-left:4px solid #52c41a; padding:8px 12px; border-radius:8px; text-align:center;">
 						<p style="margin:0 0 4px 0; color:#237804; font-weight:700;">Final $t$-query state in compact
@@ -1893,7 +1894,7 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> -->
 
 			<!-- ═══════════════ SLIDE 18: RELATION TO V ORACLE ═══════════════ -->
 			<section>
@@ -2495,6 +2496,7 @@
 			</section>
 
 
+			<!-- COMMENTED OUT: Efficient Circuit Implementation
 			<section>
 				<h3 style="color:#0077b6; text-transform:none; margin-bottom:10px; font-size:1.2em;">
 					Efficient Circuit Implementation of the Path-Recording Oracle
@@ -2502,7 +2504,7 @@
 				<div
 					style="font-size:0.80em; max-width:1250px; margin:0 auto; text-align:left; display:flex; flex-direction:column; gap:10px; max-height:590px; overflow-y:auto; padding-right:6px;">
 
-					<!-- Goal -->
+					[ Goal ]
 					<div
 						style="background:#f0f7ff; border-left:5px solid #0077b6; padding:14px 20px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.05); text-align:center;">
 						<strong style="color:#0077b6;">Implement $V$ efficiently as a quantum circuit:</strong>
@@ -2510,10 +2512,10 @@
 						|y\rangle \,|R \cup \{(x,y)\}\rangle $$
 					</div>
 
-					<!-- Three steps -->
+					[ Three steps ]
 					<div style="display:flex; gap:14px; align-items:stretch;">
 
-						<!-- Step 1 -->
+						[ Step 1 ]
 						<div
 							style="flex:1; background:#fff8e1; border-left:5px solid #f4a100; padding:16px 18px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.05);">
 							<div style="display:flex; align-items:center; gap:10px; margin-bottom:10px;">
@@ -2528,7 +2530,7 @@
 								(x_{|R|}, y_{|R|})$ lexicographically</p>
 						</div>
 
-						<!-- Step 2 -->
+						[ Step 2 ]
 						<div
 							style="flex:1.3; background:#f0fff4; border-left:5px solid #00897b; padding:16px 18px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.05);">
 							<div style="display:flex; align-items:center; gap:10px; margin-bottom:10px;">
@@ -2551,7 +2553,7 @@
 							</p>
 						</div>
 
-						<!-- Step 3 -->
+						[ Step 3 ]
 						<div
 							style="flex:1.2; background:#fdf0ff; border-left:5px solid #8e24aa; padding:16px 18px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.05);">
 							<div style="display:flex; align-items:center; gap:10px; margin-bottom:10px;">
@@ -2571,7 +2573,7 @@
 
 					</div>
 
-					<!-- Bottom bar -->
+					[ Bottom bar ]
 					<div
 						style="background:#f0f7ff; border-left:5px solid #0077b6; padding:12px 20px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.05);">
 						<ul style="list-style:none; padding-left:0; margin:0; display:flex; gap:30px; flex-wrap:wrap;">
@@ -2593,7 +2595,9 @@
 					</div>
 
 				</div>
-			</section>
+			</section>
+			 COMMENTED OUT -->
+			<!-- COMMENTED OUT: Lemma 2.1 Twirling
 			<section data-auto-animate style="height: 100%;">
 				<h3 style="color:#237804; text-transform:none; margin-bottom:20px; font-size:1.3em;">
 					Lemma 2.1 — Twirling and The Distinct Subspace
@@ -2602,7 +2606,7 @@
 				<div
 					style="font-size:0.75em; max-width:1100px; margin:0 auto; text-align:left; overflow-y:auto; overflow-x:hidden; max-height:600px; padding-right:20px;">
 
-					<!-- Section: Statement -->
+					[ Section: Statement ]
 					<div style="margin-bottom:25px;">
 						<p><strong>Setting:</strong> $n, t > 0$ integers, $\mathfrak{D}$ a unitary 2-design on $n$
 							qubits, $N = 2^n$, $\rho$ a state on $\geq nt$ qubits.</p>
@@ -2621,7 +2625,7 @@
 						</p>
 					</div>
 
-					<!-- Section: Ingredients -->
+					[ Section: Ingredients ]
 					<div style="margin-bottom:25px;">
 						<h4
 							style="color:#ad4e00; font-size:1.1em; border-bottom:2px solid #ad4e00; display:inline-block; margin-bottom:10px;">
@@ -2642,7 +2646,7 @@
 						</ul>
 					</div>
 
-					<!-- Section: Proof -->
+					[ Section: Proof ]
 					<div style="margin-bottom:25px;">
 						<h4
 							style="color:#237804; font-size:1.1em; border-bottom:2px solid #237804; display:inline-block; margin-bottom:10px;">
@@ -2686,7 +2690,8 @@
 					</p>
 
 				</div>
-			</section>
+			</section>
+			 COMMENTED OUT -->
 
 			<!-- ═══════════════ SLIDE 25: AI SAFETY & QUANTUM ADVANTAGE ═══════════════ -->
 			<section>
